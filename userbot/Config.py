@@ -78,8 +78,8 @@ if ENV:
         ALIVE_MSG = os.environ.get("ALIVE_MSG", None) or "Lêɠêɳ̃dẞøt Is Online"
         PM_MSG = os.environ.get("PM_MSG", None)
         INSTANT_BLOCK = os.environ.get("INSTANT_BLOCK", "OFF")
-        YOUR_GROUP = os.environ.get("YOUR_GROUP", "@LegendBot_Pros")
-        YOUR_CHANNEL = os.environ.get("YOUR_CHANNEL", "@Pro_LegendBots.")
+        YOUR_GROUP = os.environ.get("YOUR_GROUP", "@NAAN_1_KANNADIGA")
+        YOUR_CHANNEL = os.environ.get("YOUR_CHANNEL", "@KANNADIGA_BOTS.")
         BOT_PIC = os.environ.get("ALIVE_PIC", None)
         # auto bio
         BIO_MSG = os.environ.get("ALIVE_MSG", None)
@@ -88,11 +88,11 @@ if ENV:
         LYDIA_API = os.environ.get("LYDIA_API", None)
         PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/PROBOY-OP/PRO-LEGENDBOT"
+            "UPSTREAM_REPO", "https://github.com/MR-KANNADIGA/KANADIGA-BOT"
         )
         APP_ID = os.environ.get("APP_ID", None)
         API_HASH = os.environ.get("API_HASH", None)
-        PRO_STRING = os.environ.get("PRO_STRING", None)
+        KANNADIGA_STRING = os.environ.get("KANNADIGA_STRING", None)
         EXTRA_PLUGIN = os.environ.get("EXTRA_PLUGIN", None)
         ASSISTANT = os.environ.get("ASSISTANT", None)
         ABUSE = os.environ.get("ABUSE", None)
