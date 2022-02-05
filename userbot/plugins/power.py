@@ -2,7 +2,7 @@ import os
 import sys
 
 from userbot import HEROKU_APP, LEGENDversion, bot
-from userbot.cmdhelp import CmdHelp 
+from userbot.cmdhelp import CmdHelp
 from userbot.helpers.runner import reload_KANNADIGABOT
 from userbot.utils import admin_cmd, eor, sudo_cmd
 
