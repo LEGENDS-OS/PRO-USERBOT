@@ -10,7 +10,7 @@ from userbot.utils import *
 
 LEGEND_USER = bot.me.first_name
 Pro_Userboy = bot.uid
-legend_mention = f"[{LEGEND_USER}](tg://user?id={mr_professor_agora})"
+legend_mention = f"[{LEGEND_USER}](tg://user?id={Pro_Userboy})"
 
 gban_pic = "./userbot/resources/pics/gban.mp4"
 main_pic = "./userbot/resources/pics/main.jpg"
@@ -50,8 +50,8 @@ else:
 
 START_TIME = datetime.datetime.now()
 uptime = f"{str(datetime.datetime.now() - START_TIME).split('.')[0]}"
-my_channel = Config.YOUR_CHANNEL or "Pro_LegendBots"
-my_group = Config.YOUR_GROUP or "LegendBot_Pros"
+my_channel = Config.YOUR_CHANNEL or "Kannadiga_Bots"
+my_group = Config.YOUR_GROUP or "naan_1_kannadiga"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
