@@ -57,25 +57,25 @@ if ENV:
         ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", None) or "✥"
         ALIVE_PIC = (
             os.environ.get("ALIVE_PIC", None)
-            or "https://telegra.ph/file/af51de2749a4506d3eb43.jpg"
+            or "https://te.legra.ph/file/4eba78d12030ad7ad7f04.mp4"
         )
         PM_PIC = (
             os.environ.get("PM_PIC", None)
-            or "https://te.legra.ph/file/0c605739ddaa472cad75f.jpg"
+            or "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
         )
         AWAKE_PIC = (
             os.environ.get("AWAKE_PIC", None)
-            or "https://telegra.ph/file/47ffec836544b371408ab.mp4"
+            or "https://te.legra.ph/file/f1d1a072c1b9b64c57d14.mp4"
         )
         HELP_PIC = (
             os.environ.get("HELP_PIC", None)
-            or "https://te.legra.ph/file/b5d01ceea49ee0a822661.mp4"
+            or "https://te.legra.ph/file/6fb0b078b3ab2fc8e25a9.mp4"
         )
         PING_PIC = (
             os.environ.get("PING_PIC", None)
-            or "https://te.legra.ph/file/ace5feae5b1ac8ea262ed.jpg"
+            or "https://te.legra.ph/file/4eba78d12030ad7ad7f04.mp4"
         )
-        ALIVE_MSG = os.environ.get("ALIVE_MSG", None) or "Lêɠêɳ̃dẞøt Is Online"
+        ALIVE_MSG = os.environ.get("ALIVE_MSG", None) or "Kannadiga bot Is Online"
         PM_MSG = os.environ.get("PM_MSG", None)
         INSTANT_BLOCK = os.environ.get("INSTANT_BLOCK", "OFF")
         YOUR_GROUP = os.environ.get("YOUR_GROUP", "@NAAN_1_KANNADIGA")
