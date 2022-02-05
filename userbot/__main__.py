@@ -351,11 +351,11 @@ bot.loop.run_until_complete(install())
 
 print(
     f"""
-╔════❰KANADIGABOT❱═❍⊱❁۪۪
+╔════❰KANADIGA BOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - {Config.ALIVE_NAME}
-║┣⪼ CREATOR - @LegendBoy_XD
+║┣⪼ CREATOR - @Mr_Professor_Agora
 ║┣⪼ KANADIGABOT - {KANNADIGAversion}
-║┣⪼ ✨ 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
+║┣⪼ ✨ 『🔱 𝗞 𝗔 𝗡 𝗡 𝗔 𝗗 𝗜 𝗚 𝗔 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱"""
 )
