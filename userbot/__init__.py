@@ -20,11 +20,11 @@ DEVS = ["5127482645"]
 
 ENV = os.environ.get("ENV", False)
 
-LEGEND_ID = ["5127482645"]
+KANNADIGA_ID = ["5127482645"]
 
 LOGGER = True
 StartTime = time.time()
-LEGENDversion = "v1.0"
+KANADIGAversion = "v1.0"
 botversion = "v1.0"
 from logging import DEBUG, INFO, basicConfig, getLogger
 
@@ -50,7 +50,7 @@ else:
     session = "KANNADIGA-LEGENDBOT"
 
 try:
-    Legend = TelegramClient(
+    AGORA = TelegramClient(
         session=session,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
@@ -73,7 +73,7 @@ KANNADIGA = TelegramClient(
 ).start(bot_token=Config.BOT_TOKEN)
 
 
-bot = kbot = Legend
+bot = kbot = AGORA
 tbot = KANNADIGA
 
 
