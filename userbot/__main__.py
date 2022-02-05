@@ -9,15 +9,15 @@ from telethon import Button, TelegramClient, custom, events
 from userbot.Config import Config
 from userbot.start import abuses, addons, assistants, hekp, install, module, spams
 
-from . import LOGS, LEGENDversion, bot
+from . import LOGS, KANNADIGAversion, bot
 
 l1 = Config.HANDLER
 l2 = Config.SUDO_HANDLER
-LEGEND_PIC = "https://telegra.ph/file/e753315316673cff51085.mp4"
+LEGEND_PIC = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 
-perf = "[ Pro Lêɠêɳ̃dẞot ]"
+perf = "[ KANADIGABOT ]"
 
-onbot = "start - Check if I am Alive \nping - Pong! \ntr - <lang-code> \nbroadcast - Sends Message To all Users In Bot \nid - Shows ID of User And Media. \naddnote - Add Note \nnotes - Shows Notes \nspam - spam value text (value < 100)\nbigspam - spam value text (value > 100) \nraid - Raid value Reply to Anyone \nreplyraid - Reply To Anyone \ndreplyraid - Reply To Anyone \nrmnote - Remove Note \nalive - Am I Alive? \nbun - Works In Group , Bans A User. \nunbun - Unbans A User in Group \nprumote - Promotes A User \ndemute - Demotes A User \npin - Pins A Message \nstats - Shows Total Users In Bot \npurge - Reply It From The Message u Want to Delete (Your Bot Should be Admin to Execute It) \ndel - Reply a Message Tht Should Be Deleted (Your Bot Should be Admin to Execute It)"
+onbot = "start - Check if I am Alive \nping - Pong! \ntr - <lang-code> \nbroadcast - Sends Message To all Users In Bot \nid - Shows ID of User And Media. \naddnote - Add Note \nnotes - Shows Notes \nspam - spam value text (value < 100)\nbigspam - spam value text (value > 100) \nraid - Raid value Reply to Anyone \nreplyraid - Reply To Anyone \ndreplyraid - Reply To Anyone \nrmnote - Remove Note \nalive - Am I Alive? \nbun - Works In Group , Bans A User. \nunbun - Unbans A User in Group \nprumote - Promotes A User \ndemute - Demotes A User \npin - Pin A Message \nstats - Shows Total Users In Bot \npurge - Reply It From The Message u Want to Delete (Your Bot Should be Admin to Execute It) \ndel - Reply a Message Tht Should Be Deleted (Your Bot Should be Admin to Execute It)"
 
 bot_father = "@BotFather"
 
@@ -34,7 +34,7 @@ async def add_bot(bot_token):
         bot.me = await bot.get_me()
         bot.uid = telethon.utils.get_peer_id(bot.me)
     except Exception as e:
-        LOGS.error(f"PRO_STRING - {str(e)}")
+        LOGS.error(f"KANNADIGA_STRING - {str(e)}")
         sys.exit()
 
 
@@ -49,9 +49,9 @@ else:
                 "BOT_TOKEN", api_id=Config.APP_ID, api_hash=Config.API_HASH
             ).start(bot_token=Config.BOT_TOKEN)
             LOGS.info("Checking Completed. Proceeding to next step...")
-            LOGS.info("♥️ Starting PRO-LEGENDBOT ♥️")
+            LOGS.info("♥️ Starting KANADIGABOT ♥️")
             bot.loop.run_until_complete(add_bot(Config.BOT_USERNAME))
-            LOGS.info("🥇🔥 PRO-LEGENDBOT Startup Completed 🔥🥇")
+            LOGS.info("🥇🔥 KANADIGABOT Startup Completed 🔥🥇")
         else:
             bot.start()
     except Exception as e:
@@ -65,11 +65,11 @@ tgbot = bot.tgbot
 
 async def killer():
     LEGEND_USER = bot.me.first_name
-    Pro_LegendBoy = bot.uid
-    legd_mention = f"[{LEGEND_USER}](tg://user?id={Pro_LegendBoy})"
-    name = f"{legd_mention}'s Assistant"
+    Mr_Professor_Agora = bot.uid
+    agora_mention = f"[{LEGEND_USER}](tg://user?id={Mr_Professor_Agora})"
+    name = f"{agora_mention}'s Assistant"
     description = (
-        f"I am Assistant Of {legd_mention}.This Bot Can Help U To Chat With My Master"
+        f"I am Assistant Of {agora_mention}.This Bot Can Help U To Chat With My Master"
     )
     starkbot = await tgbot.get_me()
     bot_id = starkbot.first_name
@@ -115,9 +115,9 @@ async def killer():
 
 async def legends():
     LEGEND_USER = bot.me.first_name
-    Pro_LegendBoy = bot.uid
-    legd_mention = f"[{LEGEND_USER}](tg://user?id={Pro_LegendBoy})"
-    yescaption = f"Hello Sir/Miss Something Happened \nDing Dong Ting Tong Ping Pong\nSuccessfully PRO-LEGENDBOT Has Been Deployed \nMy Master ~ 『{legd_mention}』 \nVersion ~ {LEGENDversion}\nClick Below To Know More About Me👇🏾👇👇🏼"
+    Mr_Professor_Agora = bot.uid
+    agora_mention = f"[{LEGEND_USER}](tg://user?id={Mr_Professor_Agora})"
+    yescaption = f"Hello Sir/Miss Something Happened \nDing Dong Ting Tong Ping Pong\nSuccessfully KANADIGABOT Has Been Deployed \nMy Master ~ 『{agora_mention}』 \nVersion ~ {KANNADIGAversion}\nClick Below To Know More About Me👇🏾👇👇🏼"
     try:
         TRY = [[Button.inline("⭐ Start ⭐", data="start")]]
         await tgbot.send_file(
@@ -138,8 +138,8 @@ async def help(event):
             message=f"Hey Sir It's Me {bot_id}, Your Assistant! How Can I Help U?",
             buttons=[
                 [
-                    Button.url(" Support ", "https://t.me/LegendBot_Pros"),
-                    Button.url(" Updates ", "https://t.me/Pro_LegendBots"),
+                    Button.url(" Support ", "https://t.me/NAAN_1_KANNADIGA"),
+                    Button.url(" Updates ", "https://t.me/KANNADIGA_BOTS"),
                 ],
                 [
                     custom.Button.inline("Users", data="users"),
@@ -243,7 +243,7 @@ async def users(event):
         await event.delete()
         await tgbot.send_message(
             event.chat_id,
-            message="All Var Name Are Given Below :\n\nABUSE = ON/ OFF\nALIVE_EMOJI = ANY EMOJI, Example: ✨\nALIVE_MESSAGE = Any Message ,Example : PRO-LEGENDBOT Is Online\nALIVE_PIC = telegraph Link, use .tm to get it\nASSISTANT = ON / OFF\nAWAKE_PIC = telegraph link, get from .tm<reply to pic>\n",
+            message="All Var Name Are Given Below :\n\nABUSE = ON/ OFF\nALIVE_EMOJI = ANY EMOJI, Example: ✨\nALIVE_MESSAGE = Any Message ,Example : KANADIGABOT Is Online\nALIVE_PIC = telegraph Link, use .tm to get it\nASSISTANT = ON / OFF\nAWAKE_PIC = telegraph link, get from .tm<reply to pic>\n",
             buttons=[
                 [custom.Button.inline("Back", data="osg")],
             ],
@@ -351,10 +351,10 @@ bot.loop.run_until_complete(install())
 
 print(
     f"""
-╔════❰PRO-LEGENDBOT❱═❍⊱❁۪۪
+╔════❰KANADIGABOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - {Config.ALIVE_NAME}
 ║┣⪼ CREATOR - @LegendBoy_XD
-║┣⪼ PRO-LEGENDBOT - {LEGENDversion}
+║┣⪼ KANADIGABOT - {KANNADIGAversion}
 ║┣⪼ ✨ 『🔱🇱 🇪 🇬 🇪 🇳 🇩 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
 ╚══════════════════❍⊱"""
