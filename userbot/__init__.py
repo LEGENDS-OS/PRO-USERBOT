@@ -16,11 +16,11 @@ from telethon.sessions import StringSession
 from userbot.Config import Config
 from var import Var
 
-DEVS = ["5080268903"]
+DEVS = ["5127482645"]
 
 ENV = os.environ.get("ENV", False)
 
-LEGEND_ID = ["5080268903"]
+LEGEND_ID = ["5127482645"]
 
 LOGGER = True
 StartTime = time.time()
@@ -44,10 +44,10 @@ else:
 LOGS = getLogger(__name__)
 
 
-if Config.PRO_STRING:
-    session = StringSession(str(Config.PRO_STRING))
+if Config.KANNADIGA_STRING:
+    session = StringSession(str(Config.KANNADIGA_STRING))
 else:
-    session = "PRO-LEGENDBOT"
+    session = "KANNADIGA-LEGENDBOT"
 
 try:
     Legend = TelegramClient(
@@ -59,12 +59,12 @@ try:
         connection_retries=None,
     )
 except Exception as e:
-    LOGS.error(f"PRO_STRING - {e}")
+    LOGS.error(f"KANNADIGA_STRING - {e}")
     sys.exit()
 
 
-PRO = TelegramClient(
-    session="Legend-Bot",
+KANNADIGA = TelegramClient(
+    session="MR-KANNADIGA",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
     connection=ConnectionTcpAbridged,
@@ -74,7 +74,7 @@ PRO = TelegramClient(
 
 
 bot = kbot = Legend
-tbot = PRO
+tbot = KANNADIGA
 
 
 if not Config.API_HASH:
@@ -102,7 +102,7 @@ if not Config.DB_URI:
     quit(1)
 
 
-if not Config.PRO_STRING:
+if not Config.KANNADIGA_STRING:
     LOGS.warning("Please fill var HELLBOT SESSION to continue.")
     quit(1)
 
@@ -130,7 +130,7 @@ binaries = {
 }
 
 for binary, path in binaries.items():
-    downloader = SmartDL(binary, path, progress_bar=False)
+    downloader = SmartDL(binary, path, KANNADIGAgress_bar=False)
     downloader.start()
     os.chmod(path, 0o755)
 
