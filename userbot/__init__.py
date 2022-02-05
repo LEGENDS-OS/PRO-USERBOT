@@ -24,7 +24,7 @@ KANNADIGA_ID = ["5127482645"]
 
 LOGGER = True
 StartTime = time.time()
-KANADIGAversion = "v1.0"
+KANNADIGAversion = "v1.0"
 botversion = "v1.0"
 from logging import DEBUG, INFO, basicConfig, getLogger
 
