@@ -308,7 +308,11 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 text=f"**⚜ Mr Professor Agora - Kannadiga Bot ⚜**",
                 buttons=[
                     [Button.url("♥️ Tutorial ♥", "https://youtu.be/fKqzPzcbX8Y")],
-                    [Button.url("📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/MR-KANNADIGA/KANNADIGA-BOT")],
+                    [
+                        Button.url(
+                            "📍 𝚁𝚎𝚙𝚘 📍", "https://github.com/MR-KANNADIGA/KANNADIGA-BOT"
+                        )
+                    ],
                     [
                         Button.url(
                             "💞 Deploy 💞",
@@ -328,7 +332,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         else:
             buttons = [
                 (
-                    Button.url("Sources", "https://github.com/MR-KANNADIGA/KANNADIGA-BOT"),
+                    Button.url(
+                        "Sources", "https://github.com/MR-KANNADIGA/KANNADIGA-BOT"
+                    ),
                     Button.url(
                         "Deploy",
                         "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMR-KANNADIGA%2FKANNADIGA-BOT&template=https%3A%2F%2Fgithub.com%2FMR-KANNADIGA%2FKANNADIGA-BOT",
