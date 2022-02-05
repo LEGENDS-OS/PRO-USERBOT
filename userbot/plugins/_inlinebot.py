@@ -21,8 +21,8 @@ from . import *
 
 DEFAULTUSER = alive_name = Config.ALIVE_NAME
 legend_row = Config.BUTTONS_IN_HELP
-legend_emoji1 = Config.HELP_EMOJI1 or "✥"
-legend_emoji2 = Config.HELP_EMOJI2 or "✥"
+legend_emoji1 = Config.HELP_EMOJI1 or "💛"
+legend_emoji2 = Config.HELP_EMOJI2 or "❤️"
 mssge = cstm_pmp = (
     Config.PM_MSG
     or "I am Assistant Of My Owner\nI am Here To Protect My Owner From Scanner"
@@ -99,7 +99,7 @@ def button(page, modules):
             custom.Button.inline(
                 f"⌫ ẞαƈƙ", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
             ),
-            custom.Button.inline(f"🔥 ❌ 🔥", data="close"),
+            custom.Button.inline(f"💛 💥 ❤️", data="close"),
             custom.Button.inline(
                 f"ɳ̃êӿ† ⌦", data=f"page({0 if page == (max_pages - 1) else page + 1})"
             ),
@@ -137,7 +137,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 help_msg = random.choice(c)
             HELP_PIC = (
                 os.environ.get("HELP_PIC", None)
-                or "https://te.legra.ph/file/331766218f63e46ffe175.mp4"
+                or "https://te.legra.ph/file/c085085b63638ae1ba5cf.jpg"
             )
             if HELP_PIC is not None:
                 b = HELP_PIC.split()
@@ -180,7 +180,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                         c.append(d)
                 ALV_PIC = random.choice(c)
             else:
-                ALV_PIC = "https://te.legra.ph/file/331766218f63e46ffe175.mp4"
+                ALV_PIC = "https://te.legra.ph/file/c085085b63638ae1ba5cf.jpg"
             pp = Config.ALIVE_MSG
             if pp is not None:
                 b = pp.split(", ")
@@ -211,7 +211,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             alv_btn = [
                 [
                     Button.url(
-                        f"{LEGEND_USER}", f"tg://openmessage?user_id={Pro_Userboy}"
+                        f"{LEGEND_USER}", f"tg://openmessage?user_id={Mr_Professor_Agora}"
                     )
                 ],
                 [
@@ -245,7 +245,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             fsub_btn = [
                 [
                     Button.url(
-                        f"{LEGEND_USER}", f"tg://openmessage?user_id={Pro_Userboy}"
+                        f"{LEGEND_USER}", f"tg://openmessage?user_id={Mr_Professor_Agora}"
                     )
                 ],
                 [
