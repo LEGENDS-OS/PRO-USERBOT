@@ -47,7 +47,7 @@ LOGS = getLogger(__name__)
 if Config.KANNADIGA_STRING:
     session = StringSession(str(Config.KANNADIGA_STRING))
 else:
-    session = "KANNADIGA-LEGENDBOT"
+    session = "KANNADIGA-BOT"
 
 try:
     AGORA = TelegramClient(
@@ -103,7 +103,7 @@ if not Config.DB_URI:
 
 
 if not Config.KANNADIGA_STRING:
-    LOGS.warning("Please fill var KANNADIGA STRING to continue.")
+    LOGS.warning("Please fill var HELLBOT SESSION to continue.")
     quit(1)
 
 
