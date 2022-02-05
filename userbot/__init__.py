@@ -103,7 +103,7 @@ if not Config.DB_URI:
 
 
 if not Config.KANNADIGA_STRING:
-    LOGS.warning("Please fill var HELLBOT SESSION to continue.")
+    LOGS.warning("Please fill var KANNADIGA STRING to continue.")
     quit(1)
 
 
