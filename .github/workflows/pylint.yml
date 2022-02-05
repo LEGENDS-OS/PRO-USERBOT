@@ -30,6 +30,6 @@ jobs:
           commit_message: 'auto-fixes'
           commit_options: '--no-verify'
           repository: .
-          commit_user_name: PROBOY-OP
+          commit_user_name: MR-KANADIGA
           commit_user_email: pro045legendboy@gmail.com 
-          commit_author: PROBOY-OP <pro45legendboy@gmail.com>
+          commit_author: MR-KANADIGA <pro45legendboy@gmail.com>
