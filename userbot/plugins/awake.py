@@ -19,8 +19,8 @@ async def reply_id(event):
 
 
 LEGEND_IMG = Config.AWAKE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice ℓєgєи∂ϐοτ"
-CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@LegendBot_Pros"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Kannada Kannadiga"
+CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@naan_1_kannadiga"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -65,12 +65,12 @@ async def amireallyalive(event):
         LEGEND_caption = f"**{legend_mention}**\n"
 
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"     ⚜ 𝐊𝐀𝐍𝐍𝐀𝐃𝐈𝐆𝐀 𝐁𝐎𝐓 ⚜\n"
+        LEGEND_caption += f"     💛 ƘᗩᑎᑎᗩᗪƖᘐᗩ ᗷዐƬ ❤️\n"
         LEGEND_caption += f"•🔥• 𝙺𝙰𝙽𝙽𝙰𝙳𝙸𝙶𝙰 𝙱𝙾𝚃     : ν3.0\n"
         LEGEND_caption += f"•🔥• 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
         LEGEND_caption += f"•🔥• 𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
         LEGEND_caption += f"•🔥• 𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/kannadiga_bots)\n"
-        LEGEND_caption += f"•🔥• ᴹʸ 𝙶𝚁𝙾𝚄𝙿 : {CUSTOM_YOUR_GROUP}\n"
+        LEGEND_caption += f"•🔥• ᴹʸ 𝙶𝚁𝙾𝚄𝙿 : [𝕲ʀᴏᴜᴘ](t.me/naan_1_kannadiga)\n"
 
         await event.client.send_file(
             event.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
