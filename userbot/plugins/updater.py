@@ -34,7 +34,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "please check out to an official branch, and re-start the updater."
 )
 OFFICIAL_UPSTREAM_REPO = Config.UPSTREAM_REPO
-BOT_IS_UP_TO_DATE = "**The LegendBot** is up-to-date sir."
+BOT_IS_UP_TO_DATE = "**The Kannadiga Bot** is up-to-date sir."
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
     "changelog: \n\n{changelog}\n"
@@ -49,7 +49,7 @@ DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 
 PRO_LEGENDBOT_info = (
-    "https://raw.githubusercontent.com/LegendBot/PRO-USERBOT/Pro/proboy-info.json"
+    "https://raw.githubusercontent.com/MR-KANNADIGA/KANNADIGA-USERBOT/Pro/proboy-info.json"
 )
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 requirements_path = os.path.join(
@@ -57,13 +57,13 @@ requirements_path = os.path.join(
 )
 
 
-async def legend_info(PRO_LEGENDBOT_info):
-    infos = requests.get(PRO_LEGENDBOT_info).json()
-    _version = infos["LegendBot-INFO"]["version"]
-    _release = infos["LegendBot-INFO"]["release-date"]
-    _branch = infos["LegendBot-INFO"]["branch"]
-    _author = infos["LegendBot-INFO"]["author"]
-    _auturl = infos["LegendBot-INFO"]["author-url"]
+async def legend_info(KANNADIGABOTinfo):
+    infos = requests.get(KANNADIGABOT_info).json()
+    _version = infos["KannadigaBot-INFO"]["version"]
+    _release = infos["KannadigaBot-INFO"]["release-date"]
+    _branch = infos["KannadigaBot-INFO"]["branch"]
+    _author = infos["KannadigaBot-INFO"]["author"]
+    _auturl = infos["KannadigaBot-INFO"]["author-url"]
     return _version, _release, _branch, _author, _auturl
 
 
@@ -138,7 +138,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await event.edit(
-        "✅ Successfully updated Legendẞø†!\n\nBot is restarting please wait for a minute."
+        "✅ Successfully updated Kannadiga Bot!\n\nBot is restarting please wait for a minute."
     )
     args = [sys.executable, "-m", "userbot"]
     os.execle(sys.executable, *args, os.environ)
@@ -196,10 +196,10 @@ async def upstream(event):
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if changelog == "" and not force_update:
         await event.edit(
-            "\n**😎 Lêɠêɳ̃dẞø† is UP-TO-DATE.**"
+            "\n**😎 Kannadiga Bot is UP-TO-DATE.**"
             f"\n\n**Version :**  {LEGENDversion}"
-            f"\n**Owner :**  {legend_mention}"
-            "\nRelease Date : 16 December 2021"
+            f"\n**Owner :**  [Kannadiga](t.me/mr_professor_agora)"
+            "\nRelease Date : 05 FEBRUARY 2022"
             f"\n**Git Branch :**  {UPSTREAM_REPO_BRANCH}\n"
         )
         return repo.__del__()
