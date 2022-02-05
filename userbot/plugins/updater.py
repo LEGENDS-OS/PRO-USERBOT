@@ -48,9 +48,7 @@ IFFUCI_ACTIVE_BRANCH_NAME = "Pro"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 
-PRO_LEGENDBOT_info = (
-    "https://raw.githubusercontent.com/MR-KANNADIGA/KANNADIGA-USERBOT/Pro/proboy-info.json"
-)
+PRO_LEGENDBOT_info = "https://raw.githubusercontent.com/MR-KANNADIGA/KANNADIGA-USERBOT/Pro/proboy-info.json"
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 requirements_path = os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "requirements.txt"
