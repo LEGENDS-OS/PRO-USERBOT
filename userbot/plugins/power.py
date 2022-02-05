@@ -2,8 +2,8 @@ import os
 import sys
 
 from userbot import HEROKU_APP, LEGENDversion, bot
-from userbot.cmdhelp import CmdHelp
-from userbot.helpers.runner import reload_LEGENDBOT
+from userbot.cmdhelp import CmdHelp 
+from userbot.helpers.runner import reload_KANNADIGABOT
 from userbot.utils import admin_cmd, eor, sudo_cmd
 
 
@@ -40,7 +40,7 @@ async def _(event):
 @bot.on(sudo_cmd(pattern="reload$", allow_sudo=True))
 async def rel(event):
     await eor(event, "Reloading Lêɠêɳ̃dẞø†... Wait for few seconds...")
-    await reload_LEGENDBOT()
+    await reload_KANNADIGABOT()
 
 
 CmdHelp("power").add_command(
