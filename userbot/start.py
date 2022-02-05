@@ -159,7 +159,7 @@ async def install():
         except BaseException:
             pass
         i = 0
-        chat =-1001748524186
+        chat = -1001748524186
         documentss = await bot.get_messages(
             chat, None, filter=InputMessagesFilterDocument
         )

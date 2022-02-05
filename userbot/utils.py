@@ -17,7 +17,7 @@ from telethon import events
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from userbot import CMD_LIST, LOAD_PLUG, LOGS, KANNADIGA, SUDO_LIST, AGORA, bot
+from userbot import AGORA, CMD_LIST, KANNADIGA, LOAD_PLUG, LOGS, SUDO_LIST, bot
 from userbot.Config import Config
 from userbot.helpers.exceptions import CancelProcess
 from var import Var
@@ -63,8 +63,8 @@ def load_module(shortname):
         sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.edit_or_reply = edit_or_reply
-        mod.delete_KANNADIGA  = delete_KANNADIGA 
-        mod.eod = delete_KANNADIGA 
+        mod.delete_KANNADIGA = delete_KANNADIGA
+        mod.eod = delete_KANNADIGA
         mod.admin_cmd = admin_cmd
         mod.legend_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
@@ -169,8 +169,8 @@ def load_addons(shortname):
         mod.Var = Var
         mod.Config = Config
         mod.edit_or_reply = edit_or_reply
-        mod.delete_KANNADIGA  = delete_KANNADIGA 
-        mod.eod = delete_KANNADIGA 
+        mod.delete_KANNADIGA = delete_KANNADIGA
+        mod.eod = delete_KANNADIGA
         mod.admin_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
         mod.command = command
@@ -229,8 +229,8 @@ def load_abuse(shortname):
         mod.borg = bot
         mod.KANNADIGA = bot
         mod.edit_or_reply = edit_or_reply
-        mod.delete_KANNADIGA  = delete_KANNADIGA 
-        mod.eod = delete_KANNADIGA 
+        mod.delete_KANNADIGA = delete_KANNADIGA
+        mod.eod = delete_KANNADIGA
         mod.admin_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
         sys.modules["KANNADIGABOT.utils"] = userbot.utils
@@ -604,7 +604,7 @@ async def eor(
     os.remove(file_name)
 
 
-async def delete_KANNADIGA (event, text, time=None, parse_mode=None, link_preview=None):
+async def delete_KANNADIGA(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
     link_preview = link_preview or False
     time = time or 5
