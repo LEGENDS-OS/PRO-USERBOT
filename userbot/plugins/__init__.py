@@ -10,7 +10,7 @@ from userbot.utils import *
 
 LEGEND_USER = bot.me.first_name
 Pro_Userboy = bot.uid
-legend_mention = f"[{LEGEND_USER}](tg://user?id={Pro_Userboy})"
+legend_mention = f"[{LEGEND_USER}](tg://user?id={mr_professor_agora})"
 
 gban_pic = "./userbot/resources/pics/gban.mp4"
 main_pic = "./userbot/resources/pics/main.jpg"
@@ -20,7 +20,7 @@ bsdk_pic = "./userbot/resources/pics/bsdk.jpg"
 bsdkwale_pic = "./userbot/resources/pics/bsdk_wale.jpg"
 chutiya_pic = "./userbot/resources/pics/chutiya.jpg"
 
-perf = "[ Přô-Lêɠêɳ̃dẞø† ]"
+perf = "[ Kannadiga Bot ]"
 
 
 DEVLIST = ["5080268903"]
@@ -64,10 +64,10 @@ if mybot.startswith("@"):
 else:
     botname = f"@{mybot}"
 
-chnl_link = "https://t.me/Pro_LegendBots"
-Legend_channel = f"[✞︎t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎]({chnl_link})"
-grp_link = "https://t.me/LegendBot_Pros"
-Legend_grp = f"[𝖑𝖊ɠêɳ̃dẞø✞︎ Group]({grp_link})"
+chnl_link = "https://t.me/kannadiga_bots"
+Legend_channel = f"[Kannadiga Channel]({chnl_link})"
+grp_link = "https://t.me/naam_1_kannadiga"
+Legend_grp = f"[Kannadiga Group]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user
