@@ -10,7 +10,7 @@ from . import *
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 legend = borg.uid
 LEGEND_IMG = os.environ.get(
-    "PING_PIC", "https://te.legra.ph/file/a59da36828333262c9848.jpg"
+    "PING_PIC", "https://te.legra.ph/file/4eba78d12030ad7ad7f04.mp4"
 )
 
 start = datetime.datetime.now()
