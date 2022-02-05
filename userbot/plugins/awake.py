@@ -65,11 +65,11 @@ async def amireallyalive(event):
         LEGEND_caption = f"**{legend_mention}**\n"
 
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"     ⚜ 𝓛𝓮𝓰𝓮𝓷𝓭𝓑𝓸𝓽 𝓘𝓼 𝓐𝔀𝓪𝓴𝓮 ⚜\n"
-        LEGEND_caption += f"•🔥• Lêɠêɳ̃dẞø†     : ν3.0\n"
+        LEGEND_caption += f"     ⚜ 𝐊𝐀𝐍𝐍𝐀𝐃𝐈𝐆𝐀 𝐁𝐎𝐓 ⚜\n"
+        LEGEND_caption += f"•🔥• 𝙺𝙰𝙽𝙽𝙰𝙳𝙸𝙶𝙰 𝙱𝙾𝚃     : ν3.0\n"
         LEGEND_caption += f"•🔥• 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
         LEGEND_caption += f"•🔥• 𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
-        LEGEND_caption += f"•🔥• 𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/Pro_LegendBots)\n"
+        LEGEND_caption += f"•🔥• 𝙲𝙷𝙰𝙽𝙽𝙴𝙻        : [𝕮нαииєℓ](t.me/kannadiga_bots)\n"
         LEGEND_caption += f"•🔥• ᴹʸ 𝙶𝚁𝙾𝚄𝙿 : {CUSTOM_YOUR_GROUP}\n"
 
         await event.client.send_file(
@@ -83,10 +83,10 @@ async def amireallyalive(event):
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
             f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
             f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
+            f"🇮🇳 𝙺𝚊𝚗𝚗𝚊𝚍𝚒𝚐𝚊 𝙱𝚘𝚝  : `{LEGENDversion}`\n"
             f"🇮🇳 υρτιмє        : `{uptime}`\n"
             f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Pro_Userboy)\n",
+            f"🔱 σωɳεɾ         : [𝚔𝚊𝚗𝚗𝚊𝚍𝚒𝚐𝚊](t.me/mr_professor_agora)\n",
         )
 
 
