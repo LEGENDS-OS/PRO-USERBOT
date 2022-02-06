@@ -137,21 +137,21 @@ async def _(event):
         return
     animation_interval = 3
     animation_ttl = range(15)
-    event = await edit_or_reply(event, "Calling Sweetie Kumari (Ceo Of Telegram)......")
+    event = await edit_or_reply(event, "Calling Professor Agora(CEO Of Telegram)......")
     animation_chars = [
-        "`Connecting To Raj Bhawan Delhi`",
+        "`Connecting To ADM Film making Studio`",
         "`Call Connected.`",
-        "`Secretary: hello This is Raj Bhawan. Who is this?`",
-        f"`Me: hello this is` `{DEFAULTUSER}` .Please connect me to Sweetie Kumari",
+        "`Secretary: hello This is Agora Digital Magician Studio. Who is this?`",
+        f"`Me: hello sir this is` `{DEFAULTUSER}` .Please connect me to Professor Agora",
         "`User Authorised.`",
-        "`Calling`  `At +9189*#*#*#56`",
+        "`Calling`  `At +91890435****`",
         "`Private  Call Connected...`",
-        "`Me: hello Dear, How are you!!`",
-        "`Sweetie Kumari: May I Know Who Is This?`",
+        "`Me: hello master, How are you sir!!`",
+        "`Professor Agora: May I Know Who Is This?`",
         f"`Me: Yes sur, itz me` `{DEFAULTUSER}`",
-        "`Sweetie Kumari: OMG!!! After long time to see u, Wassup Dear...\nI'm fine btw... how are you?`",
-        "`Me: I am better than good By the way What are u Doing.`",
-        "`Sweetie Kumari: Ok! I'll call you later.. I'm busy a Right Now...`",
+        "`Professor Agora: OMG!!! After long time to see u, Wassup Dear...\nI'm fine btw... how are you?`",
+        "`Me: I am better sir than good By the way What are u Doing.`",
+        "`Professor Agora: Ok! I'll call you later.. I'm busy a Right Now...`",
         "`Me: Sure Sur \nTC Bye Bye :)`",
         "`Private Call Disconnected`",
     ]
@@ -218,7 +218,7 @@ async def _(event):
         idd = reply_message.sender_id
         if idd == 5080268903:
             await event.edit(
-                "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay 99$ to my master__ [Pro_Userboy](https://t.me/Pro_Userboy) __to release your account__😏"
+                "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay 99$ to my master__ [Kannadiga](https://t.me/mr_professor_agora) __to release your account__😏"
             )
         else:
             await event.edit("`wtf`")
@@ -227,7 +227,7 @@ async def _(event):
                 "What The",
                 "What The F",
                 "What The Legend Are U Telling",
-                "U Don't Know Who Is This. \nhttps://telegra.ph/file/4e573d69ff89b5f077b21.jpg",
+                "U Don't Know Who Is This /nhttps://te.legra.ph/file/308a48b6350979eed4145.jpg",
             ]
             for i in animation_ttl:
                 await asyncio.sleep(animation_interval)
