@@ -44,7 +44,7 @@ async def hekp():
         print(str(e))
 
     try:
-        await bot(JoinChannelRequest("@ NAAN_1_KANNADIGA"))
+        await bot(JoinChannelRequest("@NAAN_1_KANNADIGA"))
     except BaseException:
         pass
 
