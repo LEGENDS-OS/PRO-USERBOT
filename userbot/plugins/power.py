@@ -39,7 +39,7 @@ async def _(event):
 @bot.on(admin_cmd(pattern="reload$"))
 @bot.on(sudo_cmd(pattern="reload$", allow_sudo=True))
 async def rel(event):
-    await eor(event, "Reloading Kanandiga Bot... Wait for few seconds...")
+    await eor(event, "Reloading Kannadiga Bot... Wait for few seconds...")
     await reload_KANNADIGABOT()
 
 
