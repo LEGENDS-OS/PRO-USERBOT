@@ -16,7 +16,7 @@ async def _(event):
     await event.edit("Rєϐοοτιиg **[ ██░ ]** ...\nωαιτ ƒєω мιиυτє☢️")
     await event.edit("Rєϐοοτιиg **[ ███ ]** ...\nωαιτ ƒєω мιиυτєѕ☢️")
     await event.edit(
-        f"Rebooted LegendBot - {LEGENDversion} **[ ⚡ ]** ...\n**Type `.ping` or `.legend` after 5min to check if I am working**"
+        f"Rebooted Kannadiga Bot - {LEGENDversion} **[ ⚡ ]** ...\n**Type `.ping` or `.kannadiga` after 5min to check if I am working**"
     )
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -28,7 +28,7 @@ async def _(event):
     if event.fwd_from:
         return
     await event.edit(
-        "**[ ! ]** `⚰️Turning off bot now ... Manually turn me on later or follow step of update in @LegendBot_Pros` ಠ_ಠ"
+        "**[ ! ]** `⚰️Turning off bot now ... Manually turn me on later or follow step of update in @naan_1_kannadiga` ಠ_ಠ"
     )
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["userbot"].scale(0)
@@ -39,7 +39,7 @@ async def _(event):
 @bot.on(admin_cmd(pattern="reload$"))
 @bot.on(sudo_cmd(pattern="reload$", allow_sudo=True))
 async def rel(event):
-    await eor(event, "Reloading Lêɠêɳ̃dẞø†... Wait for few seconds...")
+    await eor(event, "Reloading Kanandiga Bot... Wait for few seconds...")
     await reload_KANNADIGABOT()
 
 
