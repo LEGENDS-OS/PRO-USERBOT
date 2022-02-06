@@ -244,7 +244,7 @@ async def _(event):
     animation_ttl = range(15)
     event = await edit_or_reply(event, "`Hacking this kid....`")
     animation_chars = [
-        "Looking for WhatsApp databases in targeted person... "https://telegra.ph/file/8672667dbb503b43b47f5.mp4",
+        "Looking for WhatsApp databases in targeted person...",
         " User online: True\nTelegram access: True\nRead Storage: True ",
         "Hacking... 0%\n[░░░░░░░░░░░░░░░░░░░░]\n`Looking for WhatsApp...`\nETA: 0m, 20s",
         "Hacking... 11.07%\n[██░░░░░░░░░░░░░░░░░░]\n`Looking for WhatsApp...`\nETA: 0m, 18s",
