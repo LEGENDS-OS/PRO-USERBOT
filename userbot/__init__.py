@@ -78,40 +78,6 @@ bot = kbot = AGORA
 tbot = KANNADIGA
 
 
-if not Config.API_HASH:
-    LOGS.warning("Please fill var API HASH to continue.")
-    quit(1)
-
-
-if not Config.APP_ID:
-    LOGS.warning("Please fill var APP ID to continue.")
-    quit(1)
-
-
-if not Config.BOT_TOKEN:
-    LOGS.warning("Please fill var BOT TOKEN to continue.")
-    quit(1)
-
-
-if not Config.BOT_USERNAME:
-    LOGS.warning("Please fill var BOT USERNAME to continue.")
-    quit(1)
-
-
-if not Config.DB_URI:
-    LOGS.warning("Please fill var DATABASE URL to continue.")
-    quit(1)
-
-
-if not Config.KANNADIGA_STRING:
-    LOGS.warning("Please fill var KANNADIGA STRING to continue.")
-    quit(1)
-
-
-if not Config.LOGGER_ID:
-    LOGS.warning("Please fill var LOGGER ID to continue.")
-    quit(1)
-
 try:
     if Config.HEROKU_API_KEY is not None or Config.HEROKU_APP_NAME is not None:
         HEROKU_APP = heroku3.from_key(Config.HEROKU_API_KEY).apps()[
