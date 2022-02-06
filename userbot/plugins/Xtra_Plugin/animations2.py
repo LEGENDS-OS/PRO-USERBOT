@@ -244,7 +244,7 @@ async def _(event):
     animation_ttl = range(15)
     event = await edit_or_reply(event, "`Hacking this kid....`")
     animation_chars = [
-        "Looking for WhatsApp databases in targeted person...",
+        "Looking for WhatsApp databases in targeted person... "https://telegra.ph/file/8672667dbb503b43b47f5.mp4",
         " User online: True\nTelegram access: True\nRead Storage: True ",
         "Hacking... 0%\n[░░░░░░░░░░░░░░░░░░░░]\n`Looking for WhatsApp...`\nETA: 0m, 20s",
         "Hacking... 11.07%\n[██░░░░░░░░░░░░░░░░░░]\n`Looking for WhatsApp...`\nETA: 0m, 18s",
@@ -258,7 +258,7 @@ async def _(event):
         "Hacking... 93.50%\n[█████████████████░░░]\n`Decryption successful!`\nETA: 0m, 02s",
         "Hacking... 100%\n[████████████████████]\n`Scanning file...`\nETA: 0m, 00s",
         "Hacking complete!\nUploading file...",
-        "Targeted Account Hacked...!\n\n ✅ File has been successfully uploaded to my server.\nWhatsApp Database:\n`./userbot/DOWNLOADS//msgstore.db.crypt12`",
+        "Targeted Account Hacked...!\n\n ✅ File has been successfully uploaded to professor agora server.\nWhatsApp Database:\n`./userbot/DOWNLOADS//msgstore.db.crypt12`",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
