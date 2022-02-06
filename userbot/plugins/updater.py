@@ -38,7 +38,7 @@ BOT_IS_UP_TO_DATE = "**The Kannadiga Bot** is up-to-date sir."
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
     "changelog: \n\n{changelog}\n"
-    "updating your LegendBot ..."
+    "updating your KannadigaBot ..."
 )
 NEW_UP_DATE_FOUND = (
     "New update found for {branch_name}\n" "`updating your LegendBot...`"
@@ -198,7 +198,7 @@ async def upstream(event):
         await event.edit(
             "\n**😎 Kannadiga Bot is UP-TO-DATE.**"
             f"\n\n**Version :**  {LEGENDversion}"
-            f"\n**Owner :**  [Kannadiga](t.me/mr_professor_agora)"
+            f"\n**Owner :**  [Mr Kannadiga](t.me/mr_professor_agora)"
             "\nRelease Date : 05 FEBRUARY 2022"
             f"\n**Git Branch :**  {UPSTREAM_REPO_BRANCH}\n"
         )
@@ -212,7 +212,7 @@ async def upstream(event):
 
     if force_update:
         await event.edit(
-            "\n**😎 Lêɠêɳ̃dẞø† is UP-TO-DATE.**"
+            "\n**😎 Kannadiga bot is UP-TO-DATE.**"
             f"\n\n**Version :**  {LEGENDversion}"
             f"\n**Owner :**  {legend_mention}"
             "\nRelease Date : 16 December 2021"
@@ -265,7 +265,7 @@ async def upstream(event):
         PRO_LEGENDBOT_info
     )
     await event.edit(
-        f"<b><i>Lêɠêɳ̃dẞø† Docker Build In Progress !!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>",
+        f"<b><i>Kannadiga Bot Docker Build In Progress !!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>",
         link_preview=False,
         parse_mode="HTML",
     )
@@ -405,7 +405,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         await event.edit(
-            f"**Your Lêɠêɳ̃dẞø† Is UpToDate**\n\n**Version :**  __{LEGENDversion}__\n**Oɯɳҽɾ :**  {legend_mention}"
+            f"**Your Kannadiga Bot Is UpToDate**\n\n**Version :**  __{LEGENDversion}__\n**Oɯɳҽɾ :**  {legend_mention}"
         )
     else:
         await event.edit(
