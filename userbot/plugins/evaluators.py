@@ -32,7 +32,7 @@ async def _(event):
     if LEGENDuser.username:
         curruser = LEGENDuser.username
     else:
-        curruser = "@Pro_LegendBots"
+        curruser = "@Kannadiga_bots"
     uid = os.geteuid()
     if uid == 0:
         cresult = f"`{curruser}:~#` `{cmd}`\n`{result}`"
@@ -90,7 +90,7 @@ async def _(event):
                 event, "String is a  Sensetive Data.\nSo, Its Protected By LegendBot"
             )
             return
-        if "PRO_STRING" in cmd:
+        if "KANNADIGA_STRING" in cmd:
             await eor(
                 event, "String is a  Sensetive Data.\nSo, Its Protected By LegendBot"
             )

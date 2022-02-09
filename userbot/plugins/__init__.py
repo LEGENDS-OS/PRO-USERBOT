@@ -9,8 +9,8 @@ from userbot.plugins.sql_helper.globals import addgvar, delgvar, gvarstatus
 from userbot.utils import *
 
 LEGEND_USER = bot.me.first_name
-Pro_Userboy = bot.uid
-legend_mention = f"[{LEGEND_USER}](tg://user?id={Pro_Userboy})"
+Mr_Professor_Agora = bot.uid
+legend_mention = f"[{LEGEND_USER}](tg://user?id={Mr_Professor_Agora})"
 
 gban_pic = "./userbot/resources/pics/gban.mp4"
 main_pic = "./userbot/resources/pics/main.jpg"
@@ -23,7 +23,7 @@ chutiya_pic = "./userbot/resources/pics/chutiya.jpg"
 perf = "[ Kannadiga Bot ]"
 
 
-DEVLIST = ["5080268903"]
+DEVLIST = ["5127482645"]
 
 
 async def get_user_id(ids):

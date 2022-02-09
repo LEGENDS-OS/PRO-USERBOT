@@ -28,10 +28,10 @@ pm_caption += f"**┣🚀 𝙼𝚢 𝙼𝚊𝚜𝚝𝚎𝚛    : {mention}**\n"
 pm_caption += f"**┣🚀 𝚃𝚎𝚕𝚎𝚝𝚑𝚘𝚗 : `{version.__version__}`**\n"
 pm_caption += f"**┣🚀 𝖑𝖊ɠêɳ̃dẞø✞︎ : {LEGENDversion}**\n"
 pm_caption += f"**┣🚀 𝚂𝚞𝚍𝚘     : `{sudou}`**\n"
-pm_caption += f"**┣🚀 𝙾𝚠𝚗𝚎𝚛     : [𝖑𝖊ɠêɳ̃d](https://t.me/Pro_Userboy)**\n"
-pm_caption += f"**┗[♦️𝙶𝚛𝚘𝚞𝚙♦️](https://t.me/LegendBot_Pros)┛**\n"
+pm_caption += f"**┣🚀 𝙾𝚠𝚗𝚎𝚛     : [𝖑𝖊ɠêɳ̃d](https://t.me/Mr_Professor_Agora)**\n"
+pm_caption += f"**┗[♦️𝙶𝚛𝚘𝚞𝚙♦️](https://t.me/NAAN_1_KANNADIGA)┛**\n"
 
-pm_caption += "    [✨яєρο✨](https://github.com/PROBOY-OP/LegendBot) 🔹 [📜License📜](https://github.com/PROBOY-OP/LegendBot/blob/master/LICENSE)"
+pm_caption += "    [✨яєρο✨](https://github.com/MR-KANNADIGA/LegendBot) 🔹 [📜License📜](https://github.com/MR-KANNADIGA/LegendBot/blob/master/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="bot$"))

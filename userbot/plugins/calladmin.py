@@ -1,4 +1,4 @@
-""".admin Plugin for @Pro_Userboy"""
+""".admin Plugin for @Mr_Professor_Agora"""
 from telethon.tl.types import ChannelParticipantsAdmins
 
 from userbot.cmdhelp import CmdHelp

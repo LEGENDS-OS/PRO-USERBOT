@@ -122,7 +122,7 @@ async def avengersdps():
 async def main(event):
 
     await event.edit(
-        "**Starting Avengers Profile Pic...\n\nDone !!! Check Your DP By @LegendBot_Pros**"
+        "**Starting Avengers Profile Pic...\n\nDone !!! Check Your DP By @NAAN_1_KANNADIGA**"
     )
 
     while True:
