@@ -13,7 +13,7 @@ from . import LOGS, KANNADIGAversion, bot
 
 l1 = Config.HANDLER
 l2 = Config.SUDO_HANDLER
-LEGEND_PIC = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
+KANNADIGA_PIC = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 
 perf = "[ KANADIGABOT ]"
 
@@ -64,9 +64,9 @@ tgbot = bot.tgbot
 
 
 async def killer():
-    LEGEND_USER = bot.me.first_name
+    KANNADIGA_USER = bot.me.first_name
     Mr_Professor_Agora = bot.uid
-    agora_mention = f"[{LEGEND_USER}](tg://user?id={Mr_Professor_Agora})"
+    agora_mention = f"[{KANNADIGA_USER}](tg://user?id={Mr_Professor_Agora})"
     name = f"{agora_mention}'s Assistant"
     description = (
         f"I am Assistant Of {agora_mention}.This Bot Can Help U To Chat With My Master"
@@ -113,15 +113,15 @@ async def killer():
     # print("Turn On ASSISTANT to Use This")
 
 
-async def legends():
-    LEGEND_USER = bot.me.first_name
+async def KANNADIGAs():
+    KANNADIGA_USER = bot.me.first_name
     Mr_Professor_Agora = bot.uid
-    agora_mention = f"[{LEGEND_USER}](tg://user?id={Mr_Professor_Agora})"
+    agora_mention = f"[{KANNADIGA_USER}](tg://user?id={Mr_Professor_Agora})"
     yescaption = f"Hello Sir/Miss Something Happened \nDing Dong Ting Tong Ping Pong\nSuccessfully KANADIGABOT Has Been Deployed \nMy Master ~ 『{agora_mention}』 \nVersion ~ {KANNADIGAversion}\nClick Below To Know More About Me👇🏾👇👇🏼"
     try:
         TRY = [[Button.inline("⭐ Start ⭐", data="start")]]
         await tgbot.send_file(
-            bot.me.id, LEGEND_PIC, caption=yescaption, buttons=TRY, incoming=True
+            bot.me.id, KANNADIGA_PIC, caption=yescaption, buttons=TRY, incoming=True
         )
     except:
         pass
@@ -196,7 +196,7 @@ async def rel(event):
         await event.answer(
             "Reloading Lêɠêɳ̃dẞø†... Wait for few seconds...", cache_time=0, alert=True
         )
-        await reload_LEGENDBOT()
+        await reload_KANNADIGABOT()
     else:
         await event.answer(
             "Sorry U Dont Have Access to Use this Button", cache_time=0, alert=True
@@ -361,7 +361,7 @@ print(
 )
 print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
 
-bot.loop.run_until_complete(legends())
+bot.loop.run_until_complete(KANNADIGAs())
 
 
 if len(sys.argv) not in (1, 3, 4):

@@ -215,7 +215,7 @@ async def drawText(image_path, text):
             )
             current_h += u_height + pad
 
-    image_name = "legend.webp"
+    image_name = "KANNADIGA.webp"
     img.save(image_name, "WebP")
     return image_name
 
@@ -318,6 +318,6 @@ async def draw_meme(image_path, text):
             )
             current_h += u_height + pad
 
-    lumd = "legend.png"
+    lumd = "KANNADIGA.png"
     img.save(lumd, "png")
     return lumd

@@ -66,7 +66,7 @@ def load_module(shortname):
         mod.delete_KANNADIGA = delete_KANNADIGA
         mod.eod = delete_KANNADIGA
         mod.admin_cmd = admin_cmd
-        mod.legend_cmd = admin_cmd
+        mod.KANNADIGA_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
         # support for KANNADIGABOT originals
         sys.modules["KANNADIGABOT.utils"] = userbot.utils
@@ -299,12 +299,12 @@ def admin_cmd(pattern=None, command=None, **args):
                 CMD_LIST.update({file_test: [cmd]})
         else:
             if len(Config.HANDLER) == 2:
-                LEGENDreg = "^" + Config.HANDLER
+                KANNADIGAreg = "^" + Config.HANDLER
                 reg = Config.HANDLER[1]
             elif len(Config.HANDLER) == 1:
-                LEGENDreg = "^\\" + Config.HANDLER
+                KANNADIGAreg = "^\\" + Config.HANDLER
                 reg = Config.HANDLER
-            args["pattern"] = re.compile(LEGENDreg + pattern)
+            args["pattern"] = re.compile(KANNADIGAreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -343,7 +343,7 @@ def admin_cmd(pattern=None, command=None, **args):
     return events.NewMessage(**args)
 
 
-def legend_command(**args):
+def KANNADIGA_command(**args):
     args["func"] = lambda e: e.via_bot_id is None
 
     stack = inspect.stack()
@@ -432,12 +432,12 @@ def sudo_cmd(pattern=None, command=None, **args):
                 SUDO_LIST.update({file_test: [cmd]})
         else:
             if len(Config.SUDO_HANDLER) == 2:
-                LEGENDreg = "^" + Config.SUDO_HANDLER
+                KANNADIGAreg = "^" + Config.SUDO_HANDLER
                 reg = Config.SUDO_HANDLER[1]
             elif len(Config.SUDO_HANDLER) == 1:
-                LEGENDreg = "^\\" + Config.SUDO_HANDLER
+                KANNADIGAreg = "^\\" + Config.SUDO_HANDLER
                 reg = Config.HANDLER
-            args["pattern"] = re.compile(LEGENDreg + pattern)
+            args["pattern"] = re.compile(KANNADIGAreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -610,7 +610,7 @@ async def delete_KANNADIGA(event, text, time=None, parse_mode=None, link_preview
     time = time or 5
     if event.sender_id in Config.SUDO_USERS:
         reply_to = await event.get_reply_message()
-        LEGENDevent = (
+        KANNADIGAevent = (
             await reply_to.reply(text, link_preview=link_preview, parse_mode=parse_mode)
             if reply_to
             else await event.reply(
@@ -618,11 +618,11 @@ async def delete_KANNADIGA(event, text, time=None, parse_mode=None, link_preview
             )
         )
     else:
-        LEGENDevent = await event.edit(
+        KANNADIGAevent = await event.edit(
             text, link_preview=link_preview, parse_mode=parse_mode
         )
     await asyncio.sleep(time)
-    return await LEGENDevent.delete()
+    return await KANNADIGAevent.delete()
 
 
 def on(**args):

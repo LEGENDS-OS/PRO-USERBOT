@@ -135,7 +135,7 @@ if ENV:
             "TMP_DOWNLOAD_DIRECTORY", "./userbot/DOWNLOADS/"
         )
         TELEGRAPH_SHORT_NAME = (
-            os.environ.get("TELEGRAPH_SHORT_NAME", None) or "LEGENDBOT"
+            os.environ.get("TELEGRAPH_SHORT_NAME", None) or "KANNADIGABOT"
         )
         TG_GLOBAL_ALBUM_LIMIT = int(os.environ.get("TG_GLOBAL_ALBUM_LIMIT", 9))
         # MIRROR ACE API KEY AND TOKEN
@@ -171,14 +171,14 @@ if ENV:
         # send .get_id in any channel to forward all your NEW PMs to this group
         # send .get_id in your private channel to forward all your Private messages
         DB_URI = os.environ.get("DATABASE_URL", None)
-        # number of rows of buttons to be displayed in .legend command
+        # number of rows of buttons to be displayed in .KANNADIGA command
         BUTTONS_IN_HELP = int(os.environ.get("NO_OF_BUTTONS", 7))
         NO_OF_BUTTONS = int(os.environ.get("NO_OF_BUTTONS", 7))
         BOT_HANDLER = os.environ.get("BOT_HANDLER", "^/")
         # open load
         OPEN_LOAD_LOGIN = os.environ.get("OPEN_LOAD_LOGIN", None)
         OPEN_LOAD_KEY = os.environ.get("OPEN_LOAD_KEY", None)
-        # number of colums of buttons to be displayed in .legend command
+        # number of colums of buttons to be displayed in .KANNADIGA command
 
 else:
 

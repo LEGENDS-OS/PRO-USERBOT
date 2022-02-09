@@ -11,7 +11,7 @@ from userbot.Config import Config
 from .utils import load_abuse, load_addons, load_module, start_assistant, start_spam
 
 l2 = Config.SUDO_HANDLER
-LEGEND_PIC = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
+KANNADIGA_PIC = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 l1 = Config.HANDLER
 
 perf = "[ KANNADIGABO† ]"
@@ -37,7 +37,7 @@ async def hekp():
         if Config.LOGGER_ID != 0:
             await bot.send_file(
                 Config.LOGGER_ID,
-                LEGEND_PIC,
+                KANNADIGA_PIC,
                 caption=f"#Start\nKANNADIGABOT Has Been Successfully Deployed \nClick Here ~ {Config.BOT_USERNAME}\nAny Query ~ @NAAN_1_KANNADIGA",
             )
     except Exception as e:
@@ -53,11 +53,11 @@ async def hekp():
     except BaseException:
         pass
     try:
-        await bot(leave("@Legend_UserBot"))
+        await bot(leave("@KANNADIGA_UserBot"))
     except BaseException:
         pass
     try:
-        await bot(leave("@Official_LegendBot"))
+        await bot(leave("@Official_KANNADIGABOT"))
     except BaseException:
         pass
 
