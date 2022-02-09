@@ -28,7 +28,7 @@ async def img_sampler(event):
         return await edit_or_reply(
             event, "Reply to a message or pass a query to search!"
         )
-    legend = await edit_or_reply(event, "`Processing...`")
+    KANNADIGA = await edit_or_reply(event, "`Processing...`")
     if event.pattern_match.group(1) != "":
         lim = int(event.pattern_match.group(1))
         if lim > 10:
@@ -49,7 +49,7 @@ async def img_sampler(event):
     try:
         paths = response.download(arguments)
     except Exception as e:
-        return await legend.edit(f"Error: \n`{e}`")
+        return await KANNADIGA.edit(f"Error: \n`{e}`")
     lst = paths[0][query.replace(",", " ")]
     try:
         await event.client.send_file(event.chat_id, lst, reply_to=reply_to_id)
@@ -60,4 +60,4 @@ async def img_sampler(event):
             except MediaEmptyError:
                 pass
     shutil.rmtree(os.path.dirname(os.path.abspath(lst[0])))
-    await legend.delete()
+    await KANNADIGA.delete()

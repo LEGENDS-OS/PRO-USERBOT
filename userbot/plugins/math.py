@@ -1,8 +1,8 @@
 # PLUGIN MADE BY DANGEROUSJATT
 # KEEP CREDIT
-# MADE FOR LegendBot
-# BY TEAM LegendBot
-# NOW IN LegendBot
+# MADE FOR KANNADIGABOT
+# BY TEAM KANNADIGABOT
+# NOW IN KANNADIGABOT
 import math
 
 from userbot import CmdHelp

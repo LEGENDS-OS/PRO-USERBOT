@@ -62,35 +62,35 @@ async def get_user_from_id(user, event):
 
 @bot.on(admin_cmd(pattern="gpromote ?(.*)"))
 @bot.on(sudo_cmd(pattern="gpromote ?(.*)", allow_sudo=True))
-async def _(legendevent):
+async def _(KANNADIGAevent):
     i = 0
-    await legendevent.get_sender()
-    me = await legendevent.client.get_me()
-    legend = await eor(legendevent, "`Promoting globally...`")
+    await KANNADIGAevent.get_sender()
+    me = await KANNADIGAevent.client.get_me()
+    KANNADIGA = await eor(KANNADIGAevent, "`Promoting globally...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await legendevent.get_chat()
-    if legendevent.is_private:
-        user = legendevent.chat
-        rank = legendevent.pattern_match.group(1)
+    await KANNADIGAevent.get_chat()
+    if KANNADIGAevent.is_private:
+        user = KANNADIGAevent.chat
+        rank = KANNADIGAevent.pattern_match.group(1)
     else:
-        legendevent.chat.title
+        KANNADIGAevent.chat.title
     try:
-        user, rank = await get_full_user(legendevent)
+        user, rank = await get_full_user(KANNADIGAevent)
     except:
         pass
     if me == user:
-        await legend.edit("You can't promote yourself...")
+        await KANNADIGA.edit("You can't promote yourself...")
         return
     try:
         if not rank:
             rank = "ℓεɠεɳ∂"
     except:
-        return await legend.edit("**ERROR !!**")
+        return await KANNADIGA.edit("**ERROR !!**")
     if user:
         telchanel = [
             d.entity.id
-            for d in await legendevent.client.get_dialogs()
+            for d in await KANNADIGAevent.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
         rgt = ChatAdminRights(
@@ -103,14 +103,14 @@ async def _(legendevent):
         )
         for x in telchanel:
             try:
-                await legendevent.client(EditAdminRequest(x, user, rgt, rank))
+                await KANNADIGAevent.client(EditAdminRequest(x, user, rgt, rank))
                 i += 1
-                await legend.edit(f"**Promoting User in :**  `{i}` Chats...")
+                await KANNADIGA.edit(f"**Promoting User in :**  `{i}` Chats...")
             except:
                 pass
     else:
-        await legend.edit(f"**Reply to a user !!**")
-    await legend.edit(
+        await KANNADIGA.edit(f"**Reply to a user !!**")
+    await KANNADIGA.edit(
         f"[{user.first_name}](tg://user?id={user.id}) **Was Promoted Globally In** `{i}` **Chats !!**"
     )
     await bot.send_message(
@@ -121,35 +121,35 @@ async def _(legendevent):
 
 @bot.on(admin_cmd(pattern="gdemote ?(.*)"))
 @bot.on(sudo_cmd(pattern="gdemote ?(.*)", allow_sudo=True))
-async def _(legendevent):
+async def _(KANNADIGAevent):
     i = 0
-    await legendevent.get_sender()
-    me = await legendevent.client.get_me()
-    legend = await eor(legendevent, "`Demoting Globally...`")
+    await KANNADIGAevent.get_sender()
+    me = await KANNADIGAevent.client.get_me()
+    KANNADIGA = await eor(KANNADIGAevent, "`Demoting Globally...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await legendevent.get_chat()
-    if legendevent.is_private:
-        user = legendevent.chat
-        rank = legendevent.pattern_match.group(1)
+    await KANNADIGAevent.get_chat()
+    if KANNADIGAevent.is_private:
+        user = KANNADIGAevent.chat
+        rank = KANNADIGAevent.pattern_match.group(1)
     else:
-        legendevent.chat.title
+        KANNADIGAevent.chat.title
     try:
-        user, rank = await get_full_user(legendevent)
+        user, rank = await get_full_user(KANNADIGAevent)
     except:
         pass
     if me == user:
-        await legend.edit("You can't Demote yourself !!")
+        await KANNADIGA.edit("You can't Demote yourself !!")
         return
     try:
         if not rank:
-            rank = "legend"
+            rank = "KANNADIGA"
     except:
-        return await legend.edit("**ERROR !!**")
+        return await KANNADIGA.edit("**ERROR !!**")
     if user:
         telchanel = [
             d.entity.id
-            for d in await legendevent.client.get_dialogs()
+            for d in await KANNADIGAevent.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
         rgt = ChatAdminRights(
@@ -162,14 +162,14 @@ async def _(legendevent):
         )
         for x in telchanel:
             try:
-                await legendevent.client(EditAdminRequest(x, user, rgt, rank))
+                await KANNADIGAevent.client(EditAdminRequest(x, user, rgt, rank))
                 i += 1
-                await legend.edit(f"**Demoting Globally In Chats :** `{i}`")
+                await KANNADIGA.edit(f"**Demoting Globally In Chats :** `{i}`")
             except:
                 pass
     else:
-        await legend.edit(f"**Reply to a user !!**")
-    await legend.edit(
+        await KANNADIGA.edit(f"**Reply to a user !!**")
+    await KANNADIGA.edit(
         f"[{user.first_name}](tg://user?id={user.id}) **Was Demoted Globally In** `{i}` **Chats !!**"
     )
     await bot.send_message(
@@ -181,7 +181,7 @@ async def _(legendevent):
 @bot.on(admin_cmd(pattern=r"gban ?(.*)"))
 @bot.on(sudo_cmd(pattern=r"gban ?(.*)", allow_sudo=True))
 async def _(event):
-    legend = await eor(event, "`Gbanning...`")
+    KANNADIGA = await eor(event, "`Gbanning...`")
     reason = ""
     await event.get_reply_message()
     if event.reply_to_msg_id:
@@ -205,17 +205,17 @@ async def _(event):
             reason = ""
     else:
         return await eod(
-            legend, "**To gban a user i need a userid or reply to his/her message!!**"
+            KANNADIGA, "**To gban a user i need a userid or reply to his/her message!!**"
         )
     name = (await event.client.get_entity(userid)).first_name
     chats = 0
-    if userid == Pro_Userboy:
-        return await eod(legend, "🥴 **Nashe me hai kya lawde ‽**")
+    if userid == Mr_Professor_Agora:
+        return await eod(KANNADIGA, "🥴 **Nashe me hai kya lawde ‽**")
     if str(userid) in DEVLIST:
-        return await eod(legend, "😑 **Nashe Me Hai kya lawde **")
+        return await eod(KANNADIGA, "😑 **Nashe Me Hai kya lawde **")
     if is_gbanned(userid):
         return await eor(
-            legend,
+            KANNADIGA,
             "This kid is already gbanned and added to my **Gban Watch!!**",
         )
     async for gfuck in event.client.iter_dialogs():
@@ -225,7 +225,7 @@ async def _(event):
                     gfuck.id, userid, view_messages=False
                 )
                 chats += 1
-                await legend.edit(f"**Gbanning...** \n**Chats :** __{chats}__")
+                await KANNADIGA.edit(f"**Gbanning...** \n**Chats :** __{chats}__")
             except BaseException:
                 pass
     gbaner(userid)
@@ -238,23 +238,23 @@ async def _(event):
         gbpic = random.choice(c)
     else:
         gbpic = gban_pic
-    gmsg = f"🥴 [{name}](tg://user?id={userid}) **Gbanned** By {legend_mention} \n\n📍 Added to Gban Watch!!\n**🔰 Total Chats :**  `{chats}`"
+    gmsg = f"🥴 [{name}](tg://user?id={userid}) **Gbanned** By {KANNADIGA_mention} \n\n📍 Added to Gban Watch!!\n**🔰 Total Chats :**  `{chats}`"
     if reason != "":
         gmsg += f"\n**🔰 Reason :**  `{reason}`"
-    ogmsg = f"[{name}](tg://user?id={userid}) **Is now GBanned by** {legend_mention} **in**  `{chats}`  **Chats!! 😏**\n\n**📍 Also Added to Gban Watch!!**"
+    ogmsg = f"[{name}](tg://user?id={userid}) **Is now GBanned by** {KANNADIGA_mention} **in**  `{chats}`  **Chats!! 😏**\n\n**📍 Also Added to Gban Watch!!**"
     if reason != "":
         ogmsg += f"\n**🔰 Reason :**  `{reason}`"
     if Config.ABUSE == "ON":
         await bot.send_file(event.chat_id, gbpic, caption=gmsg)
-        await legend.delete()
+        await KANNADIGA.delete()
     else:
-        await legend.edit(ogmsg)
+        await KANNADIGA.edit(ogmsg)
 
 
 @bot.on(admin_cmd(pattern=r"ungban ?(.*)"))
 @bot.on(sudo_cmd(pattern=r"ungban ?(.*)", allow_sudo=True))
 async def _(event):
-    legend = await eor(event, "`Ungban in progress...`")
+    KANNADIGA = await eor(event, "`Ungban in progress...`")
     if event.reply_to_msg_id:
         userid = (await event.get_reply_message()).sender_id
     elif event.pattern_match.group(1):
@@ -262,11 +262,11 @@ async def _(event):
     elif event.is_private:
         userid = (await event.get_chat()).id
     else:
-        return await eor(legend, "`Reply to a user or give their userid... `")
+        return await eor(KANNADIGA, "`Reply to a user or give their userid... `")
     name = (await event.client.get_entity(userid)).first_name
     chats = 0
     if not is_gbanned(userid):
-        return await eor(legend, "`User is not gbanned.`")
+        return await eor(KANNADIGA, "`User is not gbanned.`")
     async for gfuck in event.client.iter_dialogs():
         if gfuck.is_group or gfuck.is_channel:
             try:
@@ -274,13 +274,13 @@ async def _(event):
                     gfuck.id, userid, view_messages=True
                 )
                 chats += 1
-                await legend.edit(
+                await KANNADIGA.edit(
                     f"**Ungban in progress...** \n**Chats :** __{chats}__"
                 )
             except BaseException:
                 pass
     ungbaner(userid)
-    await legend.edit(
+    await KANNADIGA.edit(
         f"📍 [{name}](tg://user?id={userid}) **is now Ungbanned from `{chats}` chats and removed from Gban Watch!!**",
     )
 
@@ -294,13 +294,13 @@ async def already(event):
     if len(gbanned_users) > 0:
         for user in gbanned_users:
             hel = user.chat_id
-            legend = int(hel)
+            KANNADIGA = int(hel)
             try:
-                tity = await event.client.get_entity(legend)
+                tity = await event.client.get_entity(KANNADIGA)
                 name = tity.first_name
             except ValueError:
                 name = "User"
-            GBANNED_LIST += f"📍 [{name}](tg://user?id={legend}) (`{legend}`)\n"
+            GBANNED_LIST += f"📍 [{name}](tg://user?id={KANNADIGA}) (`{KANNADIGA}`)\n"
     else:
         GBANNED_LIST = "No Gbanned Users!!"
     await hmm.edit(GBANNED_LIST)
@@ -331,7 +331,7 @@ async def _(event):
 @bot.on(admin_cmd(pattern=r"gkick ?(.*)"))
 @bot.on(sudo_cmd(pattern=r"gkick ?(.*)", allow_sudo=True))
 async def gkick(event):
-    legend = await eor(event, "`Kicking globally...`")
+    KANNADIGA = await eor(event, "`Kicking globally...`")
     reply = await event.get_reply_message()
     if event.reply_to_msg_id:
         userid = (await event.get_reply_message()).sender_id
@@ -340,13 +340,13 @@ async def gkick(event):
     elif event.is_private:
         userid = (await event.get_chat()).id
     else:
-        return await eor(legend, "`Reply to some msg or add their id.`")
+        return await eor(KANNADIGA, "`Reply to some msg or add their id.`")
     name = (await event.client.get_entity(userid)).first_name
     chats = 0
-    if userid == Pro_Userboy:
-        return await eod(legend, "**🥴 Nashe me hai kya lawde!!**")
+    if userid == Mr_Professor_Agora:
+        return await eod(KANNADIGA, "**🥴 Nashe me hai kya lawde!!**")
     if str(userid) in DEVLIST:
-        return await eor(legend, "**😪 I'm not going to gkick my developer!!**")
+        return await eor(KANNADIGA, "**😪 I'm not going to gkick my developer!!**")
     async for gkick in event.client.iter_dialogs():
         if gkick.is_group or gkick.is_channel:
             try:
@@ -367,9 +367,9 @@ async def gkick(event):
     gkmsg = f"🏃 **Globally Kicked** [{name}](tg://user?id={userid})'s butts !! \n\n📝 **Chats :**  `{chats}`"
     if Config.ABUSE == "ON":
         await bot.send_file(event.chat_id, gbpic, caption=gkmsg, reply_to=reply)
-        await legend.delete()
+        await KANNADIGA.delete()
     else:
-        await legend.edit(gkmsg)
+        await KANNADIGA.edit(gkmsg)
 
 
 @bot.on(admin_cmd(pattern=r"gmute ?(\d+)?"))

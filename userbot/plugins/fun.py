@@ -185,7 +185,7 @@ NOOBSTR = [
     "`Kysa kysaaaa haaan? Phir MAAR nhi Khayega tu?`",
     "`Zikr Jinka hota hai galiyo meh woh bhosdika ajj paya gya naliyo me`",
 ]
-PRO_STRINGS = [
+KANNADIGA_STRINGS = [
     "`This gey is pro as phack.`",
     "`Proness Lebel: 6969696969`",
     "`Itna pro banda dekhlia bc, ab to marna hoga.`",
@@ -350,7 +350,7 @@ async def metoo(e):
 @bot.on(admin_cmd(pattern=f"piro$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"piro$", allow_sudo=True))
 async def metoo(e):
-    txt = random.choice(PRO_STRINGS)
+    txt = random.choice(KANNADIGA_STRINGS)
     await edit_or_reply(e, txt)
 
 

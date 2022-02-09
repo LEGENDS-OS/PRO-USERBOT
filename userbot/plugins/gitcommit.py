@@ -26,9 +26,9 @@ async def download(event):
         await edit_or_reply(event, "`Please ADD Proper Access Token from github.com`")
         return
     if Var.GIT_REPO_NAME is None:
-        await edit_or_reply(event, "`Please ADD Proper Github Repo Name of LegendBot`")
+        await edit_or_reply(event, "`Please ADD Proper Github Repo Name of KANNADIGABOT`")
         return
-    LegendBot = await edit_or_reply(event, "Processing ...")
+    KANNADIGABOT = await edit_or_reply(event, "Processing ...")
     if not os.path.isdir(GIT_TEMP_DIR):
         os.makedirs(GIT_TEMP_DIR)
     start = datetime.now()
@@ -40,19 +40,19 @@ async def download(event):
             reply_message.media, GIT_TEMP_DIR
         )
     except Exception as e:
-        await LegendBot.edit(str(e))
+        await KANNADIGABOT.edit(str(e))
     else:
         end = datetime.now()
         ms = (end - start).seconds
         await event.delete()
-        await LegendBot.edit(
+        await KANNADIGABOT.edit(
             "Downloaded to `{}` in {} seconds.".format(downloaded_file_name, ms)
         )
-        await LegendBot.edit("Committing to Github....")
-        await git_commit(downloaded_file_name, LegendBot)
+        await KANNADIGABOT.edit("Committing to Github....")
+        await git_commit(downloaded_file_name, KANNADIGABOT)
 
 
-async def git_commit(file_name, LegendBot):
+async def git_commit(file_name, KANNADIGABOT):
     content_list = []
     access_token = Var.GITHUB_ACCESS_TOKEN
     g = Github(access_token)
@@ -68,7 +68,7 @@ async def git_commit(file_name, LegendBot):
     for i in content_list:
         create_file = True
         if i == 'ContentFile(path="' + file_name + '")':
-            return await LegendBot.edit("`File Already Exists`")
+            return await KANNADIGABOT.edit("`File Already Exists`")
             create_file = False
     file_name = "userbot/plugins/" + file_name
     if create_file == True:
@@ -81,14 +81,14 @@ async def git_commit(file_name, LegendBot):
             print("Committed File")
             ccess = Var.GIT_REPO_NAME
             ccess = ccess.strip()
-            await LegendBot.edit(
+            await KANNADIGABOT.edit(
                 f"`Commited On Your Github Repo`\n\n[Your STDPLUGINS](https://github.com/{ccess}/tree/master/userbot/plugins/)"
             )
         except:
             print("Cannot Create Plugin")
-            await LegendBot.edit("Cannot Upload Plugin")
+            await KANNADIGABOT.edit("Cannot Upload Plugin")
     else:
-        return await LegendBot.edit("`Committed Suicide`")
+        return await KANNADIGABOT.edit("`Committed Suicide`")
 
 
 CmdHelp("github").add_command(

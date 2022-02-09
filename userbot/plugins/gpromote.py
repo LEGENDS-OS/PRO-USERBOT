@@ -33,7 +33,7 @@ async def get_full_user(event):
             user_obj = await event.client.get_entity(user)
         except Exception as err:
             return await event.edit(
-                "Error... Please report at @LEGENDSupport", str(err)
+                "Error... Please report at @KANNADIGASupport", str(err)
             )
     return user_obj, extra
 
@@ -78,7 +78,7 @@ async def gben(userbot):
         return
     try:
         if not rank:
-            rank = "legend"
+            rank = "KANNADIGA"
     except:
         return await dark.edit(f"**Something W3NT Wrong**")
     if user:

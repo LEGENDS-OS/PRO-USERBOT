@@ -10,7 +10,7 @@ DEFAULTUSER = (
     str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 )
 
-legend = bot.uid
+KANNADIGA = bot.uid
 
 
 @bot.on(admin_cmd(pattern=r"lock ?(.*)", outgoing=True))
@@ -98,7 +98,7 @@ async def locks(event):
         )
         await edit_or_reply(
             event,
-            f"[{DEFAULTUSER}](tg://user?id={legend}) Locked `{what}` \n__Cause its Rest Time Nimba!!__",
+            f"[{DEFAULTUSER}](tg://user?id={KANNADIGA}) Locked `{what}` \n__Cause its Rest Time Nimba!!__",
         )
     except BaseException as e:
         await edit_or_reply(
@@ -194,7 +194,7 @@ async def rem_locks(event):
         )
         await edit_or_reply(
             event,
-            f"[{DEFAULTUSER}](tg://user?id={legend}) Unlocked `{what}` \n__Now Start Chit Chat !!__",
+            f"[{DEFAULTUSER}](tg://user?id={KANNADIGA}) Unlocked `{what}` \n__Now Start Chit Chat !!__",
         )
     except BaseException as e:
         await edit_or_reply(

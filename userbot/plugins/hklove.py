@@ -1,4 +1,4 @@
-# PLUGIN MADE BY @Pro_Userboy FOR LegendBot
+# PLUGIN MADE BY @Mr_Professor_Agora FOR KANNADIGABOT
 # KEEP CREDITS ELSE GAY
 
 import asyncio

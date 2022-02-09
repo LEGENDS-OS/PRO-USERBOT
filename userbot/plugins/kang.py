@@ -31,7 +31,7 @@ KANGING_STR = [
     "Mr.Steal Your Sticker is stealing this sticker... ",
 ]
 
-legend = Config.CUSTOM_STICKER_PACK_NAME
+KANNADIGA = Config.CUSTOM_STICKER_PACK_NAME
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="kang"))
@@ -101,9 +101,9 @@ async def kang(args):
 
         packname = f"{user.username}"
         packnick = (
-            f"{legend} Vol.{pack}"
-            if legend
-            else f"@{user.username}'s legend Vol.{pack}"
+            f"{KANNADIGA} Vol.{pack}"
+            if KANNADIGA
+            else f"@{user.username}'s KANNADIGA Vol.{pack}"
         )
         cmd = "/newpack"
         file = io.BytesIO()
@@ -137,9 +137,9 @@ async def kang(args):
                     pack += 1
                     packname = f"{user.username}_by_{user.username}_{pack}"
                     packnick = (
-                        f"{legend} Vol.{pack}"
-                        if legend
-                        else f"@{user.username}'s legend Vol.{pack}"
+                        f"{KANNADIGA} Vol.{pack}"
+                        if KANNADIGA
+                        else f"@{user.username}'s KANNADIGA Vol.{pack}"
                     )
                     await args.edit(
                         "`Switching to Pack "

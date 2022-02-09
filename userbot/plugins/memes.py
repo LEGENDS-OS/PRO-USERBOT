@@ -823,7 +823,7 @@ async def smrk(smk):
         message = textx
         message = str(message.message)
     if message == "dele":
-        await edit_or_reply(smk, message + "te the LEGEND" + "ツ")
+        await edit_or_reply(smk, message + "te the KANNADIGA" + "ツ")
         await edit_or_reply(smk, "ツ")
     else:
         smirk = " ツ"

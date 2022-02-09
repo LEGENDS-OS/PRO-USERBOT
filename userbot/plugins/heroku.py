@@ -41,21 +41,21 @@ async def variable(var):
         if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
             return await eod(
                 var,
-                f"Go To @LegendBot_Pros\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly",
+                f"Go To @NAAN_1_KANNADIGA\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly",
                 link_preview=False,
             )
         await var.edit("`Getting information...`")
         await asyncio.sleep(1.5)
         try:
             variable = var.pattern_match.group(2).split()[0]
-            legend = "**ConfigVars**:" f"\n\n {variable} = `{heroku_var[variable]}`\n"
-            if "PRO_STRING" in variable:
+            KANNADIGA = "**ConfigVars**:" f"\n\n {variable} = `{heroku_var[variable]}`\n"
+            if "KANNADIGA_STRING" in variable:
                 await eor(
-                    var, "Legend String is a Sensetive Data.\nProtected By LegendBot"
+                    var, "KANNADIGA String is a Sensetive Data.\nProtected By KANNADIGABOT"
                 )
                 return
             elif variable in heroku_var:
-                await eor(var, legend)
+                await eor(var, KANNADIGA)
             else:
                 return await var.edit(
                     "**ConfigVars**:" f"\n\n`Error:\n-> {variable} don't exists`"
@@ -86,7 +86,7 @@ async def variable(var):
         if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
             return await eod(
                 var,
-                f"Go To @LegendBot_Pros\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly.",
+                f"Go To @NAAN_1_KANNADIGA\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly.",
                 link_preview=False,
             )
         await var.edit("`Setting information...weit ser`")
@@ -101,7 +101,7 @@ async def variable(var):
             except IndexError:
                 return await var.edit(f"`.set var <VARS NAME> <value>`")
         await asyncio.sleep(1.5)
-        if "PRO_STRING" in variable:
+        if "KANNADIGA_STRING" in variable:
             await eor(var, "Successfully Changed To {value}")
             return
         elif variable in heroku_var:
@@ -117,7 +117,7 @@ async def variable(var):
         if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
             return await eod(
                 var,
-                f"Go To @LegendBot_Pros\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly.",
+                f"Go To @NAAN_1_KANNADIGA\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly.",
                 link_preview=False,
             )
         await var.edit("`Getting information to deleting variable...`")
@@ -214,7 +214,7 @@ async def _(event):
     if (HEROKU_APP_NAME is None) or (HEROKU_API_KEY is None):
         return await eod(
             dyno,
-            f"Go To @LegendBot_Pros\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly",
+            f"Go To @NAAN_1_KANNADIGA\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly",
             link_preview=False,
         )
     try:
@@ -222,12 +222,12 @@ async def _(event):
         app = Heroku.app(HEROKU_APP_NAME)
     except BaseException:
         return await event.reply(
-            f"Go To @LegendBot_Pros\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly.",
+            f"Go To @NAAN_1_KANNADIGA\n Type #reveal Then click on Img \n Then Check HEROKU_APP_NAME OR HEROKU_API_KEY Are Filled Correctly.",
             link_preview=False,
         )
     # event = await eor(dyno, "Downloading Logs...")
-    LEGEND_data = app.get_log()
-    await eor(event, LEGEND_data)
+    KANNADIGA_data = app.get_log()
+    await eor(event, KANNADIGA_data)
 
 
 CmdHelp("heroku").add_command(

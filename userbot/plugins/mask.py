@@ -13,59 +13,59 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 @bot.on(admin_cmd(pattern="mask$", outgoing=True))
 @bot.on(sudo_cmd(pattern="mask$", allow_sudo=True))
-async def _(LegendBot):
-    reply_message = await LegendBot.get_reply_message()
+async def _(KANNADIGABOT):
+    reply_message = await KANNADIGABOT.get_reply_message()
     if not reply_message.media or not reply_message:
-        await edit_or_reply(LegendBot, "```reply to media message```")
+        await edit_or_reply(KANNADIGABOT, "```reply to media message```")
         return
     chat = "@hazmat_suit_bot"
     if reply_message.sender.bot:
-        await edit_or_reply(LegendBot, "```Reply to actual users message.```")
+        await edit_or_reply(KANNADIGABOT, "```Reply to actual users message.```")
         return
-    event = await LegendBot.edit("```Processing```")
-    async with LegendBot.client.conversation(chat) as conv:
+    event = await KANNADIGABOT.edit("```Processing```")
+    async with KANNADIGABOT.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
                 events.NewMessage(incoming=True, from_users=905164246)
             )
-            await LegendBot.client.send_message(chat, reply_message)
+            await KANNADIGABOT.client.send_message(chat, reply_message)
             response = await response
         except YouBlockedUserError:
             await edit_or_reply(
-                LegendBot, "`Please unblock` @hazmat_suit_bot `and try again`"
+                KANNADIGABOT, "`Please unblock` @hazmat_suit_bot `and try again`"
             )
             return
         if response.text.startswith("Forward"):
             await edit_or_reply(
-                LegendBot,
+                KANNADIGABOT,
                 "```can you kindly disable your forward privacy settings for good?```",
             )
         else:
-            await LegendBot.client.send_file(event.chat_id, response.message.media)
+            await KANNADIGABOT.client.send_file(event.chat_id, response.message.media)
             await event.delete()
 
 
 @bot.on(admin_cmd(pattern="awooify$", outgoing=True))
 @bot.on(sudo_cmd(pattern="awooify$", allow_sudo=True))
-async def LegendBot(LEGENDmemes):
-    replied = await LEGENDmemes.get_reply_message()
+async def KANNADIGABOT(KANNADIGAmemes):
+    replied = await KANNADIGAmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if not replied:
-        await edit_or_reply(LEGENDmemes, "reply to a supported media file")
+        await edit_or_reply(KANNADIGAmemes, "reply to a supported media file")
         return
     if replied.media:
-        LEGENDevent = await edit_or_reply(LEGENDmemes, "passing to telegraph...")
+        KANNADIGAevent = await edit_or_reply(KANNADIGAmemes, "passing to telegraph...")
     else:
-        await edit_or_reply(LEGENDmemes, "reply to a supported media file")
+        await edit_or_reply(KANNADIGAmemes, "reply to a supported media file")
         return
     try:
-        LEGEND = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        LEGEND = Get(LEGEND)
-        await LEGENDmemes.client(LEGEND)
+        KANNADIGA = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        KANNADIGA = Get(KANNADIGA)
+        await KANNADIGAmemes.client(KANNADIGA)
     except BaseException:
         pass
-    download_location = await LEGENDmemes.client.download_media(
+    download_location = await KANNADIGAmemes.client.download_media(
         replied, Config.TMP_DOWNLOAD_DIRECTORY
     )
     if download_location.endswith((".webp")):
@@ -73,50 +73,50 @@ async def LegendBot(LEGENDmemes):
     size = os.stat(download_location).st_size
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
-            await LEGENDevent.edit(
+            await KANNADIGAevent.edit(
                 "the replied file size is not supported it must me below 5 mb"
             )
             os.remove(download_location)
             return
-        await LEGENDevent.edit("generating image..")
+        await KANNADIGAevent.edit("generating image..")
     else:
-        await LEGENDevent.edit("the replied file is not supported")
+        await KANNADIGAevent.edit("the replied file is not supported")
         os.remove(download_location)
         return
     try:
         response = upload_file(download_location)
         os.remove(download_location)
     except exceptions.TelegraphException as exc:
-        await LEGENDevent.edit("ERROR: " + str(exc))
+        await KANNADIGAevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    LEGEND = f"https://telegra.ph{response[0]}"
-    LEGEND = await awooify(LEGEND)
-    await LEGENDevent.delete()
-    await LEGENDmemes.client.send_file(LEGENDmemes.chat_id, LEGEND, reply_to=replied)
+    KANNADIGA = f"https://telegra.ph{response[0]}"
+    KANNADIGA = await awooify(KANNADIGA)
+    await KANNADIGAevent.delete()
+    await KANNADIGAmemes.client.send_file(KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="lolice$"))
 @bot.on(sudo_cmd(pattern="lolice$", allow_sudo=True))
-async def LegendBot(LEGENDmemes):
-    replied = await LEGENDmemes.get_reply_message()
+async def KANNADIGABOT(KANNADIGAmemes):
+    replied = await KANNADIGAmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if not replied:
-        await edit_or_reply(LEGENDmemes, "reply to a supported media file")
+        await edit_or_reply(KANNADIGAmemes, "reply to a supported media file")
         return
     if replied.media:
-        LEGENDevent = await edit_or_reply(LEGENDmemes, "passing to telegraph...")
+        KANNADIGAevent = await edit_or_reply(KANNADIGAmemes, "passing to telegraph...")
     else:
-        await edit_or_reply(LEGENDmemes, "reply to a supported media file")
+        await edit_or_reply(KANNADIGAmemes, "reply to a supported media file")
         return
     try:
-        LEGEND = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        LEGEND = Get(LEGEND)
-        await LEGENDmemes.client(LEGEND)
+        KANNADIGA = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        KANNADIGA = Get(KANNADIGA)
+        await KANNADIGAmemes.client(KANNADIGA)
     except BaseException:
         pass
-    download_location = await LEGENDmemes.client.download_media(
+    download_location = await KANNADIGAmemes.client.download_media(
         replied, Config.TMP_DOWNLOAD_DIRECTORY
     )
     if download_location.endswith((".webp")):
@@ -124,50 +124,50 @@ async def LegendBot(LEGENDmemes):
     size = os.stat(download_location).st_size
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
-            await LEGENDevent.edit(
+            await KANNADIGAevent.edit(
                 "the replied file size is not supported it must me below 5 mb"
             )
             os.remove(download_location)
             return
-        await LEGENDevent.edit("generating image..")
+        await KANNADIGAevent.edit("generating image..")
     else:
-        await LEGENDevent.edit("the replied file is not supported")
+        await KANNADIGAevent.edit("the replied file is not supported")
         os.remove(download_location)
         return
     try:
         response = upload_file(download_location)
         os.remove(download_location)
     except exceptions.TelegraphException as exc:
-        await LEGENDevent.edit("ERROR: " + str(exc))
+        await KANNADIGAevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    LEGEND = f"https://telegra.ph{response[0]}"
-    LEGEND = await lolice(LEGEND)
-    await LEGENDevent.delete()
-    await LEGENDmemes.client.send_file(LEGENDmemes.chat_id, LEGEND, reply_to=replied)
+    KANNADIGA = f"https://telegra.ph{response[0]}"
+    KANNADIGA = await lolice(KANNADIGA)
+    await KANNADIGAevent.delete()
+    await KANNADIGAmemes.client.send_file(KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="bun$"))
 @bot.on(sudo_cmd(pattern="bun$", allow_sudo=True))
-async def LegendBot(LEGENDmemes):
-    replied = await LEGENDmemes.get_reply_message()
+async def KANNADIGABOT(KANNADIGAmemes):
+    replied = await KANNADIGAmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if not replied:
-        await edit_or_reply(LEGENDmemes, "reply to a supported media file")
+        await edit_or_reply(KANNADIGAmemes, "reply to a supported media file")
         return
     if replied.media:
-        LEGENDevent = await edit_or_reply(LEGENDmemes, "passing to telegraph...")
+        KANNADIGAevent = await edit_or_reply(KANNADIGAmemes, "passing to telegraph...")
     else:
-        await edit_or_reply(LEGENDmemes, "reply to a supported media file")
+        await edit_or_reply(KANNADIGAmemes, "reply to a supported media file")
         return
     try:
-        LEGEND = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        LEGEND = Get(LEGEND)
-        await LEGENDmemes.client(LEGEND)
+        KANNADIGA = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        KANNADIGA = Get(KANNADIGA)
+        await KANNADIGAmemes.client(KANNADIGA)
     except BaseException:
         pass
-    download_location = await LEGENDmemes.client.download_media(
+    download_location = await KANNADIGAmemes.client.download_media(
         replied, Config.TMP_DOWNLOAD_DIRECTORY
     )
     if download_location.endswith((".webp")):
@@ -175,50 +175,50 @@ async def LegendBot(LEGENDmemes):
     size = os.stat(download_location).st_size
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
-            await LEGENDevent.edit(
+            await KANNADIGAevent.edit(
                 "the replied file size is not supported it must me below 5 mb"
             )
             os.remove(download_location)
             return
-        await LEGENDevent.edit("generating image..")
+        await KANNADIGAevent.edit("generating image..")
     else:
-        await LEGENDevent.edit("the replied file is not supported")
+        await KANNADIGAevent.edit("the replied file is not supported")
         os.remove(download_location)
         return
     try:
         response = upload_file(download_location)
         os.remove(download_location)
     except exceptions.TelegraphException as exc:
-        await LEGENDevent.edit("ERROR: " + str(exc))
+        await KANNADIGAevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    LEGEND = f"https://telegra.ph{response[0]}"
-    LEGEND = await baguette(LEGEND)
-    await LEGENDevent.delete()
-    await LEGENDmemes.client.send_file(LEGENDmemes.chat_id, LEGEND, reply_to=replied)
+    KANNADIGA = f"https://telegra.ph{response[0]}"
+    KANNADIGA = await baguette(KANNADIGA)
+    await KANNADIGAevent.delete()
+    await KANNADIGAmemes.client.send_file(KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied)
 
 
 @bot.on(admin_cmd(pattern="iphx$"))
 @bot.on(sudo_cmd(pattern="iphx$", allow_sudo=True))
-async def LegendBot(LEGENDmemes):
-    replied = await LEGENDmemes.get_reply_message()
+async def KANNADIGABOT(KANNADIGAmemes):
+    replied = await KANNADIGAmemes.get_reply_message()
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if not replied:
-        await edit_or_reply(LEGENDmemes, "reply to a supported media file")
+        await edit_or_reply(KANNADIGAmemes, "reply to a supported media file")
         return
     if replied.media:
-        LEGENDevent = await edit_or_reply(LEGENDmemes, "passing to telegraph...")
+        KANNADIGAevent = await edit_or_reply(KANNADIGAmemes, "passing to telegraph...")
     else:
-        await edit_or_reply(LEGENDmemes, "reply to a supported media file")
+        await edit_or_reply(KANNADIGAmemes, "reply to a supported media file")
         return
     try:
-        LEGEND = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        LEGEND = Get(LEGEND)
-        await LEGENDmemes.client(LEGEND)
+        KANNADIGA = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        KANNADIGA = Get(KANNADIGA)
+        await KANNADIGAmemes.client(KANNADIGA)
     except BaseException:
         pass
-    download_location = await LEGENDmemes.client.download_media(
+    download_location = await KANNADIGAmemes.client.download_media(
         replied, Config.TMP_DOWNLOAD_DIRECTORY
     )
     if download_location.endswith((".webp")):
@@ -226,27 +226,27 @@ async def LegendBot(LEGENDmemes):
     size = os.stat(download_location).st_size
     if download_location.endswith((".jpg", ".jpeg", ".png", ".bmp", ".ico")):
         if size > 5242880:
-            await LEGENDevent.edit(
+            await KANNADIGAevent.edit(
                 "the replied file size is not supported it must me below 5 mb"
             )
             os.remove(download_location)
             return
-        await LEGENDevent.edit("generating image..")
+        await KANNADIGAevent.edit("generating image..")
     else:
-        await LEGENDevent.edit("the replied file is not supported")
+        await KANNADIGAevent.edit("the replied file is not supported")
         os.remove(download_location)
         return
     try:
         response = upload_file(download_location)
         os.remove(download_location)
     except exceptions.TelegraphException as exc:
-        await LEGENDevent.edit("ERROR: " + str(exc))
+        await KANNADIGAevent.edit("ERROR: " + str(exc))
         os.remove(download_location)
         return
-    LEGEND = f"https://telegra.ph{response[0]}"
-    LEGEND = await iphonex(LEGEND)
-    await LEGENDevent.delete()
-    await LEGENDmemes.client.send_file(LEGENDmemes.chat_id, LEGEND, reply_to=replied)
+    KANNADIGA = f"https://telegra.ph{response[0]}"
+    KANNADIGA = await iphonex(KANNADIGA)
+    await KANNADIGAevent.delete()
+    await KANNADIGAmemes.client.send_file(KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied)
 
 
 CmdHelp("mask").add_command(

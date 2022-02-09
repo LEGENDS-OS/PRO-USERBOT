@@ -11,7 +11,7 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 from . import *
 
-path = "./legendmify/"
+path = "./KANNADIGAmify/"
 if not os.path.isdir(path):
     os.makedirs(path)
 
@@ -29,10 +29,10 @@ async def _(event):
     if not (_reply and (_reply.media)):
         legen_ = await eod(event, "`Can't memify this 🥴`")
         return
-    legend = await _reply.download_media()
-    if legend.endswith((".tgs")):
+    KANNADIGA = await _reply.download_media()
+    if KANNADIGA.endswith((".tgs")):
         legen_ = await eor(event, "**Memifying 🌚🌝**")
-        cmd = ["lottie_convert.py", legend, "pic.png"]
+        cmd = ["lottie_convert.py", KANNADIGA, "pic.png"]
         file = "pic.png"
         process = await asyncio.create_subprocess_exec(
             *cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -40,14 +40,14 @@ async def _(event):
         stdout, stderr = await process.communicate()
         stderr.decode().strip()
         stdout.decode().strip()
-    elif legend.endswith((".webp", ".png")):
+    elif KANNADIGA.endswith((".webp", ".png")):
         legen_ = await eor(event, "**Memifying 🌚🌝**")
-        pic = Image.open(legend)
+        pic = Image.open(KANNADIGA)
         pic.save("pic.png", format="PNG", optimize=True)
         file = "pic.png"
     else:
         await eor(event, "**Memifying 🌚🌝**")
-        img = cv2.VideoCapture(legend)
+        img = cv2.VideoCapture(KANNADIGA)
         tal, semx = img.read()
         cv2.imwrite("pic.png", semx)
         file = "pic.png"
@@ -57,7 +57,7 @@ async def _(event):
     )
     await legen_.delete()
     try:
-        os.remove(legend)
+        os.remove(KANNADIGA)
         os.remove(file)
     except BaseException:
         pass
@@ -67,8 +67,8 @@ async def _(event):
 @bot.on(admin_cmd(pattern="doge(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="doge(?: |$)(.*)", allow_sudo=True))
 async def nope(event):
-    legend = event.pattern_match.group(1)
-    if not legend:
+    KANNADIGA = event.pattern_match.group(1)
+    if not KANNADIGA:
         if event.is_reply:
             (await event.get_reply_message()).message
         else:
@@ -77,7 +77,7 @@ async def nope(event):
             else:
                 return await eor(event, "Doge need some text to make sticker.")
 
-    troll = await bot.inline_query("DogeStickerBot", f"{(deEmojify(legend))}")
+    troll = await bot.inline_query("DogeStickerBot", f"{(deEmojify(KANNADIGA))}")
     if troll:
         await event.delete()
         legen_ = await troll[0].click(Config.LOGGER_ID)
@@ -95,8 +95,8 @@ async def nope(event):
 @bot.on(admin_cmd(pattern="gg(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="gg(?: |$)(.*)", allow_sudo=True))
 async def nope(kraken):
-    legend = kraken.pattern_match.group(1)
-    if not legend:
+    KANNADIGA = kraken.pattern_match.group(1)
+    if not KANNADIGA:
         if kraken.is_reply:
             (await kraken.get_reply_message()).message
         else:
@@ -105,7 +105,7 @@ async def nope(kraken):
             else:
                 return await eor(kraken, "Googlax need some text to make sticker.")
 
-    troll = await bot.inline_query("GooglaxBot", f"{(deEmojify(legend))}")
+    troll = await bot.inline_query("GooglaxBot", f"{(deEmojify(KANNADIGA))}")
     if troll:
         await kraken.delete()
         legen_ = await troll[0].click(Config.LOGGER_ID)
@@ -123,8 +123,8 @@ async def nope(kraken):
 @bot.on(admin_cmd(pattern="honk(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="honk(?: |$)(.*)", allow_sudo=True))
 async def nope(kraken):
-    legend = kraken.pattern_match.group(1)
-    if not legend:
+    KANNADIGA = kraken.pattern_match.group(1)
+    if not KANNADIGA:
         if kraken.is_reply:
             (await kraken.get_reply_message()).message
         else:
@@ -133,7 +133,7 @@ async def nope(kraken):
             else:
                 return await eor(kraken, "Honka need some text to make sticker.")
 
-    troll = await bot.inline_query("honka_says_bot", f"{(deEmojify(legend))}.")
+    troll = await bot.inline_query("honka_says_bot", f"{(deEmojify(KANNADIGA))}.")
     if troll:
         await kraken.delete()
         legen_ = await troll[0].click(Config.LOGGER_ID)
@@ -187,10 +187,10 @@ async def _(event):
     if not (_reply and (_reply.media)):
         legen_ = await eod(event, "`Can't memify this 🥴`")
         return
-    legend = await _reply.download_media()
-    if legend.endswith((".tgs")):
+    KANNADIGA = await _reply.download_media()
+    if KANNADIGA.endswith((".tgs")):
         legen_ = await eor(event, "**Memifying 🌚🌝**")
-        cmd = ["lottie_convert.py", legend, "pic.png"]
+        cmd = ["lottie_convert.py", KANNADIGA, "pic.png"]
         file = "pic.png"
         process = await asyncio.create_subprocess_exec(
             *cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -198,14 +198,14 @@ async def _(event):
         stdout, stderr = await process.communicate()
         stderr.decode().strip()
         stdout.decode().strip()
-    elif legend.endswith((".webp", ".png")):
+    elif KANNADIGA.endswith((".webp", ".png")):
         legen_ = await eor(event, "**Memifying 🌚🌝**")
-        pics = Image.open(legend)
+        pics = Image.open(KANNADIGA)
         pics.save("pic.png", format="PNG", optimize=True)
         file = "pic.png"
     else:
         legen_ = await eor(event, "**Memifying 🌚🌝**")
-        img = cv2.VideoCapture(legend)
+        img = cv2.VideoCapture(KANNADIGA)
         tal, semx = img.read()
         cv2.imwrite("pic.png", semx)
         file = "pic.png"
@@ -215,7 +215,7 @@ async def _(event):
     )
     await legen_.delete()
     try:
-        os.remove(legend)
+        os.remove(KANNADIGA)
         os.remove(file)
         os.remove(output)
     except BaseException:

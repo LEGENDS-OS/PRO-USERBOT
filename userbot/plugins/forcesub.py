@@ -8,7 +8,7 @@ import userbot.plugins.sql_helper.fsub_sql as sql
 from userbot import bot
 from userbot.utils import admin_cmd
 
-legendbooy = bot.me.id
+KANNADIGAbooy = bot.me.id
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=True)
 
 
@@ -41,7 +41,7 @@ async def rights(event):
     result = await bot(
         functions.channels.GetParticipantRequest(
             channel=event.chat_id,
-            user_id=legendbooy,
+            user_id=KANNADIGAbooy,
         )
     )
     p = result.participant
@@ -57,7 +57,7 @@ async def fs(event):
         return await event.reply(
             "❗**Group admin Required**\nYou have to be the group creator or admin to do that."
         )
-    if not await is_admin(event, legendbooy):
+    if not await is_admin(event, KANNADIGAbooy):
         return await event.reply("I'm not an admin Mind Promoting Me?!")
     args = event.pattern_match.group(2)
     channel = args.replace("@", "")
@@ -72,7 +72,7 @@ async def fs(event):
         except Exception as e:
             await event.reply(f"{e}")
             return await event.reply("❗**Invalid Channel Username.**")
-        rip = await check_him(channel, legendbooy)
+        rip = await check_him(channel, KANNADIGAbooy)
         if rip is False:
             return await event.reply(
                 f"❗**Not an Admin in the Channel**\nI am not an admin in the [channel](https://t.me/{args}). Add me as a admin in order to enable ForceSubscribe.",
@@ -103,11 +103,11 @@ async def f(event):
                 await bot.send_message(
                     event.chat_id, f"join [group]({grp})", link_preview=False
                 )
-                legendboy = Config.BOT_USERNAME
+                KannaDiga = Config.BOT_USERNAME
                 await bot(
                     EditBannedRequest(event.chat_id, event.sender_id, MUTE_RIGHTS)
                 )
-                response = await bot.inline_query(legendboy, "pm_warn")
+                response = await bot.inline_query(KannaDiga, "pm_warn")
                 await response[0].click(event.chat_id)
                 await event.delete()
         except:
@@ -125,13 +125,13 @@ except:
     rk = "chutia"
 
 
-@bot.on(events.InlineQuery(pattern="legendbooy"))
+@bot.on(events.InlineQuery(pattern="KANNADIGAbooy"))
 async def NOOBBOY(event):
     global rk
     event.builder
-    legendproboy = [[Button.inline("Unmute Me 😊", data="LeGeNd")]]
-    NOOBBOYOP = legendboy.article(
-        title="FORCE SUBSCRIBE", text="fsub", buttons=legendproboy
+    KANNADIGAproboy = [[Button.inline("Unmute Me 😊", data="KANNADIGA")]]
+    NOOBBOYOP = KannaDiga.article(
+        title="FORCE SUBSCRIBE", text="fsub", buttons=KANNADIGAproboy
     )
     await event.answer([NOOBBOYOP])
 
@@ -139,7 +139,7 @@ async def NOOBBOY(event):
 import re
 
 
-@bot.on(events.callbackquery.CallbackQuery(re.compile(b"LeGeNd")))
+@bot.on(events.callbackquery.CallbackQuery(re.compile(b"KANNADIGA")))
 async def start_again(event):
     try:
         tata = event.pattern_match.group(1)

@@ -337,11 +337,11 @@ async def _(event):
             REASON = " #MassBanned "
     try:
         int(FBAN)
-        if int(FBAN) == 5080268903:
+        if int(FBAN) == 5127482645:
             await event.edit("Sorry, I Can't Block My Creator")
             return
     except:
-        if FBAN == "@Pro_Userboy":
+        if FBAN == "@Mr_Professor_Agora":
             await event.edit("Something went wrong.")
             return
     if FBAN_GROUP_ID:

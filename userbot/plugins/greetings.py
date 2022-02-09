@@ -25,8 +25,8 @@ X = (
 
 
 @borg.on(admin_cmd(pattern=r"baby"))
-async def legend(legend):
-    await legend.edit(S)
+async def KANNADIGA(KANNADIGA):
+    await KANNADIGA.edit(S)
 
 
 @borg.on(admin_cmd(pattern=r"thanks"))

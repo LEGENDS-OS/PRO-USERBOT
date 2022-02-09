@@ -59,4 +59,4 @@ async def autopic(event):
             return
 
 
-CmdHelp("legenddp").add_command("ldp", None, "Starts autodp of LegendBoy").add()
+CmdHelp("KANNADIGAdp").add_command("ldp", None, "Starts autodp of KannaDiga").add()

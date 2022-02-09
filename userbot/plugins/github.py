@@ -46,7 +46,7 @@ async def gitsearch(event):
 **Following** - {ufollowing}
 """
     await xx.delete()
-    await legend_bot.send_file(
+    await KANNADIGA_bot.send_file(
         event.chat_id,
         upic,
         caption=fullusr,
