@@ -13,7 +13,7 @@ from userbot.helpers.tools import media_type
 from userbot.helpers.utils import _format
 from userbot.utils import admin_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓєgєи∂"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Kannadiga"
 
 KANNADIGA = bot.uid
 
@@ -64,7 +64,7 @@ async def set_not_afk(event):
     ):
         shite = await event.client.send_message(
             event.chat_id,
-            "`Back alive! No Longer afk.\nWas afk for " + endtime + "`",
+            "`I am Back! No Longer afk.\nWas afk for " + endtime + "`",
         )
         AFK_.USERAFK_ON = {}
         AFK_.afk_time = None
