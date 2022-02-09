@@ -11,7 +11,7 @@ LOVESTR = [
     "ಪ್ರೀತಿ ಇಲ್ಲ ಎನ್ನುವುದಾದರೆ , ನಾವಿಬ್ಬರು ನಡೆಯುವಾಗ ಒಂದೇ ನೆರಳು ಬೀಳುವುದೇಕೆ ….ಆ ಒಂದೇ ನೆರಳಿನಲ್ಲಿ ನಾವಿಬ್ಬರು ಕಾಣುವುದೇಕೆ …!! - [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
     "ಕರೆದು ಬಿಡಲೇ ನಿನ್ನ ಹೆಸರನ್ನೊಮ್ಮೆ, ಇಳಿದು ಬಿಡಲೇ ನಿನ್ನ ಹೃದಯಕೊಮ್ಮೆ,ಈ ಪ್ರೀತಿಯ ಒಲವೆಲ್ಲವು ನಿನಗೆ ತಾನೇ…- [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
     "ಹೊತ್ತು ಮುಳುಗುವ ಹೊತ್ತು, ಇಬ್ಬನಿ ಜಾರುತಲಿತ್ತು,ಇನಿಯ ನಾ ಕಾದೆ ನಿನಗಾಗಿ, ಈ ಲೋಕವ ಮರೆತು,ಗಂಟೆಗಳು ಉರುಳುತಿವೆ, ರವಿಯ ಕಿರಣ ಸರಿಯುತಿದೆ,ಬಾ ನನ್ನ ನಲ್ಲ ಎಲ್ಲಿರುವೆ ನೀ ……………ಓ ಮುದ್ದು ಮನಸೇ……….- [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
-    "I swear I couldn't love you more than I do right now, and yet I know I will tomorrow.",
+    "ಯಾರು ನಿಮಗಾಗಿ ಕಾಯ್ತಾರೋ ಅವರಿಗಾಗಿ ಬದುಕಿ,ಯಾರು ನಿಮಗಾಗಿ ಅಳುತ್ತಾರೋ ಅವರನ್ನು ನಗಿಸಿ,ಯಾರು ನಿಮಗಾಗಿ ಪ್ರತಿಕ್ಷಣ ಹಂಬಲಿಸುತ್ತಾರೆ ಅವರನ್ನು ಪ್ರೀತಿಸಿ. - [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
     "When I saw you I fell in love, and you smiled because you knew it.",
     "In all the world, there is no heart for me like yours. / In all the world, there is no love for you like mine.",
     "To love or have loved, that is enough. Ask nothing further. There is no other pearl to be found in the dark folds of life.",
