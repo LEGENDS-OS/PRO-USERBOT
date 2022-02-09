@@ -41,7 +41,9 @@ async def amireallykannadiga(kannadiga):
     if kannadiga_IMG:
         kannadiga_caption = f"kannadigaBot is Up And Running\n\n"
         kannadiga_caption += f"      🔰Bot Status🔰 \n"
-        kannadiga_caption += f"{kannadiga_emoji} kannadigaBo† version   ~ {kannadigaversion}\n"
+        kannadiga_caption += (
+            f"{kannadiga_emoji} kannadigaBo† version   ~ {kannadigaversion}\n"
+        )
         kannadiga_caption += (
             f"{kannadiga_emoji} Telethon version   ~ {version.version}\n"
         )
@@ -49,9 +51,14 @@ async def amireallykannadiga(kannadiga):
             f"{kannadiga_emoji} Python version    ~ {python_version()}\n"
         )
         kannadiga_caption += f"{kannadiga_emoji} Uptime           ~ {uptime}\n"
-        kannadiga_caption += f"{kannadiga_emoji} Master          ~ {Config.kannadiga_NAME}"
+        kannadiga_caption += (
+            f"{kannadiga_emoji} Master          ~ {Config.kannadiga_NAME}"
+        )
         await kannadiga.client.send_file(
-            kannadiga.chat_id, kannadiga_IMG, caption=kannadiga_caption, reply_to=reply_to_id
+            kannadiga.chat_id,
+            kannadiga_IMG,
+            caption=kannadiga_caption,
+            reply_to=reply_to_id,
         )
         await kannadiga.delete()
     else:
@@ -104,6 +111,8 @@ pm_caption += f"┣✨ Agora   ~ [Owner](https://t.me/mr_professor_agora)\n"
 pm_caption += f"┣✨ Support ~ [Group](https://t.me/naan_1_kannadiga)\n"
 pm_caption += f"┣✨ Repo   ~ [Repo](https://github.com/MR-KANNADIGA/KANNADIGA-BOT)\n"
 pm_caption += f"╰────────────\n"
+
+
 @borg.on(admin_cmd(pattern=r"about"))
 @borg.on(sudo_cmd(pattern="about$", allow_sudo=True))
 async def amireallykannadiga(yes):
