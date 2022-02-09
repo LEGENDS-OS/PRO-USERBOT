@@ -73,7 +73,10 @@ async def amireallyalive(event):
         KANNADIGA_caption += f"•🔥• ᴹʸ 𝙶𝚁𝙾𝚄𝙿 : [𝕲ʀᴏᴜᴘ](t.me/naan_1_kannadiga)\n"
 
         await event.client.send_file(
-            event.chat_id, KANNADIGA_IMG, caption=KANNADIGA_caption, reply_to=reply_to_id
+            event.chat_id,
+            KANNADIGA_IMG,
+            caption=KANNADIGA_caption,
+            reply_to=reply_to_id,
         )
         await event.delete()
     else:

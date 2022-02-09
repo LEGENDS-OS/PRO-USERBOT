@@ -143,7 +143,9 @@ async def nope(lege_):
             )
             return
 
-    troll = await bot.inline_query("AniFluidbot", f".character {(deEmojify(KANNADIGA))}")
+    troll = await bot.inline_query(
+        "AniFluidbot", f".character {(deEmojify(KANNADIGA))}"
+    )
 
     await troll[0].click(
         lege_.chat_id,

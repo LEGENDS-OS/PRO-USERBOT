@@ -41,7 +41,9 @@ async def amireallyalive(alive):
     if KANNADIGA_IMG:
         KANNADIGA_caption = f"**KANNADIGABOT is Up And Running**\n\n"
         KANNADIGA_caption += f"      🔰Bot Status🔰 \n"
-        KANNADIGA_caption += f"{alive_emoji} **KANNADIGABo† version**   ~ {KANNADIGAversion}\n"
+        KANNADIGA_caption += (
+            f"{alive_emoji} **KANNADIGABo† version**   ~ {KANNADIGAversion}\n"
+        )
         KANNADIGA_caption += (
             f"{alive_emoji} **Telethon version**   ~ `{version.__version__}`\n"
         )
@@ -49,9 +51,14 @@ async def amireallyalive(alive):
             f"{alive_emoji} **Python version**    ~ `{python_version()}`\n"
         )
         KANNADIGA_caption += f"{alive_emoji} **Uptime**           ~ `{uptime}`\n"
-        KANNADIGA_caption += f"{alive_emoji} **Master**          ~ `{Config.ALIVE_NAME}`"
+        KANNADIGA_caption += (
+            f"{alive_emoji} **Master**          ~ `{Config.ALIVE_NAME}`"
+        )
         await alive.client.send_file(
-            alive.chat_id, KANNADIGA_IMG, caption=KANNADIGA_caption, reply_to=reply_to_id
+            alive.chat_id,
+            KANNADIGA_IMG,
+            caption=KANNADIGA_caption,
+            reply_to=reply_to_id,
         )
         await alive.delete()
     else:

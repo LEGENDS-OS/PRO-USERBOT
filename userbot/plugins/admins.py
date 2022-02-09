@@ -544,7 +544,9 @@ async def kick(usr):
             f"🔶Kicked [{user.first_name}](tg://user?id={user.id})!\n🔶яєαѕοи: {reason}",
         )
     else:
-        await KANNADIGAevent.edit(f"Kicked [{user.first_name}](tg://user?id={user.id})!")
+        await KANNADIGAevent.edit(
+            f"Kicked [{user.first_name}](tg://user?id={user.id})!"
+        )
     if LOGGER:
         await usr.client.send_message(
             lg_id,

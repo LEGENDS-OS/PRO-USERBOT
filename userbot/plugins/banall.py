@@ -165,7 +165,9 @@ async def _(event):
             if "y" in input_str:
                 status, e = await ban_user(event.chat_id, i, rights)
                 if not status:
-                    await eod(KANNADIGA, "I need admin priveleges to perform this action!")
+                    await eod(
+                        KANNADIGA, "I need admin priveleges to perform this action!"
+                    )
                     e.append(str(e))
                     break
                 else:
@@ -175,7 +177,9 @@ async def _(event):
             if "m" in input_str:
                 status, e = await ban_user(event.chat_id, i, rights)
                 if not status:
-                    await eod(KANNADIGA, "I need admin priveleges to perform this action!")
+                    await eod(
+                        KANNADIGA, "I need admin priveleges to perform this action!"
+                    )
                     e.append(str(e))
                     break
                 else:

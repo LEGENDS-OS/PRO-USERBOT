@@ -607,7 +607,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         buttons.append(
             [
                 custom.Button.inline(
-                    f"{KANNADIGA_emoji1} Help Menu {KANNADIGA_emoji2}", data=f"page({page})"
+                    f"{KANNADIGA_emoji1} Help Menu {KANNADIGA_emoji2}",
+                    data=f"page({page})",
                 )
             ]
         )
