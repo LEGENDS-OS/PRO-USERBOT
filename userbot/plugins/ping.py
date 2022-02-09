@@ -75,7 +75,9 @@ async def _(event):
         KANNADIGA_caption = (
             f"**💞Pong💞**\n\n   🔸️ {ms}\n   🔹️ **𝙼𝚢** **𝙼𝚊𝚜𝚝𝚎𝚛** ~『{KANNADIGA_mention}』"
         )
-        await event.client.send_file(event.chat_id, KANNADIGA_IMG, caption=KANNADIGA_caption)
+        await event.client.send_file(
+            event.chat_id, KANNADIGA_IMG, caption=KANNADIGA_caption
+        )
         await event.delete()
 
 

@@ -78,7 +78,9 @@ async def stats(
     response += f"⚜                 **Unread** : {unread} \n"
     response += f" **Unread мємτιοиѕ** : {unread_mentions} \n\n"
     response += f"       __ιτ τοοκ :__ {stop_time:.02f}s \n"
-    response += f"ƒɾσɱ ƭɦε ∂αƭαɓαรε σƒ:-[♥️𝖑𝖊ɠêɳ̃dẞø✞︎♥️](https://t.me/NAAN_1_KANNADIGA)"
+    response += (
+        f"ƒɾσɱ ƭɦε ∂αƭαɓαรε σƒ:-[♥️𝖑𝖊ɠêɳ̃dẞø✞︎♥️](https://t.me/NAAN_1_KANNADIGA)"
+    )
     await KANNADIGA.edit(response)
 
 

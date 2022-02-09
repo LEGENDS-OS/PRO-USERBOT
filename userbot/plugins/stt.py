@@ -16,7 +16,9 @@ async def _(event):
     input_str = event.pattern_match.group(1)
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
-    KANNADIGAevent = await edit_or_reply(event, "Downloading to my local, for analysis  🙇")
+    KANNADIGAevent = await edit_or_reply(
+        event, "Downloading to my local, for analysis  🙇"
+    )
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
         required_file_name = await event.client.download_media(
@@ -31,7 +33,9 @@ async def _(event):
                 "You need to set the required ENV variables for this module. \nModule stopping"
             )
         else:
-            await KANNADIGAevent.edit("Starting analysis, using IBM WatSon Speech To Text")
+            await KANNADIGAevent.edit(
+                "Starting analysis, using IBM WatSon Speech To Text"
+            )
             headers = {
                 "Content-Type": previous_message.media.document.mime_type,
             }

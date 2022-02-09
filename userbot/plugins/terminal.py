@@ -22,7 +22,9 @@ async def dc(event):
         await event.edit(" Give a command or use .help terminal.")
         return
     if cmd in ("userbot.session", "env", "printenv"):
-        return await event.edit(f"{KANNADIGA}: Privacy Error, This command not permitted")
+        return await event.edit(
+            f"{KANNADIGA}: Privacy Error, This command not permitted"
+        )
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )

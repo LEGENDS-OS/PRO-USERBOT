@@ -28,7 +28,12 @@ async def spammer(e):
 @bot.on(admin_cmd(pattern="bigspam"))
 @bot.on(sudo_cmd(pattern="bigspam", allow_sudo=True))
 async def bigspam(KANNADIGA):
-    if not KANNADIGA.text[0].isalpha() and KANNADIGA.text[0] not in ("/", "#", "@", "!"):
+    if not KANNADIGA.text[0].isalpha() and KANNADIGA.text[0] not in (
+        "/",
+        "#",
+        "@",
+        "!",
+    ):
         KANNADIGA_msg = KANNADIGA.text
         PRO_KANNADIGABOT_count = int(KANNADIGA_msg[9:13])
         KANNADIGA_spam = str(KANNADIGA.text[13:])

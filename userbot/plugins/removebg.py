@@ -65,7 +65,9 @@ async def remove_background(event):
             response = ReTrieveFile(file_name)
             os.remove(file_name)
     elif input_str:
-        KANNADIGAevent = await edit_or_reply(event, "`Removing Background of this media`")
+        KANNADIGAevent = await edit_or_reply(
+            event, "`Removing Background of this media`"
+        )
         response = ReTrieveURL(input_str)
     else:
         await edit_or_reply(
