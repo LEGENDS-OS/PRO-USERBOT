@@ -9,7 +9,7 @@ from telethon.errors import ChatSendInlineForbiddenError as noin
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 
 from userbot import *
-from userbot import kannadigaversion
+from userbot import KANNADIGAversion
 from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 from userbot.helpers.events import reply_id
@@ -18,12 +18,12 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 from . import *
 
-kannadiga_IMG = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
+KANNADIGA_IMG = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@NAAN_1_KANNADIGA"
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="kannadiga$"))
-@bot.on(sudo_cmd(pattern="kannadiga$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="KANNADIGA$"))
+@bot.on(sudo_cmd(pattern="KANNADIGA$", allow_sudo=True))
 async def amireallykannadiga(kannadiga):
     if kannadiga.fwd_from:
         return
@@ -38,26 +38,26 @@ async def amireallykannadiga(kannadiga):
             for d in b:
                 c.append(d)
         kannadiga_emoji = random.choice(c)
-    if kannadiga_IMG:
-        kannadiga_caption = f"kannadigaBot is Up And Running\n\n"
-        kannadiga_caption += f"      🔰Bot Status🔰 \n"
-        kannadiga_caption += (
-            f"{kannadiga_emoji} kannadigaBo† version   ~ {kannadigaversion}\n"
+    if KANNADIGA_IMG:
+        KANNADIGA_caption = f"kannadigaBot is Up And Running\n\n"
+        KANNADIGA_caption += f"      🔰Bot Status🔰 \n"
+        KANNADIGA_caption += (
+            f"{kannadiga_emoji} kannadigaBo† version   ~ {KANNADIGAversion}\n"
         )
-        kannadiga_caption += (
+        KANNADIGA_caption += (
             f"{kannadiga_emoji} Telethon version   ~ {version.version}\n"
         )
-        kannadiga_caption += (
+        KANNADIGA_caption += (
             f"{kannadiga_emoji} Python version    ~ {python_version()}\n"
         )
-        kannadiga_caption += f"{kannadiga_emoji} Uptime           ~ {uptime}\n"
-        kannadiga_caption += (
+        KANNADIGA_caption += f"{kannadiga_emoji} Uptime           ~ {uptime}\n"
+        KANNADIGA_caption += (
             f"{kannadiga_emoji} Master          ~ {Config.kannadiga_NAME}"
         )
         await kannadiga.client.send_file(
             kannadiga.chat_id,
             kannadiga_IMG,
-            caption=kannadiga_caption,
+            caption=KANNADIGA_caption,
             reply_to=reply_to_id,
         )
         await kannadiga.delete()
@@ -69,7 +69,7 @@ async def amireallykannadiga(kannadiga):
 
 
 msg = (
-    gvarstatus("kannadiga_TEMPLATE")
+    gvarstatus("KANNADIGA_TEMPLATE")
     or f"""
   ⚜️ Kannadiga Bot is Online ⚜️
      {Config.kannadiga_MSG}
@@ -89,10 +89,10 @@ botname = Config.BOT_USERNAME
 @bot.on(admin_cmd(pattern="kannadiga$", allow_sudo=True))
 async def kannadiga_a(event):
     try:
-        kannadiga = await bot.inline_query(botname, "kannadiga")
-        await kannadiga[0].click(event.chat_id)
+        KANNADIGA = await bot.inline_query(botname, "kannadiga")
+        await KANNADIGA[0].click(event.chat_id)
         await event.delete()
-        if event.sender_id == Pro_Userboy:
+        if event.sender_id == MR_PROFESSOR_AGORA:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
@@ -106,7 +106,7 @@ file5 = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 """=======================CONSTANTS====================== """
 pm_caption = f"╭────────────\n"
 pm_caption += f"┣✨ Owner   ~ {Config.kannadiga_NAME}\n"
-pm_caption += f"┣✨ Kannadigabot ~ {kannadigaversion}\n"
+pm_caption += f"┣✨ Kannadigabot ~ {KANNADIGAversion}\n"
 pm_caption += f"┣✨ Agora   ~ [Owner](https://t.me/mr_professor_agora)\n"
 pm_caption += f"┣✨ Support ~ [Group](https://t.me/naan_1_kannadiga)\n"
 pm_caption += f"┣✨ Repo   ~ [Repo](https://github.com/MR-KANNADIGA/KANNADIGA-BOT)\n"
