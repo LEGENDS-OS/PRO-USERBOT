@@ -5,8 +5,8 @@ from sqlalchemy import Column, PickleType, UnicodeText, distinct, func
 from . import BASE, SESSION
 
 
-class Legend_GlobalCollection(BASE):
-    __tablename__ = "legend_globalcollection"
+class KANNADIGA_GlobalCollection(BASE):
+    __tablename__ = "KANNADIGA_globalcollection"
     keywoard = Column(UnicodeText, primary_key=True)
     contents = Column(PickleType, primary_key=True, nullable=False)
 
@@ -15,22 +15,22 @@ class Legend_GlobalCollection(BASE):
         self.contents = tuple(contents)
 
     def __repr__(self):
-        return "<Legend Global Collection lists '%s' for %s>" % (
+        return "<KANNADIGA Global Collection lists '%s' for %s>" % (
             self.contents,
             self.keywoard,
         )
 
     def __eq__(self, other):
         return bool(
-            isinstance(other, Legend_GlobalCollection)
+            isinstance(other, KANNADIGA_GlobalCollection)
             and self.keywoard == other.keywoard
             and self.contents == other.contents
         )
 
 
-Legend_GlobalCollection.__table__.create(checkfirst=True)
+KANNADIGA_GlobalCollection.__table__.create(checkfirst=True)
 
-LEGEND_GLOBALCOLLECTION = threading.RLock()
+KANNADIGA_GLOBALCOLLECTION = threading.RLock()
 
 
 class COLLECTION_SQL:
@@ -42,8 +42,8 @@ COLLECTION_SQL_ = COLLECTION_SQL()
 
 
 def add_to_collectionlist(keywoard, contents):
-    with LEGEND_GLOBALCOLLECTION:
-        keyword_items = Legend_GlobalCollection(keywoard, tuple(contents))
+    with KANNADIGA_GLOBALCOLLECTION:
+        keyword_items = KANNADIGA_GlobalCollection(keywoard, tuple(contents))
 
         SESSION.merge(keyword_items)
         SESSION.commit()
@@ -51,8 +51,8 @@ def add_to_collectionlist(keywoard, contents):
 
 
 def rm_from_collectionlist(keywoard, contents):
-    with LEGEND_GLOBALCOLLECTION:
-        keyword_items = SESSION.query(Legend_GlobalCollection).get(
+    with KANNADIGA_GLOBALCOLLECTION:
+        keyword_items = SESSION.query(KANNADIGA_GlobalCollection).get(
             (keywoard, tuple(contents))
         )
         if keyword_items:
@@ -69,16 +69,16 @@ def rm_from_collectionlist(keywoard, contents):
 
 
 def is_in_collectionlist(keywoard, contents):
-    with LEGEND_GLOBALCOLLECTION:
+    with KANNADIGA_GLOBALCOLLECTION:
         keyword_items = COLLECTION_SQL_.CONTENTS_LIST.get(keywoard, set())
         return any(tuple(contents) == list1 for list1 in keyword_items)
 
 
 def del_keyword_collectionlist(keywoard):
-    with LEGEND_GLOBALCOLLECTION:
+    with KANNADIGA_GLOBALCOLLECTION:
         keyword_items = (
-            SESSION.query(Legend_GlobalCollection.keywoard)
-            .filter(Legend_GlobalCollection.keywoard == keywoard)
+            SESSION.query(KANNADIGA_GlobalCollection.keywoard)
+            .filter(KANNADIGA_GlobalCollection.keywoard == keywoard)
             .delete()
         )
         COLLECTION_SQL_.CONTENTS_LIST.pop(keywoard)
@@ -91,7 +91,7 @@ def get_item_collectionlist(keywoard):
 
 def get_collectionlist_items():
     try:
-        chats = SESSION.query(Legend_GlobalCollection.keywoard).distinct().all()
+        chats = SESSION.query(KANNADIGA_GlobalCollection.keywoard).distinct().all()
         return [i[0] for i in chats]
     finally:
         SESSION.close()
@@ -99,7 +99,7 @@ def get_collectionlist_items():
 
 def num_collectionlist():
     try:
-        return SESSION.query(Legend_GlobalCollection).count()
+        return SESSION.query(KANNADIGA_GlobalCollection).count()
     finally:
         SESSION.close()
 
@@ -107,8 +107,8 @@ def num_collectionlist():
 def num_collectionlist_item(keywoard):
     try:
         return (
-            SESSION.query(Legend_GlobalCollection.keywoard)
-            .filter(Legend_GlobalCollection.keywoard == keywoard)
+            SESSION.query(KANNADIGA_GlobalCollection.keywoard)
+            .filter(KANNADIGA_GlobalCollection.keywoard == keywoard)
             .count()
         )
     finally:
@@ -118,7 +118,7 @@ def num_collectionlist_item(keywoard):
 def num_collectionlist_items():
     try:
         return SESSION.query(
-            func.count(distinct(Legend_GlobalCollection.keywoard))
+            func.count(distinct(KANNADIGA_GlobalCollection.keywoard))
         ).scalar()
     finally:
         SESSION.close()
@@ -126,11 +126,11 @@ def num_collectionlist_items():
 
 def __load_item_collectionlists():
     try:
-        chats = SESSION.query(Legend_GlobalCollection.keywoard).distinct().all()
+        chats = SESSION.query(KANNADIGA_GlobalCollection.keywoard).distinct().all()
         for (keywoard,) in chats:
             COLLECTION_SQL_.CONTENTS_LIST[keywoard] = []
 
-        all_groups = SESSION.query(Legend_GlobalCollection).all()
+        all_groups = SESSION.query(KANNADIGA_GlobalCollection).all()
         for x in all_groups:
             COLLECTION_SQL_.CONTENTS_LIST[x.keywoard] += [x.contents]
 

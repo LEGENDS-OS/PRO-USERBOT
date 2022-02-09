@@ -38,15 +38,15 @@ async def start(event):
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     replied_user.user.first_name
     vent = event.chat_id
-    starttext = f"Hey! 👤{mention},\nI am {my_mention}'s assistant bot.\nYou can contact to my master from here.\n\nPowered By [『Lêɠêɳ̃dẞø†』](https://t.me/Pro_LegendBots)"
+    starttext = f"Hey! 👤{mention},\nI am {my_mention}'s assistant bot.\nYou can contact to my master from here.\n\nPowered By [『Lêɠêɳ̃dẞø†』](https://t.me/Kannadiga_bots)"
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
             message=f"Hi Sir/Miss, It's Me {bot_id}, Your Assistant ! \nHow Can I help U?",
             buttons=[
                 [
-                    Button.url(" Support ", "https://t.me/LegendBot_Pros"),
-                    Button.url(" Updates ", "https://t.me/Pro_LegendBots"),
+                    Button.url(" Support ", "https://t.me/NAAN_1_KANNADIGA"),
+                    Button.url(" Updates ", "https://t.me/Kannadiga_bots"),
                 ],
                 [
                     custom.Button.inline("Users", data="users"),
@@ -66,8 +66,8 @@ async def start(event):
             link_preview=False,
             buttons=[
                 [
-                    Button.url(" Repo ", "https://github.com/PROBOY-OP/PRO-LEGENDBOT"),
-                    Button.url(" Support ", "https://t.me/LegendBot_Pros"),
+                    Button.url(" Repo ", "https://github.com/MR-KANNADIGA/KANNADIGA-BOT"),
+                    Button.url(" Support ", "https://t.me/NAAN_1_KANNADIGA"),
                 ],
             ],
         )

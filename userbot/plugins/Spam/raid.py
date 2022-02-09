@@ -337,16 +337,16 @@ async def spam(e):
     if ABUSE == "ON":
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
-        legend = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        KANNADIGA = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         await e.get_reply_message()
-        if len(legend) == 2:
-            message = str(legend[1])
+        if len(KANNADIGA) == 2:
+            message = str(KANNADIGA[1])
             print(message)
             a = await e.client.get_entity(message)
             g = a.id
             c = a.first_name
             username = f"[{c}](tg://user?id={g})"
-            counter = int(legend[0])
+            counter = int(KANNADIGA[0])
             for _ in range(counter):
                 reply = random.choice(RAID)
                 caption = f"{username} {reply}"
@@ -358,7 +358,7 @@ async def spam(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             c = b.first_name
-            counter = int(legend[0])
+            counter = int(KANNADIGA[0])
             username = f"[{c}](tg://user?id={g})"
             for _ in range(counter):
                 reply = random.choice(RAID)
@@ -393,10 +393,10 @@ async def _(e):
         usage = "/replyraid"
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
-        legend = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        KANNADIGA = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         await e.get_reply_message()
         if len(e.text) > 11:
-            message = str(legend[0])
+            message = str(KANNADIGA[0])
             a = await e.client.get_entity(message)
             g = a.id
             que[g] = []
@@ -413,7 +413,7 @@ async def _(e):
             qeue = que.get(g)
             appendable = [g]
             qeue.append(appendable)
-            text = f"**Activated Reply Raid By {legend_mention}**"
+            text = f"**Activated Reply Raid By {KANNADIGA_mention}**"
             await e.reply(text, parse_mode=None, link_preview=None)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
@@ -428,10 +428,10 @@ async def _(e):
         usage = "/dreplyraid "
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
-        legend = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        KANNADIGA = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         await e.get_reply_message()
         if len(e.text) > 11:
-            message = str(legend[0])
+            message = str(KANNADIGA[0])
             a = await e.client.get_entity(message)
             g = a.id
             que[g] = []

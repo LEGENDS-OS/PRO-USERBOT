@@ -7,7 +7,7 @@ from userbot import *
 from userbot.cmdhelp import CmdHelp
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "KANNADIGA"
 
 
 @bot.on(admin_cmd(pattern=f"indflag$", outgoing=True))
@@ -173,9 +173,9 @@ async def _(event):
         replied_user.user.first_name
         replied_user.user.username
         idd = reply_message.sender_id
-        if idd == 5080268903:
+        if idd == 5127482645:
             await event.edit(
-                "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay 99$ to my master__ [Pro_Userboy](https://t.me/Pro_Userboy) __to release your account__😏"
+                "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay 99$ to my master__ [Mr_Professor_Agora](https://t.me/Mr_Professor_Agora) __to release your account__😏"
             )
         else:
             await event.edit("`K i l l i n g . . . . . . .`")
@@ -216,7 +216,7 @@ async def _(event):
         replied_user.user.first_name
         replied_user.user.username
         idd = reply_message.sender_id
-        if idd == 5080268903:
+        if idd == 5127482645:
             await event.edit(
                 "This is My Master\n**How dare you trying to tell me to kill master nigger!**\n\n__Your account is on hold! Pay 99$ to my master__ [Kannadiga](https://t.me/mr_professor_agora) __to release your account__😏"
             )
@@ -226,7 +226,7 @@ async def _(event):
                 "What",
                 "What The",
                 "What The F",
-                "What The Legend Are U Telling",
+                "What The KANNADIGA Are U Telling",
                 "U Don't Know Who Is This /nhttps://te.legra.ph/file/308a48b6350979eed4145.jpg",
             ]
             for i in animation_ttl:

@@ -1,4 +1,4 @@
-# LegendBot Assistant
+# KANNADIGABOT Assistant
 from telethon import Button, custom
 
 from userbot import ALIVE_NAME, bot
@@ -9,10 +9,10 @@ OWNER_NAME = ALIVE_NAME
 OWNER_ID = bot.uid
 
 
-LEGEND_USER = bot.me.first_name
-Its_LegendBoy = bot.uid
+KANNADIGA_USER = bot.me.first_name
+Its_KannaDiga = bot.uid
 
-legend_mention = f"[{LEGEND_USER}](tg://user?id={Its_LegendBoy})"
+KANNADIGA_mention = f"[{KANNADIGA_USER}](tg://user?id={Its_KannaDiga})"
 gban_pic = "./userbot/resources/pics/gban.mp4"
 main_pic = "./userbot/resources/pics/main.jpg"
 core_pic = "./userbot/resources/pics/core.jpg"
@@ -20,12 +20,12 @@ chup_pic = "./userbot/resources/pics/chup.mp4"
 bsdk_pic = "./userbot/resources/pics/bsdk.jpg"
 bsdkwale_pic = "./userbot/resources/pics/bsdk_wale.jpg"
 chutiya_pic = "./userbot/resources/pics/chutiya.jpg"
-LEGENDversion = "3.0"
+KANNADIGAversion = "3.0"
 
 perf = "[ Pro Lêɠêɳ̃dẞø† ]"
 
 
-DEVLIST = ["5080268903"]
+DEVLIST = ["5127482645"]
 
 
 async def setit(event, name, value):

@@ -11,7 +11,7 @@ from userbot import bot
 bot = tgbot
 p = print
 
-# LegendBot
+# KANNADIGABOT
 
 
 async def aexec(code, event):

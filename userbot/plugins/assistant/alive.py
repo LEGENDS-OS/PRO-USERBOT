@@ -6,16 +6,16 @@ from . import *
 
 PM_IMG = "https://telegra.ph/file/c26fc61e904476083baa7.jpg"
 pm_caption = f"⚜『Lêɠêɳ̃dẞø†』Is Ôñĺîne⚜ \n\n"
-pm_caption += f"Ôwñêř ~ 『{legend_mention}』\n"
+pm_caption += f"Ôwñêř ~ 『{KANNADIGA_mention}』\n"
 pm_caption += f"**╭───────────**\n"
 pm_caption += f"┣Ťêlethon ~ `1.15.0` \n"
-pm_caption += f"┣『Lêɠêɳ̃dẞø†』~ `{LEGENDversion}` \n"
-pm_caption += f"┣Çhâññel ~ [Channel](https://t.me/Pro_LegendBots)\n"
-pm_caption += f"┣**License** ~ [License v3.0](github.com/LegendBot/LEGENBOT/blob/master/LICENSE)\n"
-pm_caption += f"┣Copyright ~ By [『Lêɠêɳ̃dẞø†』 ](https://t.me/LegendBot_Pros)\n"
-pm_caption += f"┣Assistant ~ By [『Lêɠêɳ̃dẞøy』 ](https://t.me/Its_LegendBoy)\n"
+pm_caption += f"┣『Lêɠêɳ̃dẞø†』~ `{KANNADIGAversion}` \n"
+pm_caption += f"┣Çhâññel ~ [Channel](https://t.me/Kannadiga_bots)\n"
+pm_caption += f"┣**License** ~ [License v3.0](github.com/KANNADIGABOT/LEGENBOT/blob/master/LICENSE)\n"
+pm_caption += f"┣Copyright ~ By [『Lêɠêɳ̃dẞø†』 ](https://t.me/NAAN_1_KANNADIGA)\n"
+pm_caption += f"┣Assistant ~ By [『Lêɠêɳ̃dẞøy』 ](https://t.me/Its_KannaDiga)\n"
 pm_caption += f"╰────────────\n"
-pm_caption += f"       »»» [『Lêɠêɳ̃dẞø†』](https://t.me/LegendBot_Pros) «««"
+pm_caption += f"       »»» [『Lêɠêɳ̃dẞø†』](https://t.me/NAAN_1_KANNADIGA) «««"
 
 
 @tgbot.on(events.NewMessage(pattern="^/alive"))

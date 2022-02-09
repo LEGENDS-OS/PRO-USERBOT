@@ -494,4 +494,4 @@ CmdHelp("animations6").add_command("bigoof", None, "🇮🇳🇮🇳🇮🇳").a
     "Addons"
 ).add()
 
-# LegendBot
+# KANNADIGABOT

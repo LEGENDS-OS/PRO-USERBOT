@@ -1,5 +1,5 @@
 # credits to userge
-# ported to LegendBot by @Its_LegendBoy
+# ported to KANNADIGABOT by @Its_KannaDiga
 
 import asyncio
 import os
