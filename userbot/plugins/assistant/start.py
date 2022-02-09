@@ -66,7 +66,9 @@ async def start(event):
             link_preview=False,
             buttons=[
                 [
-                    Button.url(" Repo ", "https://github.com/MR-KANNADIGA/KANNADIGA-BOT"),
+                    Button.url(
+                        " Repo ", "https://github.com/MR-KANNADIGA/KANNADIGA-BOT"
+                    ),
                     Button.url(" Support ", "https://t.me/NAAN_1_KANNADIGA"),
                 ],
             ],

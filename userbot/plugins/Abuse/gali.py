@@ -13,7 +13,9 @@ async def yashraid(event):
         kek = event.chat_id
         await KANNADIGA.send_message(kek, "TERI MA KI CHOOXT MAARUU BSDKEE")
         await KANNADIGA.send_message(kek, "TERI BHN KA BHOSXDA FAAD DIA MADARCHOD")
-        await KANNADIGA.send_message(kek, "TERI BHN KI GANXD ME DYNAMTE LAGA KE UDA DIA")
+        await KANNADIGA.send_message(
+            kek, "TERI BHN KI GANXD ME DYNAMTE LAGA KE UDA DIA"
+        )
         await KANNADIGA.send_message(kek, "KANNADIGA OP HAI HM BAAP BOLTE HMKO")
         await KANNADIGA.send_message(kek, "TERI MAA KO CHOODUU")
         await KANNADIGA.send_message(kek, "MAADARCHODD")
@@ -36,7 +38,8 @@ async def yashraid(event):
         await KANNADIGA.send_message(kek, "TUM SABB KAA")
         await KANNADIGA.send_message(kek, " BAAAP HAII")
         await KANNADIGA.send_message(
-            kek, "KANNADIGA HAI HM HMKO KAHTE H OP AUR BETE TUM KANNADIGA KE LAND KI TOPI"
+            kek,
+            "KANNADIGA HAI HM HMKO KAHTE H OP AUR BETE TUM KANNADIGA KE LAND KI TOPI",
         )
         await KANNADIGA.send_message(kek, "😂")
         await KANNADIGA.send_message(kek, "TERI GAMD TOD DI JAYEGI MADDRCHOD")
@@ -84,14 +87,18 @@ async def yashraid(event):
         await KANNADIGA.send_message(kek, "MAZAA DETI")
         await KANNADIGA.send_message(kek, "HAII")
         await KANNADIGA.send_message(kek, "TUMHARII MAA")
-        await KANNADIGA.send_message(kek, "KANNADIGA NE TUMHARI BHN KO PURII RAT CHOXDAAA ")
+        await KANNADIGA.send_message(
+            kek, "KANNADIGA NE TUMHARI BHN KO PURII RAT CHOXDAAA "
+        )
         await KANNADIGA.send_message(kek, "😂")
         await KANNADIGA.send_message(kek, "TERI MAKI CHOOT 3 BAAR")
         await KANNADIGA.send_message(kek, "BAAP HAII H HUM")
         await KANNADIGA.send_message(kek, "TERII MAA")
         await KANNADIGA.send_message(kek, "KOO")
         await KANNADIGA.send_message(kek, "BHUTT GANDAA CHODAA")
-        await KANNADIGA.send_message(kek, "BHOXDIKE AUKAAT BNA FRR KANNADIGA SE PANGE LENA")
+        await KANNADIGA.send_message(
+            kek, "BHOXDIKE AUKAAT BNA FRR KANNADIGA SE PANGE LENA"
+        )
         await KANNADIGA.send_message(kek, "GANDUUU")
         await KANNADIGA.send_message(kek, "KIII MAAA")
         await KANNADIGA.send_message(kek, "KIII CHUTTT")
