@@ -41,15 +41,15 @@ NEW_BOT_UP_DATE_FOUND = (
     "updating your KannadigaBot ..."
 )
 NEW_UP_DATE_FOUND = (
-    "New update found for {branch_name}\n" "`updating your LegendBot...`"
+    "New update found for {branch_name}\n" "`updating your KANNADIGABOT...`"
 )
 REPO_REMOTE_NAME = "temponame"
 IFFUCI_ACTIVE_BRANCH_NAME = "Pro"
 DIFF_MARKER = "HEAD..{remote_name}/{branch_name}"
 NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 
-PRO_LEGENDBOT_info = (
-    "https://raw.githubusercontent.com/Legendbot/PRO-USERBOT/Pro/proboy-info.json"
+PRO_KANNADIGABOT_info = (
+    "https://raw.githubusercontent.com/KANNADIGABOT/KANNADIGA-USERBOT/Pro/proboy-info.json"
 )
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 requirements_path = os.path.join(
@@ -57,7 +57,7 @@ requirements_path = os.path.join(
 )
 
 
-async def legend_info(KANNADIGABOTinfo):
+async def KANNADIGA_info(KANNADIGABOTinfo):
     infos = requests.get(KANNADIGABOT_info).json()
     _version = infos["KannadigaBot-INFO"]["version"]
     _release = infos["KannadigaBot-INFO"]["release-date"]
@@ -105,7 +105,7 @@ async def print_changelogs(event, ac_br, changelog):
             event.chat_id,
             "output.txt",
             reply_to=event.id,
-            thumb=legend_logo1,
+            thumb=KANNADIGA_logo1,
         )
         os.remove("output.txt")
     else:
@@ -197,7 +197,7 @@ async def upstream(event):
     if changelog == "" and not force_update:
         await event.edit(
             "\n**😎 Kannadiga Bot is UP-TO-DATE.**"
-            f"\n\n**Version :**  {LEGENDversion}"
+            f"\n\n**Version :**  {KANNADIGAversion}"
             f"\n**Owner :**  [Mr Kannadiga](t.me/mr_professor_agora)"
             "\nRelease Date : 05 FEBRUARY 2022"
             f"\n**Git Branch :**  {UPSTREAM_REPO_BRANCH}\n"
@@ -207,14 +207,14 @@ async def upstream(event):
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
         return await event.respond(
-            f"🌚 Do `.update build` to update your **Legendẞø†** !!"
+            f"🌚 Do `.update build` to update your **KANNADIGAẞø†** !!"
         )
 
     if force_update:
         await event.edit(
             "\n**😎 Kannadiga bot is UP-TO-DATE.**"
-            f"\n\n**Version :**  {LEGENDversion}"
-            f"\n**Owner :**  {legend_mention}"
+            f"\n\n**Version :**  {KANNADIGAversion}"
+            f"\n**Owner :**  {KANNADIGA_mention}"
             "\nRelease Date : 16 December 2021"
             f"\n**Git Branch :**  {UPSTREAM_REPO_BRANCH}\n"
         )
@@ -231,11 +231,11 @@ async def upstream(event):
         event,
         "`Hard-Update In Progress... \nPlease wait until docker build is finished...`",
     )
-    off_repo = "https://github.com/PROBOY-OP/LegendBot"
+    off_repo = "https://github.com/MR-KANNADIGA/KANNADIGABOT"
     os.chdir("/app")
-    git_legend = f"rm -rf .git"
+    git_KANNADIGA = f"rm -rf .git"
     try:
-        await runcmd(git_legend)
+        await runcmd(git_KANNADIGA)
     except BaseException:
         pass
     txt = "😕 `Updater cannot continue due to some problems occured`\n\n**LOGTRACE:**\n"
@@ -261,8 +261,8 @@ async def upstream(event):
     ac_br = repo.active_branch.name
     ups_rem = repo.remote("upstream")
     ups_rem.fetch(ac_br)
-    _version, _release, _branch, _author, _auturl = await legend_info(
-        PRO_LEGENDBOT_info
+    _version, _release, _branch, _author, _auturl = await KANNADIGA_info(
+        PRO_KANNADIGABOT_info
     )
     await event.edit(
         f"<b><i>Kannadiga Bot Docker Build In Progress !!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>",
@@ -405,7 +405,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         await event.edit(
-            f"**Your Kannadiga Bot Is UpToDate**\n\n**Version :**  __{LEGENDversion}__\n**Oɯɳҽɾ :**  {legend_mention}"
+            f"**Your Kannadiga Bot Is UpToDate**\n\n**Version :**  __{KANNADIGAversion}__\n**Oɯɳҽɾ :**  {KANNADIGA_mention}"
         )
     else:
         await event.edit(

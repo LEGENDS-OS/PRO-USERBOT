@@ -15,7 +15,7 @@ USER_night = {}
 night_time = None
 last_night_message = {}
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "KANNADIGA"
 
 
 @borg.on(events.NewMessage(outgoing=True))  # pylint:disable=E0602
@@ -35,7 +35,7 @@ async def set_not_night(event):
                 event.chat_id,
                 "Please set `PLUGIN_CHANNEL` "
                 + "for the proper functioning of night functionality "
-                + "report in [LegendBot](t.me/LegendBot_Pros)\n\n `{}`".format(str(e)),
+                + "report in [KANNADIGABOT](t.me/NAAN_1_KANNADIGA)\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )

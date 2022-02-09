@@ -36,8 +36,8 @@ from userbot.utils import admin_cmd, edit_or_reply, progress, sudo_cmd
 @bot.on(admin_cmd(pattern="lyrics(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="lyrics(?: |$)(.*)", allow_sudo=True))
 async def nope(aura):
-    LEGEND = aura.pattern_match.group(1)
-    if not LEGEND:
+    KANNADIGA = aura.pattern_match.group(1)
+    if not KANNADIGA:
         if aura.is_reply:
             (await aura.get_reply_message()).message
         else:
@@ -46,7 +46,7 @@ async def nope(aura):
             )
             return
 
-    troll = await bot.inline_query("iLyricsBot", f"{(deEmojify(LEGEND))}")
+    troll = await bot.inline_query("iLyricsBot", f"{(deEmojify(KANNADIGA))}")
 
     await troll[0].click(
         aura.chat_id,
@@ -127,7 +127,7 @@ async def _(event):
     hell = await eor(event, f"__Searching for__ `{query}`")
     hel_ = await song_search(event, query, max_results, details=True)
     x, title, views, duration, thumb = hel_[0], hel_[1], hel_[2], hel_[3], hel_[4]
-    thumb_name = f"thumb{Pro_Userboy}.jpg"
+    thumb_name = f"thumb{Mr_Professor_Agora}.jpg"
     thumbnail = requests.get(thumb, allow_redirects=True)
     open(thumb_name, "wb").write(thumbnail.content)
     url = x.replace("\n", "")
@@ -164,7 +164,7 @@ async def _(event):
         event.chat_id,
         f"{hell_data['id']}.mp3",
         supports_streaming=True,
-        caption=f"**✘ Song -** `{title}` \n**✘ Views -** `{views}` \n**✘ Duration -** `{duration}` \n\n**✘ By :** {legend_mention}",
+        caption=f"**✘ Song -** `{title}` \n**✘ Views -** `{views}` \n**✘ Duration -** `{duration}` \n\n**✘ By :** {KANNADIGA_mention}",
         thumb=thumb_name,
         attributes=[
             DocumentAttributeAudio(
@@ -191,7 +191,7 @@ async def _(event):
     hell = await eor(event, f"__Searching for__ `{query}`")
     hel_ = await song_search(event, query, max_results, details=True)
     x, title, views, duration, thumb = hel_[0], hel_[1], hel_[2], hel_[3], hel_[4]
-    thumb_name = f"thumb{Pro_Userboy}.jpg"
+    thumb_name = f"thumb{Mr_Professor_Agora}.jpg"
     thumbnail = requests.get(thumb, allow_redirects=True)
     open(thumb_name, "wb").write(thumbnail.content)
     url = x.replace("\n", "")
@@ -228,7 +228,7 @@ async def _(event):
         event.chat_id,
         f"{hell_data['id']}.mp4",
         supports_streaming=True,
-        caption=f"**✘ Video :** `{title}` \n\n**✘ By :** {legend_mention}",
+        caption=f"**✘ Video :** `{title}` \n\n**✘ By :** {KANNADIGA_mention}",
         thumb=thumb_name,
         progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
             progress(d, t, event, c_time, "Uploading..", f"{hell_data['title']}.mp4")
@@ -381,7 +381,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 songh,
-                caption="🔆**Here's the requested song!**🔆\n`Check out` [LegendBot](https://t.me/LEGENDSupport)",
+                caption="🔆**Here's the requested song!**🔆\n`Check out` [KANNADIGABOT](https://t.me/KANNADIGASupport)",
             )
             await event.delete()
         except YouBlockedUserError:

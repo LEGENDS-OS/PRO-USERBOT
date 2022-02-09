@@ -112,7 +112,7 @@ async def _(event):
 
 
 CmdHelp("welcome").add_command(
-    "listwelcome", None, "Gets the saved welcome message of LegendBot"
+    "listwelcome", None, "Gets the saved welcome message of KANNADIGABOT"
 ).add_command(
     "clearwelcome", None, "Clears/Deletes the welcome message (if any)"
 ).add_command(

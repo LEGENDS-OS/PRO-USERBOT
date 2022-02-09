@@ -194,7 +194,7 @@ async def _(event):
                     event.chat_id,
                     downloaded_file_name,
                     thumb=thumb,
-                    caption="reuploaded by [LegendBot](https://t.me/LEGENDSupport)",
+                    caption="reuploaded by [KANNADIGABOT](https://t.me/KANNADIGASupport)",
                     force_document=False,
                     allow_cache=False,
                     reply_to=event.message.id,

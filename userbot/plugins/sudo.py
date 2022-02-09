@@ -11,7 +11,7 @@ Heroku = heroku3.from_key(Config.HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
 sudousers = os.environ.get("SUDO_USERS")
 LOP = Var.HEROKU_APP_NAME
-LEGEND = Var.HEROKU_API_KEY
+KANNADIGA = Var.HEROKU_API_KEY
 
 
 async def get_user(event):
@@ -67,7 +67,7 @@ async def add(event):
 
 @bot.on(admin_cmd(pattern="rmsudo"))
 async def remove_sudo(event):
-    Heroku = heroku3.from_key(LEGEND)
+    Heroku = heroku3.from_key(KANNADIGA)
     app = Heroku.app(LOP)
     heroku_var = app.config()
     if not event.is_reply:
@@ -98,7 +98,7 @@ async def remove_sudo(event):
 @bot.on(admin_cmd("listsudo"))
 async def sudolists(event):
     op = await event.edit("Checking All Sudos")
-    Heroku = heroku3.from_key(LEGEND)
+    Heroku = heroku3.from_key(KANNADIGA)
     app = Heroku.app(LOP)
     app.config()
     if not sudousers:

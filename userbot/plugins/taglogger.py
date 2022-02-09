@@ -25,11 +25,11 @@ if Config.LOGGER_ID:
         # the message format is stolen from @MasterTagAlertBot
         ammoca_message = ""
 
-        legend = await event.client.get_entity(event.sender_id)
-        if legend.bot or legend.verified or legend.support:
+        KANNADIGA = await event.client.get_entity(event.sender_id)
+        if KANNADIGA.bot or KANNADIGA.verified or KANNADIGA.support:
             return
 
-        legendm = f"[{get_display_name(legend)}](tg://user?id={legend.id})"
+        KANNADIGAm = f"[{get_display_name(KANNADIGA)}](tg://user?id={KANNADIGA.id})"
 
         where_ = await event.client.get_entity(event.chat_id)
 
@@ -45,7 +45,7 @@ if Config.LOGGER_ID:
             message_link = f"tg://openmessage?chat_id={where_.id}&message_id={event.id}"
             # Telegram is weird :\
 
-        ammoca_message += f"{legendm} `just tagged you...` \nWhere?\nIn [{where_m}]({message_link})\n__Tap to go the tagged msg__📬🚶"
+        ammoca_message += f"{KANNADIGAm} `just tagged you...` \nWhere?\nIn [{where_m}]({message_link})\n__Tap to go the tagged msg__📬🚶"
         if tagger is not None:
             await bot.send_message(
                 entity=tagger,

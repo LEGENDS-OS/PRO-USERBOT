@@ -60,7 +60,7 @@ async def _(event):
     if not reply_message.text:
         await edit_or_reply(event, "```Reply to text message```")
         return
-    LEGEND = event.pattern_match.group(1)
+    KANNADIGA = event.pattern_match.group(1)
     chat = "@QuotLyBot"
     reply_message.sender
     if reply_message.sender.bot:
@@ -72,7 +72,7 @@ async def _(event):
             response = conv.wait_event(
                 events.NewMessage(incoming=True, from_users=1031952739)
             )
-            await conv.send_message(f"/qcolor {LEGEND}")
+            await conv.send_message(f"/qcolor {KANNADIGA}")
             await asyncio.sleep(4)
             await bot.forward_messages(chat, reply_message)
             response = await response

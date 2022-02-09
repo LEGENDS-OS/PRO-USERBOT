@@ -345,9 +345,9 @@ async def _(event):
             return
     except:
         if (
-            FBAN == "@Pro_Userboy"
-            or FBAN == "@LegendBot_Pros"
-            or FBAN == "@LEGEND_CoOwnerr"
+            FBAN == "@Mr_Professor_Agora"
+            or FBAN == "@NAAN_1_KANNADIGA"
+            or FBAN == "@KANNADIGA_CoOwnerr"
         ):
             await event.edit("Something went wrong.")
             return
@@ -515,7 +515,7 @@ CmdHelp("superfban").add_command(
     "<User-id> or reply to a user",
     "Unban the selected user from all the federations",
 ).add_command(
-    "legendinfo", "<User-id> or reply to a user", "Gives info about the user"
+    "KANNADIGAinfo", "<User-id> or reply to a user", "Gives info about the user"
 ).add_command(
     "supermyfeds", None, "gives the list of your admin feds"
 ).add_command(

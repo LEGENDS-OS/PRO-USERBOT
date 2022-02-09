@@ -9,9 +9,9 @@ from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 from userbot.utils import admin_cmd, edit_or_reply, eor, sudo_cmd
 
-from . import legend_mention
+from . import KANNADIGA_mention
 
-LEGEND_NAME = Config.ALIVE_NAME or "Legendẞø†"
+KANNADIGA_NAME = Config.ALIVE_NAME or "KANNADIGAẞø†"
 lg_id = Config.LOGGER_ID
 
 telegraph = Telegraph()
@@ -63,7 +63,7 @@ async def _(event):
                     "✓ **[File uploaded to telegraph](https://telegra.ph{})** \n✓ **Time Taken :-** `{}` secs \n✓ **By :- {}** \n✓  `https://telegra.ph{}`".format(
                         media_urls[0],
                         (ms + ms_two),
-                        legend_mention,
+                        KANNADIGA_mention,
                         media_urls[0],
                     ),
                     link_preview=True,
@@ -91,10 +91,10 @@ async def _(event):
             response = telegraph.create_page(title_of_page, html_content=page_content)
             end = datetime.datetime.now()
             ms = (end - start).seconds
-            legendboy = f"https://telegra.ph/{response['path']}"
+            KannaDiga = f"https://telegra.ph/{response['path']}"
             await edit_or_reply(
                 event,
-                f"✓ **[Pasted to telegraph]({legendboy})** \n✓ **Time Taken :-** `{ms}` secs\n✓** By :**  {legend_mention} \n✓  `{legendboy}`",
+                f"✓ **[Pasted to telegraph]({KannaDiga})** \n✓ **Time Taken :-** `{ms}` secs\n✓** By :**  {KANNADIGA_mention} \n✓  `{KannaDiga}`",
                 link_preview=True,
             )
     else:

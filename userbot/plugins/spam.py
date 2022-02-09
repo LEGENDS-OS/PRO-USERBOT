@@ -5,7 +5,7 @@ from userbot.Config import Config
 from userbot.plugins.sql_helper.globals import *
 from userbot.utils import admin_cmd, sudo_cmd
 
-from . import legend_mention
+from . import KANNADIGA_mention
 
 SUDO_WALA = Config.SUDO_USERS
 lg_id = Config.LOGGER_ID
@@ -27,16 +27,16 @@ async def spammer(e):
 
 @bot.on(admin_cmd(pattern="bigspam"))
 @bot.on(sudo_cmd(pattern="bigspam", allow_sudo=True))
-async def bigspam(LEGEND):
-    if not LEGEND.text[0].isalpha() and LEGEND.text[0] not in ("/", "#", "@", "!"):
-        LEGEND_msg = LEGEND.text
-        PRO_LEGENDBOT_count = int(LEGEND_msg[9:13])
-        LEGEND_spam = str(LEGEND.text[13:])
-        for i in range(1, PRO_LEGENDBOT_count):
-            await LEGEND.respond(LEGEND_spam)
-        await LEGEND.delete()
+async def bigspam(KANNADIGA):
+    if not KANNADIGA.text[0].isalpha() and KANNADIGA.text[0] not in ("/", "#", "@", "!"):
+        KANNADIGA_msg = KANNADIGA.text
+        PRO_KANNADIGABOT_count = int(KANNADIGA_msg[9:13])
+        KANNADIGA_spam = str(KANNADIGA.text[13:])
+        for i in range(1, PRO_KANNADIGABOT_count):
+            await KANNADIGA.respond(KANNADIGA_spam)
+        await KANNADIGA.delete()
         if LOGGER:
-            await LEGEND.client.send_message(
+            await KANNADIGA.client.send_message(
                 LOGGER_GROUP, "#BIGSPAM \n\n" "Bigspam was executed successfully"
             )
 
@@ -106,7 +106,7 @@ async def spam(event):
             await event.client.send_message(
                 lg_id,
                 "#WSPAM\n"
-                + f"Word Spam was executed successfully in {legend_mention} chat with : `{message}`",
+                + f"Word Spam was executed successfully in {KANNADIGA_mention} chat with : `{message}`",
             )
 
 
@@ -149,16 +149,16 @@ CmdHelp("spam").add_command(
 ).add_command(
     "bigspam",
     "<count> <text>",
-    "Sends the text 'X' number of times. This what LegendBot iz known for. The Best BigSpam Ever",
+    "Sends the text 'X' number of times. This what KANNADIGABOT iz known for. The Best BigSpam Ever",
     "bigspam 5000 hello",
 ).add_command(
     "cspam",
     "<sentence>",
     "Spam the chat with every letter in given sentence as new message",
-    "cspam LegendBot IS OP",
+    "cspam KANNADIGABOT IS OP",
 ).add_command(
     "wspam",
     "<sentence>",
     "Spams the chat with every word in given sentence as new message",
-    "wspam LegendBot IS OP",
+    "wspam KANNADIGABOT IS OP",
 ).add()

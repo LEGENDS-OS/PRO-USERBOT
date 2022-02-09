@@ -1,7 +1,7 @@
 import os
 import sys
 
-from userbot import HEROKU_APP, LEGENDversion, bot
+from userbot import HEROKU_APP, KANNADIGAversion, bot
 from userbot.cmdhelp import CmdHelp
 from userbot.helpers.runner import reload_KANNADIGABOT
 from userbot.utils import admin_cmd, eor, sudo_cmd
@@ -16,7 +16,7 @@ async def _(event):
     await event.edit("Rєϐοοτιиg **[ ██░ ]** ...\nωαιτ ƒєω мιиυτє☢️")
     await event.edit("Rєϐοοτιиg **[ ███ ]** ...\nωαιτ ƒєω мιиυτєѕ☢️")
     await event.edit(
-        f"Rebooted Kannadiga Bot - {LEGENDversion} **[ ⚡ ]** ...\n**Type `.ping` or `.kannadiga` after 5min to check if I am working**"
+        f"Rebooted Kannadiga Bot - {KANNADIGAversion} **[ ⚡ ]** ...\n**Type `.ping` or `.kannadiga` after 5min to check if I am working**"
     )
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)

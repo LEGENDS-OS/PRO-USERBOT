@@ -13,12 +13,12 @@ from userbot.utils import *
 
 from . import *
 
-LEGEND = [
+KANNADIGA = [
     "Wait Few Minute...",
     "Wait A Sec Processing...",
 ]
 
-legend = Config.CUSTOM_STICKER_PACK_NAME
+KANNADIGA = Config.CUSTOM_STICKER_PACK_NAME
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="png"))
@@ -46,7 +46,7 @@ async def kang(args):
                 message.media.document.attributes[1].alt
                 emojibypass = True
         elif "tgsticker" in message.media.document.mime_type:
-            await args.edit(f"`{random.choice(LEGEND)}`")
+            await args.edit(f"`{random.choice(KANNADIGA)}`")
             await bot.download_file(message.media.document, "AnimatedSticker.tgs")
 
             attributes = message.media.document.attributes
@@ -84,9 +84,9 @@ async def kang(args):
 
         packname = f"{user.username}"
         packnick = (
-            f"{legend} Vol.{pack}"
-            if legend
-            else f"@{user.username}'s legend Vol.{pack}"
+            f"{KANNADIGA} Vol.{pack}"
+            if KANNADIGA
+            else f"@{user.username}'s KANNADIGA Vol.{pack}"
         )
         file = io.BytesIO()
         await args.delete()

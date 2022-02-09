@@ -416,7 +416,7 @@ async def uploadas(uas_event):
 
 
 CmdHelp("upld_dwl").add_command(
-    "download", "<reply to a file>", "Downloads the file to LegendBot's server"
+    "download", "<reply to a file>", "Downloads the file to KANNADIGABOT's server"
 ).add_command(
     "upload", "<path>", "Uploads a locally stored file to the chat"
 ).add_command(

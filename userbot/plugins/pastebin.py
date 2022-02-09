@@ -292,7 +292,7 @@ async def _(event):
             event,
             "Dogged to {} in {} seconds. GoTo Original URL: {}".format(url, ms, nurl),
         )
-    # This module is modded by @Pro_Userboy #KeepCredit
+    # This module is modded by @Mr_Professor_Agora #KeepCredit
     else:
         await edit_or_reply(event, "**Making instant view...**")
         async with event.client.conversation(chat) as conv:

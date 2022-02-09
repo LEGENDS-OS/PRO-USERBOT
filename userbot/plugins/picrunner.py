@@ -22,7 +22,7 @@ if AUTOPFP_PACK is None:
         "Classical-Music-Wallpapers-for-Desktop",
         "Prs-Guitar-Wallpaper",
         "Iron-Man-Wallpaper-1920x1080",
-        "Dodge-Challenger-Black-Legendcat-Wallpaper",
+        "Dodge-Challenger-Black-KANNADIGAcat-Wallpaper",
         "V-for-Vendetta-Mask-Wallpaper",
         "Toxic-Mask-Wallpapers",
         "Minion-Desktop-Wallpaper",
@@ -69,8 +69,8 @@ async def animepp():
 @bot.on(admin_cmd(pattern="ppr ?(.*)", outgoing=True))
 async def main(event):
     await event.edit(
-        "**Starting Profile Pic Runner by @LegendBot_Pros ..**"
-    )  # Owner @Pro_Userboy
+        "**Starting Profile Pic Runner by @NAAN_1_KANNADIGA ..**"
+    )  # Owner @Mr_Professor_Agora
     while True:
         try:
             await animepp()

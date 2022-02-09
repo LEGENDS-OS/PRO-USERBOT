@@ -15,7 +15,7 @@ async def stats(
     event: NewMessage.Event,
 ) -> None:  # pylint: disable = R0912, R0914, R0915
     """Command to get stats about the account"""
-    LEGEND = await edit_or_reply(event, "`Collecting stats...`")
+    KANNADIGA = await edit_or_reply(event, "`Collecting stats...`")
     start_time = time.time()
     private_chats = 0
     bots = 0
@@ -78,8 +78,8 @@ async def stats(
     response += f"⚜                 **Unread** : {unread} \n"
     response += f" **Unread мємτιοиѕ** : {unread_mentions} \n\n"
     response += f"       __ιτ τοοκ :__ {stop_time:.02f}s \n"
-    response += f"ƒɾσɱ ƭɦε ∂αƭαɓαรε σƒ:-[♥️𝖑𝖊ɠêɳ̃dẞø✞︎♥️](https://t.me/LegendBot_Pros)"
-    await LEGEND.edit(response)
+    response += f"ƒɾσɱ ƭɦε ∂αƭαɓαรε σƒ:-[♥️𝖑𝖊ɠêɳ̃dẞø✞︎♥️](https://t.me/NAAN_1_KANNADIGA)"
+    await KANNADIGA.edit(response)
 
 
 def make_mention(user):

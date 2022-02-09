@@ -1,1 +1,1 @@
-# LegendBot-Addons
+# KANNADIGABOT-Addons

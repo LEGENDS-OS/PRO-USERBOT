@@ -50,11 +50,11 @@ async def _(event):
 
 @bot.on(admin_cmd(pattern=r"trc", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"trc", allow_sudo=True))
-async def _(LEGEND):
-    if LEGEND.fwd_from:
+async def _(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
     await edit_or_reply(
-        LEGEND,
+        KANNADIGA,
         "**•ALL COUNTRY LANGUAGE CODE CAN BE FOUND HERE** \n ⚡ [HERE](http://www.lingoes.net/en/translator/langcode.htm) ⚡",
     )
 

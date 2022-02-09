@@ -7,9 +7,9 @@ from ..cmdhelp import CmdHelp
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 from . import *
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
-legend = borg.uid
-LEGEND_IMG = os.environ.get(
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "KANNADIGA User"
+KANNADIGA = borg.uid
+KANNADIGA_IMG = os.environ.get(
     "PING_PIC", "https://te.legra.ph/file/4eba78d12030ad7ad7f04.mp4"
 )
 
@@ -71,11 +71,11 @@ async def _(event):
     if event.fwd_from:
         return
     event = await edit_or_reply(event, "**(❛ ᑭσɳց ❜!**")
-    if LEGEND_IMG:
-        legend_caption = (
-            f"**💞Pong💞**\n\n   🔸️ {ms}\n   🔹️ **𝙼𝚢** **𝙼𝚊𝚜𝚝𝚎𝚛** ~『{legend_mention}』"
+    if KANNADIGA_IMG:
+        KANNADIGA_caption = (
+            f"**💞Pong💞**\n\n   🔸️ {ms}\n   🔹️ **𝙼𝚢** **𝙼𝚊𝚜𝚝𝚎𝚛** ~『{KANNADIGA_mention}』"
         )
-        await event.client.send_file(event.chat_id, LEGEND_IMG, caption=legend_caption)
+        await event.client.send_file(event.chat_id, KANNADIGA_IMG, caption=KANNADIGA_caption)
         await event.delete()
 
 

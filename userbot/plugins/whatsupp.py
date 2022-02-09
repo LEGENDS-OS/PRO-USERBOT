@@ -22,4 +22,4 @@ async def payf(event):
     await event.edit(pay)
 
 
-CmdHelp("whatsupp").add_command("ftype", "Use and See", "Eg:-.ftype legend").add()
+CmdHelp("whatsupp").add_command("ftype", "Use and See", "Eg:-.ftype KANNADIGA").add()

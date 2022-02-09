@@ -18,7 +18,7 @@ async def _(event):
         )
     if x == 2:
         await event.edit(
-            "DON'T TRY TO KNOW ABUOT ME I M LEGEND✌️ @Pro_Userboy\nfrom: @LegendBot_Pros"
+            "DON'T TRY TO KNOW ABUOT ME I M KANNADIGA✌️ @Mr_Professor_Agora\nfrom: @NAAN_1_KANNADIGA"
         )
     if x == 3:
         await event.edit(
@@ -99,7 +99,7 @@ async def _(event):
             "America Ke Pas Superman Hai,\nBatman Hai, Spiderman Hai…\n Lekin India Ke Pas Padman Hai\nFrom: Padman"
         )
     if x == 25:
-        await event.edit("Written and Created By: @Pro_Userboy ! thank you🙏🏻❤")
+        await event.edit("Written and Created By: @Mr_Professor_Agora ! thank you🙏🏻❤")
 
 
 CmdHelp("randomdialogue").add_command("rfilmy", None, "Use and See").add()

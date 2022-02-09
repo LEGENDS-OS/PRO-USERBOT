@@ -16,7 +16,7 @@ async def _(event):
     input_str = event.pattern_match.group(1)
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
-    LEGENDevent = await edit_or_reply(event, "Downloading to my local, for analysis  🙇")
+    KANNADIGAevent = await edit_or_reply(event, "Downloading to my local, for analysis  🙇")
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
         required_file_name = await event.client.download_media(
@@ -27,11 +27,11 @@ async def _(event):
             Config.IBM_WATSON_CRED_URL is None
             or Config.IBM_WATSON_CRED_PASSWORD is None
         ):
-            await LEGENDevent.edit(
+            await KANNADIGAevent.edit(
                 "You need to set the required ENV variables for this module. \nModule stopping"
             )
         else:
-            await LEGENDevent.edit("Starting analysis, using IBM WatSon Speech To Text")
+            await KANNADIGAevent.edit("Starting analysis, using IBM WatSon Speech To Text")
             headers = {
                 "Content-Type": previous_message.media.document.mime_type,
             }
@@ -64,13 +64,13 @@ async def _(event):
                     string_to_show = "**Language : **`{}`\n**Time Taken : **`{} seconds`\n**No Results Found**".format(
                         lan, ms
                     )
-                await LEGENDevent.edit(string_to_show)
+                await KANNADIGAevent.edit(string_to_show)
             else:
-                await LEGENDevent.edit(r["error"])
+                await KANNADIGAevent.edit(r["error"])
             # now, remove the temporary file
             os.remove(required_file_name)
     else:
-        await LEGENDevent.edit(
+        await KANNADIGAevent.edit(
             "Reply to a voice message, to get the relevant transcript."
         )
 

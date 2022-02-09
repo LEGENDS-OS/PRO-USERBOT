@@ -11,7 +11,7 @@ LOVESTR = [
     "ಪ್ರೀತಿ ಇಲ್ಲ ಎನ್ನುವುದಾದರೆ , ನಾವಿಬ್ಬರು ನಡೆಯುವಾಗ ಒಂದೇ ನೆರಳು ಬೀಳುವುದೇಕೆ ….ಆ ಒಂದೇ ನೆರಳಿನಲ್ಲಿ ನಾವಿಬ್ಬರು ಕಾಣುವುದೇಕೆ …!! - [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
     "ಕರೆದು ಬಿಡಲೇ ನಿನ್ನ ಹೆಸರನ್ನೊಮ್ಮೆ, ಇಳಿದು ಬಿಡಲೇ ನಿನ್ನ ಹೃದಯಕೊಮ್ಮೆ,ಈ ಪ್ರೀತಿಯ ಒಲವೆಲ್ಲವು ನಿನಗೆ ತಾನೇ…- [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
     "ಹೊತ್ತು ಮುಳುಗುವ ಹೊತ್ತು, ಇಬ್ಬನಿ ಜಾರುತಲಿತ್ತು,ಇನಿಯ ನಾ ಕಾದೆ ನಿನಗಾಗಿ, ಈ ಲೋಕವ ಮರೆತು,ಗಂಟೆಗಳು ಉರುಳುತಿವೆ, ರವಿಯ ಕಿರಣ ಸರಿಯುತಿದೆ,ಬಾ ನನ್ನ ನಲ್ಲ ಎಲ್ಲಿರುವೆ ನೀ ……………ಓ ಮುದ್ದು ಮನಸೇ……….- [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
-    "ಯಾರು ನಿಮಗಾಗಿ ಕಾಯ್ತಾರೋ ಅವರಿಗಾಗಿ ಬದುಕಿ,ಯಾರು ನಿಮಗಾಗಿ ಅಳುತ್ತಾರೋ ಅವರನ್ನು ನಗಿಸಿ,ಯಾರು ನಿಮಗಾಗಿ ಪ್ರತಿಕ್ಷಣ ಹಂಬಲಿಸುತ್ತಾರೆ ಅವರನ್ನು ಪ್ರೀತಿಸಿ. - [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
+    "I swear I couldn't love you more than I do right now, and yet I know I will tomorrow.",
     "When I saw you I fell in love, and you smiled because you knew it.",
     "In all the world, there is no heart for me like yours. / In all the world, there is no love for you like mine.",
     "To love or have loved, that is enough. Ask nothing further. There is no other pearl to be found in the dark folds of life.",
@@ -131,12 +131,12 @@ CHASE_STR = [
     '"Oh, look at me! I\'m so cool, I can run from a bot!" - this person',
     "Yeah yeah, just tap /kickme already.",
     "Here, take this ring and head to Mordor while you're at it.",
-    "Legend has it, they're still running...",
+    "KANNADIGA has it, they're still running...",
     "Unlike Harry Potter, your parents can't protect you from me.",
     "Fear leads to anger. Anger leads to hate. Hate leads to suffering. If you keep running in fear, you might "
     "be the next Vader.",
     "Multiple calculations later, I have decided my interest in your shenanigans is exactly 0.",
-    "Legend has it, they're still running.",
+    "KANNADIGA has it, they're still running.",
     "Keep it up, not sure we want you here anyway.",
     "You're a wiza- Oh. Wait. You're not Harry, keep moving.",
     "NO RUNNING IN THE HALLWAYS!",
@@ -155,7 +155,7 @@ CHASE_STR = [
 ]
 
 
-LEGENDOSTR = [
+KANNADIGAOSTR = [
     "Hi !",
     "‘Ello, gov'nor!",
     "What’s crackin’?",
@@ -323,7 +323,7 @@ async def Sahih(e):
 @bot.on(admin_cmd(pattern=f"qhi$", outgoing=True))
 @bot.on(sudo_cmd(pattern=f"qhi$", allow_sudo=True))
 async def hoi(e):
-    txt = random.choice(LEGENDOSTR)
+    txt = random.choice(KANNADIGAOSTR)
     await edit_or_reply(e, txt)
 
 
