@@ -169,7 +169,7 @@ async def amireallykannadiga(yes):
 
 
 CmdHelp("kannadiga").add_command("bot", None, "υѕє αи∂ ѕєє").add_command(
-    "kannadiga", None, "Its Same Like kannadiga"
+    "KANNADIGA", None, "Its Same Like kannadiga"
 ).add_command("about", None, "BEST kannadiga command").add_command(
     "kannadiga", None, "Its Show ur kannadiga Template"
 ).add_warning(
