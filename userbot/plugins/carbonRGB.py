@@ -109,7 +109,7 @@ async def carbon_api(e):
         await e.client.send_file(
             e.chat_id,
             file,
-            caption="Carbonised by [LEGEND](https://github.com/MR-KANNADIGA/LegendBot)",
+            caption="Carbonised by [KANNADIGA](https://github.com/MR-KANNADIGA/KANNADIGABOT)",
             force_document=False,
             reply_to=e.message.reply_to_msg_id,
         )

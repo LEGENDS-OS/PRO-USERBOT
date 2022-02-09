@@ -28,9 +28,9 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     result = str(stdout.decode().strip()) + str(stderr.decode().strip())
-    LEGENDuser = await event.client.get_me()
-    if LEGENDuser.username:
-        curruser = LEGENDuser.username
+    KANNADIGAuser = await event.client.get_me()
+    if KANNADIGAuser.username:
+        curruser = KANNADIGAuser.username
     else:
         curruser = "@Kannadiga_bots"
     uid = os.geteuid()
@@ -57,7 +57,7 @@ async def _(event):
         cmd = "".join(event.text.split(maxsplit=1)[1:])
         if not cmd:
             return await eor(event, "`What should i run ?..`")
-        LEGENDevent = await eor(event, "`Running ...`")
+        KANNADIGAevent = await eor(event, "`Running ...`")
         old_stderr = sys.stderr
         old_stdout = sys.stdout
         redirected_output = sys.stdout = io.StringIO()
@@ -82,22 +82,22 @@ async def _(event):
             evaluation = "Success"
         final_output = f"•  Eval : \n`{cmd}` \n\n•  Result : \n`{evaluation}` \n"
         # await eor(
-        # LEGENDevent,
+        # KANNADIGAevent,
         # "**Eval Command Executed. Check out LOGGER_ID Group[Private Group Where All Message Forward]for result.**",
         # )
         if "session" in cmd:
             await eor(
-                event, "String is a  Sensetive Data.\nSo, Its Protected By LegendBot"
+                event, "String is a  Sensetive Data.\nSo, Its Protected By KANNADIGABOT"
             )
             return
         if "KANNADIGA_STRING" in cmd:
             await eor(
-                event, "String is a  Sensetive Data.\nSo, Its Protected By LegendBot"
+                event, "String is a  Sensetive Data.\nSo, Its Protected By KANNADIGABOT"
             )
             return
         else:
             await eor(
-                LEGENDevent,
+                KANNADIGAevent,
                 f"{final_output}",
             )
     else:
@@ -164,7 +164,7 @@ CmdHelp("evaluators").add_command(
 ).add_command(
     "exec",
     "<command>",
-    "Execute a Terminal command on LegendBot server and shows details",
+    "Execute a Terminal command on KANNADIGABOT server and shows details",
 ).add_command(
     "bash", "<query>", "Bash your codes on linux and gives the output in current chat"
 ).add_type(

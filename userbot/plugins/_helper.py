@@ -19,10 +19,10 @@ else:
 msg = f"""
 **⚜ 𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚛𝚢 𝙰𝚏 𝙻𝚎𝚐𝚎𝚗𝚍𝙱𝚘𝚝 ⚜**
 
-  •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/MR-KANNADIGA/LegendBot)
+  •        [♥️ 𝚁𝚎𝚙𝚘 ♥️](https://github.com/MR-KANNADIGA/KANNADIGABOT)
   •        [♦️ Deploy ♦️](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMR-KANNADIGA%2FKANNADIGA-BOT&template=https%3A%2F%2Fgithub.com%2FMR-KANNADIGA%2FKANNADIGA-BOT)
 
-  •  ©️ {Legend_channel} ™
+  •  ©️ {KANNADIGA_channel} ™
 """
 
 
@@ -30,8 +30,8 @@ msg = f"""
 @bot.on(sudo_cmd(pattern="repo$", allow_sudo=True))
 async def repo(event):
     try:
-        legend = await bot.inline_query(botname, "repo")
-        await legend[0].click(event.chat_id)
+        KANNADIGA = await bot.inline_query(botname, "repo")
+        await KANNADIGA[0].click(event.chat_id)
         if event.sender_id == Mr_Professor_Agora:
             await event.delete()
     except (noin, dedbot):
@@ -47,13 +47,13 @@ async def _(event):
     chat = "@Botfather"
     if tgbotusername is not None:
         try:
-            results = await event.client.inline_query(tgbotusername, "LEGENDBOT_help")
+            results = await event.client.inline_query(tgbotusername, "KANNADIGABOT_help")
             await results[0].click(
                 event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
             )
             await event.delete()
         except noinline:
-            legend = await eor(
+            KANNADIGA = await eor(
                 event,
                 "**Inline Mode is disabled.** \n__Turning it on, please wait for a minute...__",
             )
@@ -67,8 +67,8 @@ async def _(event):
                     sixth = await conv.get_response()
                     await bot.send_read_acknowledge(conv.chat_id)
                 except YouBlockedUserError:
-                    return await legend.edit("Unblock @Botfather first.")
-                await legend.edit(
+                    return await KANNADIGA.edit("Unblock @Botfather first.")
+                await KANNADIGA.edit(
                     f"**Turned On Inline Mode Successfully.** \n\nDo `{l1}op` again to get the help menu."
                 )
             await bot.delete_messages(
@@ -88,7 +88,7 @@ async def yardim(event):
         return
     tgbotusername = botname
     input_str = event.pattern_match.group(1)
-    if tgbotusername is not None or LEGEND_input == "text":
+    if tgbotusername is not None or KANNADIGA_input == "text":
         results = await event.client.inline_query(tgbotusername, "KANNADIGA-BOT_help")
         await results[0].click(
             event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
@@ -109,7 +109,7 @@ async def yardim(event):
 
 @bot.on(admin_cmd(pattern="ihelp(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="ihelp(?: |$)(.*)", allow_sudo=True))
-async def LEGENDBOTt(event):
+async def KANNADIGABOTt(event):
     if event.fwd_from:
         return
     args = event.pattern_match.group(1).lower()

@@ -1,4 +1,4 @@
-# LegendBot
+# KANNADIGABOT
 import asyncio
 from time import sleep
 
@@ -39,7 +39,7 @@ async def _(event):
     )
     if not result.participant.admin_rights.ban_users:
         return await eod(event, "No immunity for this action!!")
-    legend = await eor(event, "**Black Magics Started... Lets See**")
+    KANNADIGA = await eor(event, "**Black Magics Started... Lets See**")
     admins = await event.client.get_participants(
         event.chat_id, filter=ChannelParticipantsAdmins
     )
@@ -56,7 +56,7 @@ async def _(event):
         except Exception as e:
             LOGS.info(str(e))
             await asyncio.sleep(0.5)
-    await legend.edit("**Bleck Magik Done...🤣**")
+    await KANNADIGA.edit("**Bleck Magik Done...🤣**")
     await bot.send_message(
         Config.LOGGER_ID,
         f"#KICKALL \n\nKicked Out  `{success}`  of  `{total}`  members",
@@ -71,7 +71,7 @@ async def _(event):
     )
     if not result:
         return await eod(event, "Immunity Low!!")
-    legend = await eor(event, "**Bleck Magik Begins..**")
+    KANNADIGA = await eor(event, "**Bleck Magik Begins..**")
     admins = await event.client.get_participants(
         event.chat_id, filter=ChannelParticipantsAdmins
     )
@@ -90,7 +90,7 @@ async def _(event):
         except Exception as e:
             LOGS.info(str(e))
             await asyncio.sleep(0.5)
-    await legend.edit("**Bleck Magik Completed...**")
+    await KANNADIGA.edit("**Bleck Magik Completed...**")
     await bot.send_message(
         Config.LOGGER_ID,
         f"#BANALL \n\nSucessfully banned  `{success}`  out of  `{total}`  members!!",
@@ -153,7 +153,7 @@ async def _(event):
     o = 0
     q = 0
     r = 0
-    legend = await edit_or_reply(event, "Searching Participant Lists.")
+    KANNADIGA = await edit_or_reply(event, "Searching Participant Lists.")
     async for i in bot.iter_participants(event.chat_id):
         p = p + 1
         #
@@ -165,7 +165,7 @@ async def _(event):
             if "y" in input_str:
                 status, e = await ban_user(event.chat_id, i, rights)
                 if not status:
-                    await eod(legend, "I need admin priveleges to perform this action!")
+                    await eod(KANNADIGA, "I need admin priveleges to perform this action!")
                     e.append(str(e))
                     break
                 else:
@@ -175,7 +175,7 @@ async def _(event):
             if "m" in input_str:
                 status, e = await ban_user(event.chat_id, i, rights)
                 if not status:
-                    await eod(legend, "I need admin priveleges to perform this action!")
+                    await eod(KANNADIGA, "I need admin priveleges to perform this action!")
                     e.append(str(e))
                     break
                 else:
@@ -252,9 +252,9 @@ UserStatusOnline: {}
 UserStatusRecently: {}
 Bots: {}
 None: {}"""
-        await legend.edit(required_string.format(c, p, d, y, m, w, o, q, r, b, n))
+        await KANNADIGA.edit(required_string.format(c, p, d, y, m, w, o, q, r, b, n))
         await asyncio.sleep(5)
-    await legend.edit(
+    await KANNADIGA.edit(
         """Total: {} users
 Deleted Accounts: {}
 UserStatusEmpty: {}

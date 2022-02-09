@@ -6,7 +6,7 @@ from userbot.utils import *
 
 # -------------------------------------------------------------------------------
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "KANNADIGA"
 
 ludosudo = Config.SUDO_USERS
 
@@ -15,9 +15,9 @@ if ludosudo:
 else:
     sudou = "False"
 
-legend = bot.uid
+KANNADIGA = bot.uid
 
-mention = f"[{DEFAULTUSER}](tg://user?id={legend})"
+mention = f"[{DEFAULTUSER}](tg://user?id={KANNADIGA})"
 
 
 PM_IMG = "https://telegra.ph/file/4f03f6d4e9521902eb57f.jpg"
@@ -26,12 +26,12 @@ pm_caption = "**𝖑𝖊ɠêɳ̃dẞø✞︎ 𝙸𝚜 𝙾𝚗𝚕𝚒𝚗𝚎**
 pm_caption += f"**┏🔥✞t͛ẞ̸ 𝖑𝖊ɠêɳ̃dẞø✞︎t🔥┓**\n"
 pm_caption += f"**┣🚀 𝙼𝚢 𝙼𝚊𝚜𝚝𝚎𝚛    : {mention}**\n"
 pm_caption += f"**┣🚀 𝚃𝚎𝚕𝚎𝚝𝚑𝚘𝚗 : `{version.__version__}`**\n"
-pm_caption += f"**┣🚀 𝖑𝖊ɠêɳ̃dẞø✞︎ : {LEGENDversion}**\n"
+pm_caption += f"**┣🚀 𝖑𝖊ɠêɳ̃dẞø✞︎ : {KANNADIGAversion}**\n"
 pm_caption += f"**┣🚀 𝚂𝚞𝚍𝚘     : `{sudou}`**\n"
 pm_caption += f"**┣🚀 𝙾𝚠𝚗𝚎𝚛     : [𝖑𝖊ɠêɳ̃d](https://t.me/Mr_Professor_Agora)**\n"
 pm_caption += f"**┗[♦️𝙶𝚛𝚘𝚞𝚙♦️](https://t.me/NAAN_1_KANNADIGA)┛**\n"
 
-pm_caption += "    [✨яєρο✨](https://github.com/MR-KANNADIGA/LegendBot) 🔹 [📜License📜](https://github.com/MR-KANNADIGA/LegendBot/blob/master/LICENSE)"
+pm_caption += "    [✨яєρο✨](https://github.com/MR-KANNADIGA/KANNADIGABOT) 🔹 [📜License📜](https://github.com/MR-KANNADIGA/KANNADIGABOT/blob/master/LICENSE)"
 
 
 @bot.on(admin_cmd(outgoing=True, pattern="bot$"))

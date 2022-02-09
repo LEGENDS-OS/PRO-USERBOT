@@ -11,7 +11,7 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 GENDER = [
     "u is mard",
     "u is man",
-    "u is legendt",
+    "u is KANNADIGAt",
     "u is woman",
     "u is gey",
     "u is chakka",

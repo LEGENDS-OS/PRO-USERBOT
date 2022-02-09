@@ -15,7 +15,7 @@ from userbot.utils import admin_cmd
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓєgєи∂"
 
-LEGEND = bot.uid
+KANNADIGA = bot.uid
 
 
 class AFK:

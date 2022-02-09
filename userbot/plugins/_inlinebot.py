@@ -20,9 +20,9 @@ from userbot.helpers.ffunctions.utils import get_readable_time
 from . import *
 
 DEFAULTUSER = alive_name = Config.ALIVE_NAME
-legend_row = Config.BUTTONS_IN_HELP
-legend_emoji1 = Config.HELP_EMOJI1 or "💛"
-legend_emoji2 = Config.HELP_EMOJI2 or "❤️"
+KANNADIGA_row = Config.BUTTONS_IN_HELP
+KANNADIGA_emoji1 = Config.HELP_EMOJI1 or "💛"
+KANNADIGA_emoji2 = Config.HELP_EMOJI2 or "❤️"
 mssge = cstm_pmp = (
     Config.PM_MSG
     or "I am Assistant Of My Owner\nI am Here To Protect My Owner From Scanner"
@@ -44,7 +44,7 @@ USER_BOT_WARN_ZERO = (
     "Enough Of Your Flooding In My Master's PM!! \n\n**🚫 Blocked and Reported**"
 )
 
-LEGEND_FIRST = "__{}__\n**Please choose why u are here.** ♥️!!"
+KANNADIGA_FIRST = "__{}__\n**Please choose why u are here.** ♥️!!"
 
 about = Config.ALIVE_EMOJI
 if about is not None:
@@ -74,7 +74,7 @@ alive_txt = (
 
 
 def button(page, modules):
-    Row = legend_row
+    Row = KANNADIGA_row
 
     modules = sorted([modul for modul in modules if not modul.startswith("_")])
     pairs = list(map(list, zip(modules[::2], modules[1::2])))
@@ -87,7 +87,7 @@ def button(page, modules):
         buttons.append(
             [
                 custom.Button.inline(
-                    f"{legend_emoji1} " + pair + f" {legend_emoji2}",
+                    f"{KANNADIGA_emoji1} " + pair + f" {KANNADIGA_emoji2}",
                     data=f"Information[{page}]({pair})",
                 )
                 for pair in pairs
@@ -126,7 +126,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     apn.append(y)
             HELP_MESSAGE = (
                 os.environ.get("HELP_MESSAGE", None)
-                or f"『{legend_mention}』\n\n⭐ 𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍 ⭆ `{len(CMD_HELP)}`\n🔥 𝚃𝚘𝚝𝚊𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜⭆ `{len(apn)}`\n📖 Pαցҽ⭆ 1/{veriler[0]}"
+                or f"『{KANNADIGA_mention}』\n\n⭐ 𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍 ⭆ `{len(CMD_HELP)}`\n🔥 𝚃𝚘𝚝𝚊𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜⭆ `{len(apn)}`\n📖 Pαցҽ⭆ 1/{veriler[0]}"
             )
             if HELP_MESSAGE:
                 b = HELP_MESSAGE.split(", ")
@@ -196,7 +196,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 alive_emoji,
                 alive_emoji,
                 alive_emoji,
-                LEGENDversion,
+                KANNADIGAversion,
                 alive_emoji,
                 version.__version__,
                 alive_emoji,
@@ -211,7 +211,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             alv_btn = [
                 [
                     Button.url(
-                        f"{LEGEND_USER}",
+                        f"{KANNADIGA_USER}",
                         f"tg://openmessage?user_id={Mr_Professor_Agora}",
                     )
                 ],
@@ -246,7 +246,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             fsub_btn = [
                 [
                     Button.url(
-                        f"{LEGEND_USER}",
+                        f"{KANNADIGA_USER}",
                         f"tg://openmessage?user_id={Mr_Professor_Agora}",
                     )
                 ],
@@ -281,7 +281,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     link_preview=False,
                 )
         elif event.query.user_id == bot.uid and query == "pm_warn":
-            lege_nd = LEGEND_FIRST.format(mssge)
+            lege_nd = KANNADIGA_FIRST.format(mssge)
             PM_PIC = Config.PM_PIC
             if PM_PIC is not None:
                 b = PM_PIC.split()
@@ -289,11 +289,11 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 if len(b) >= 1:
                     for d in b:
                         c.append(d)
-                legend_pic = random.choice(c)
+                KANNADIGA_pic = random.choice(c)
             else:
-                legend_pic = "https://te.legra.ph/file/c085085b63638ae1ba5cf.jpg"
+                KANNADIGA_pic = "https://te.legra.ph/file/c085085b63638ae1ba5cf.jpg"
             result = builder.photo(
-                file=legend_pic,
+                file=KANNADIGA_pic,
                 text=lege_nd,
                 buttons=[
                     [
@@ -381,22 +381,22 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"🔰 This is kannadiga bot PM Security for {legend_mention} to keep away unwanted retards from spamming PM..."
+                f"🔰 This is kannadiga bot PM Security for {KANNADIGA_mention} to keep away unwanted retards from spamming PM..."
             )
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"req")))
-    async def on_pm_click(legend):
-        if legend.query.user_id == bot.uid:
-            fck_bit = f"Oh! C'mon Master {legend_mention} Im Try To Get Rid Of This Nigga Pls Dont Touch"
-            await legend.answer(fck_bit, cache_time=0, alert=True)
+    async def on_pm_click(KANNADIGA):
+        if KANNADIGA.query.user_id == bot.uid:
+            fck_bit = f"Oh! C'mon Master {KANNADIGA_mention} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+            await KANNADIGA.answer(fck_bit, cache_time=0, alert=True)
             return
-        await legend.get_chat()
-        legend.query.user_id
-        await legend.edit(
+        await KANNADIGA.get_chat()
+        KANNADIGA.query.user_id
+        await KANNADIGA.edit(
             "Oh You Wanna Talk With My Master\n\nPls Wait Dear \n\n**Btw** **You Can Wait For My Master**"
         )
         await asyncio.sleep(2)
-        await legend.edit(
+        await KANNADIGA.edit(
             "Which Type Of Request U Want?",
             buttons=[
                 [Button.inline("Register", data="school")],
@@ -405,37 +405,37 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"tg_okay")))
-    async def yeahbaba(legend):
-        if legend.query.user_id == bot.uid:
+    async def yeahbaba(KANNADIGA):
+        if KANNADIGA.query.user_id == bot.uid:
             fck_bit = f"Oh! C'mon Master.This Is for other users"
-            await legend.answer(fck_bit, cache_time=0, alert=True)
+            await KANNADIGA.answer(fck_bit, cache_time=0, alert=True)
         else:
-            await legend.edit(
-                f"✅ **Request Registered** \n\n{legend_mention} will now decide to talk with u or not\n😐 Till then wait patiently and don't spam!!"
+            await KANNADIGA.edit(
+                f"✅ **Request Registered** \n\n{KANNADIGA_mention} will now decide to talk with u or not\n😐 Till then wait patiently and don't spam!!"
             )
-            target = await legend.client(GetFullUserRequest(legend.query.user_id))
+            target = await KANNADIGA.client(GetFullUserRequest(KANNADIGA.query.user_id))
             first_name = html.escape(target.user.first_name)
-            ok = legend.query.user_id
+            ok = KANNADIGA.query.user_id
             if first_name is not None:
                 first_name = first_name.replace("\u2060", "")
-                tosend = f"**👀 Hey {legend_mention} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
+                tosend = f"**👀 Hey {KANNADIGA_mention} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
                 await bot.send_message(LOG_GP, tosend)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"school")))
-    async def yeahbaba(legend):
-        if legend.query.user_id == bot.uid:
+    async def yeahbaba(KANNADIGA):
+        if KANNADIGA.query.user_id == bot.uid:
             fck_bit = f"This Is For Other user"
-            await legend.answer(fck_bit, cache_time=0, alert=True)
+            await KANNADIGA.answer(fck_bit, cache_time=0, alert=True)
         else:
-            await legend.edit(
-                f"✅ **Request Registered** \n\n{legend_mention} will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
+            await KANNADIGA.edit(
+                f"✅ **Request Registered** \n\n{KANNADIGA_mention} will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
             )
-            target = await legend.client(GetFullUserRequest(legend.query.user_id))
+            target = await KANNADIGA.client(GetFullUserRequest(KANNADIGA.query.user_id))
             first_name = html.escape(target.user.first_name)
-            ok = legend.query.user_id
+            ok = KANNADIGA.query.user_id
             if first_name is not None:
                 first_name = first_name.replace("\u2060", "")
-            tosend = f"**👀 Hey {legend_mention} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
+            tosend = f"**👀 Hey {KANNADIGA_mention} !!** \n\n⚜️ You Got A Request From [{first_name}](tg://user?id={ok}) In PM!!"
             await bot.send_message(LOG_GP, tosend)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"chat")))
@@ -446,29 +446,29 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"Ahh!! You here to do chit-chat!!\n\nPlease wait for {legend_mention} to come. Till then keep patience and don't spam."
+                f"Ahh!! You here to do chit-chat!!\n\nPlease wait for {KANNADIGA_mention} to come. Till then keep patience and don't spam."
             )
             target = await event.client(GetFullUserRequest(event.query.user_id))
             ok = event.query.user_id
             first_name = html.escape(target.user.first_name)
             if first_name is not None:
                 first_name = first_name.replace("\u2060", "")
-            tosend = f"**👀 Hey {legend_mention} !!** \n\n⚜️ You Got A PM from  [{first_name}](tg://user?id={ok})  for random chats!!"
+            tosend = f"**👀 Hey {KANNADIGA_mention} !!** \n\n⚜️ You Got A PM from  [{first_name}](tg://user?id={ok})  for random chats!!"
             await bot.send_message(LOG_GP, tosend)
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"heheboi")))
-    async def on_pm_click(legend):
-        if legend.query.user_id == bot.uid:
-            fck_bit = f"Oh! C'mon Master{legend_mention} Im Try To Get Rid Of This Nigga Pls Dont Touch"
-            await legend.answer(fck_bit, cache_time=0, alert=True)
+    async def on_pm_click(KANNADIGA):
+        if KANNADIGA.query.user_id == bot.uid:
+            fck_bit = f"Oh! C'mon Master{KANNADIGA_mention} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+            await KANNADIGA.answer(fck_bit, cache_time=0, alert=True)
             return
-        await legend.get_chat()
-        legend_id = legend.query.user_id
-        await legend.edit("Okay let Me Think🤫")
+        await KANNADIGA.get_chat()
+        KANNADIGA_id = KANNADIGA.query.user_id
+        await KANNADIGA.edit("Okay let Me Think🤫")
         await asyncio.sleep(2)
-        await legend.edit("Okay Giving You A Chance🤨")
+        await KANNADIGA.edit("Okay Giving You A Chance🤨")
         await asyncio.sleep(2)
-        await legend.edit(
+        await KANNADIGA.edit(
             "Will You Spam?",
             buttons=[
                 [Button.inline("Yes", data="lemme_ban")],
@@ -477,54 +477,54 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         )
         await bot.send_message(
             LOG_GP,
-            message=f"Hello, Master  [Nibba](tg://user?id={legend_id}). Wants To Request Something.",
-            buttons=[Button.url("Contact Him", f"tg://user?id=legend_id")],
+            message=f"Hello, Master  [Nibba](tg://user?id={KANNADIGA_id}). Wants To Request Something.",
+            buttons=[Button.url("Contact Him", f"tg://user?id=KANNADIGA_id")],
         )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"hmm")))
-    async def yes_ucan(legend):
-        if legend.query.user_id == bot.uid:
+    async def yes_ucan(KANNADIGA):
+        if KANNADIGA.query.user_id == bot.uid:
             lmaoo = "You Are Not Requesting , Lol."
-            await legend.answer(lmaoo, cache_time=0, alert=True)
+            await KANNADIGA.answer(lmaoo, cache_time=0, alert=True)
             return
-        await legend.get_chat()
+        await KANNADIGA.get_chat()
         await asyncio.sleep(2)
-        legend.query.user_id
-        await legend.edit("Okay You Can Wait Till Wait")
+        KANNADIGA.query.user_id
+        await KANNADIGA.edit("Okay You Can Wait Till Wait")
         hmmmmm = "Okay Kindly wait  i will inform you"
-        await bot.send_message(legend.query.user_id, hmmmmm)
+        await bot.send_message(KANNADIGA.query.user_id, hmmmmm)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lemme_ban")))
-    async def yes_ucan(legend):
-        if legend.query.user_id == bot.uid:
+    async def yes_ucan(KANNADIGA):
+        if KANNADIGA.query.user_id == bot.uid:
             lmaoo = "You Are Not Requesting , Lol."
-            await legend.answer(lmaoo, cache_time=0, alert=True)
+            await KANNADIGA.answer(lmaoo, cache_time=0, alert=True)
             return
-        await legend.get_chat()
+        await KANNADIGA.get_chat()
         await asyncio.sleep(2)
-        legend_id = legend.query.user_id
-        await legend.edit("Get Lost Retard")
+        KANNADIGA_id = KANNADIGA.query.user_id
+        await KANNADIGA.edit("Get Lost Retard")
         ban = f"Pahli Fursat Me Nikal\nU Are Blocked"
-        await bot.send_message(legend.query.user_id, ban)
-        await bot(functions.contacts.BlockRequest(legend.query.user_id))
+        await bot.send_message(KANNADIGA.query.user_id, ban)
+        await bot(functions.contacts.BlockRequest(KANNADIGA.query.user_id))
         await bot.send_message(
             LOG_GP,
-            message=f"Hello, Master  [Nibba](tg://user?id={legend_id}). Has Been Blocked Due to Choose Spam",
-            buttons=[Button.url("Contact Him", f"tg://user?id=legend_id")],
+            message=f"Hello, Master  [Nibba](tg://user?id={KANNADIGA_id}). Has Been Blocked Due to Choose Spam",
+            buttons=[Button.url("Contact Him", f"tg://user?id=KANNADIGA_id")],
         )
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"unmute")))
     async def on_pm_click(event):
         hunter = (event.data_match.group(2)).decode("UTF-8")
-        legend = hunter.split("+")
-        if not event.sender_id == int(legend[0]):
+        KANNADIGA = hunter.split("+")
+        if not event.sender_id == int(KANNADIGA[0]):
             return await event.answer("This Ain't For You!!", alert=True)
         try:
-            await bot(GetParticipantRequest(int(legend[1]), int(legend[0])))
+            await bot(GetParticipantRequest(int(KANNADIGA[1]), int(KANNADIGA[0])))
         except UserNotParticipantError:
             return await event.answer("You need to join the channel first.", alert=True)
         await bot.edit_permissions(
-            event.chat_id, int(legend[0]), send_message=True, until_date=None
+            event.chat_id, int(KANNADIGA[0]), send_message=True, until_date=None
         )
         await event.edit("Yay! You can chat now !!")
 
@@ -551,7 +551,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             veriler = custom.Button.inline(
-                f"{legend_emoji1} OPEN MENU {legend_emoji2}", data="reopen"
+                f"{KANNADIGA_emoji1} OPEN MENU {KANNADIGA_emoji2}", data="reopen"
             )
             await event.edit(
                 f"My Master {Config.ALIVE_NAME} has Been Closed Menu\n\n               [©️kannadigabot]({chnl_link})",
@@ -573,7 +573,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 apn.append(y)
         if event.query.user_id == bot.uid or event.query.user_id in Config.SUDO_USERS:
             await event.edit(
-                f"{legend_mention}\n\n⭐ 𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍⭆ `{len(CMD_HELP)}`\n🔥 𝚃𝚘𝚝𝚊𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜⭆ `{len(apn)}`\n📖 Pαցҽ⭆ 1/{veriler[0]}\n",
+                f"{KANNADIGA_mention}\n\n⭐ 𝚃𝚘𝚝𝚊𝚕 𝙼𝚘𝚍𝚞𝚕𝚎𝚜 𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚎𝚍⭆ `{len(CMD_HELP)}`\n🔥 𝚃𝚘𝚝𝚊𝚕 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜⭆ `{len(apn)}`\n📖 Pαցҽ⭆ 1/{veriler[0]}\n",
                 buttons=veriler[1],
                 link_preview=False,
             )
@@ -607,7 +607,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         buttons.append(
             [
                 custom.Button.inline(
-                    f"{legend_emoji1} Help Menu {legend_emoji2}", data=f"page({page})"
+                    f"{KANNADIGA_emoji1} Help Menu {KANNADIGA_emoji2}", data=f"page({page})"
                 )
             ]
         )
@@ -660,7 +660,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result,
                 buttons=[
                     custom.Button.inline(
-                        f"{legend_emoji1} Return {legend_emoji2}",
+                        f"{KANNADIGA_emoji1} Return {KANNADIGA_emoji2}",
                         data=f"Information[{page}]({cmd})",
                     )
                 ],

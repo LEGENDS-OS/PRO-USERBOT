@@ -1,4 +1,4 @@
-# plugin made legend support
+# plugin made KANNADIGA support
 # keep credits if you are gonna kang it lol
 import asyncio
 

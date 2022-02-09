@@ -9,7 +9,7 @@ from telethon.errors import ChatSendInlineForbiddenError as noin
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 
 from userbot import *
-from userbot import LEGENDversion
+from userbot import KANNADIGAversion
 from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 from userbot.helpers.events import reply_id
@@ -18,12 +18,12 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 from . import *
 
-LEGEND_IMG = "https://telegra.ph/file/153977a71b928874151a5.jpg"
+KANNADIGA_IMG = "https://telegra.ph/file/153977a71b928874151a5.jpg"
 CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@NAAN_1_KANNADIGA"
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="legend$"))
-@bot.on(sudo_cmd(pattern="legend$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="KANNADIGA$"))
+@bot.on(sudo_cmd(pattern="KANNADIGA$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
@@ -38,20 +38,20 @@ async def amireallyalive(alive):
             for d in b:
                 c.append(d)
         alive_emoji = random.choice(c)
-    if LEGEND_IMG:
-        LEGEND_caption = f"**LegendBot is Up And Running**\n\n"
-        LEGEND_caption += f"      🔰Bot Status🔰 \n"
-        LEGEND_caption += f"{alive_emoji} **LegendBo† version**   ~ {LEGENDversion}\n"
-        LEGEND_caption += (
+    if KANNADIGA_IMG:
+        KANNADIGA_caption = f"**KANNADIGABOT is Up And Running**\n\n"
+        KANNADIGA_caption += f"      🔰Bot Status🔰 \n"
+        KANNADIGA_caption += f"{alive_emoji} **KANNADIGABo† version**   ~ {KANNADIGAversion}\n"
+        KANNADIGA_caption += (
             f"{alive_emoji} **Telethon version**   ~ `{version.__version__}`\n"
         )
-        LEGEND_caption += (
+        KANNADIGA_caption += (
             f"{alive_emoji} **Python version**    ~ `{python_version()}`\n"
         )
-        LEGEND_caption += f"{alive_emoji} **Uptime**           ~ `{uptime}`\n"
-        LEGEND_caption += f"{alive_emoji} **Master**          ~ `{Config.ALIVE_NAME}`"
+        KANNADIGA_caption += f"{alive_emoji} **Uptime**           ~ `{uptime}`\n"
+        KANNADIGA_caption += f"{alive_emoji} **Master**          ~ `{Config.ALIVE_NAME}`"
         await alive.client.send_file(
-            alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
+            alive.chat_id, KANNADIGA_IMG, caption=KANNADIGA_caption, reply_to=reply_to_id
         )
         await alive.delete()
     else:
@@ -68,7 +68,7 @@ msg = (
      {Config.ALIVE_MSG}
     ** Bot Status **
 **🔰 Owner   :** **{Config.ALIVE_NAME}**
-**✨ LegendBot  :** {LEGENDversion}
+**✨ KANNADIGABOT  :** {KANNADIGAversion}
 **✨ Telethon  :** {version.__version__}
 **✨ Abuse    :**  {abuse_m}
 **✨ Sudo    :**  {is_sudo}
@@ -80,10 +80,10 @@ botname = Config.BOT_USERNAME
 
 @bot.on(admin_cmd(pattern="alive$"))
 @bot.on(admin_cmd(pattern="alive$", allow_sudo=True))
-async def legend_a(event):
+async def KANNADIGA_a(event):
     try:
-        legend = await bot.inline_query(botname, "alive")
-        await legend[0].click(event.chat_id)
+        KANNADIGA = await bot.inline_query(botname, "alive")
+        await KANNADIGA[0].click(event.chat_id)
         await event.delete()
         if event.sender_id == Mr_Professor_Agora:
             await event.delete()
@@ -99,10 +99,10 @@ file5 = "https://telegra.ph/file/af51de2749a4506d3eb43.jpg"
 """=======================CONSTANTS====================== """
 pm_caption = f"**╭────────────**\n"
 pm_caption += f"┣✨ Owner   ~ {Config.ALIVE_NAME}\n"
-pm_caption += f"┣✨ Lêɠêɳ̃dẞø† ~ {LEGENDversion}\n"
+pm_caption += f"┣✨ Lêɠêɳ̃dẞø† ~ {KANNADIGAversion}\n"
 pm_caption += f"┣✨ ProBoy   ~ [Owner](https://t.me/Mr_Professor_Agora)\n"
 pm_caption += f"┣✨ Support ~ [Group](https://t.me/NAAN_1_KANNADIGA)\n"
-pm_caption += f"┣✨ Repo   ~ [Repo](https://github.com/MR-KANNADIGA/LegendBot)\n"
+pm_caption += f"┣✨ Repo   ~ [Repo](https://github.com/MR-KANNADIGA/KANNADIGABOT)\n"
 pm_caption += f"**╰────────────**\n"
 
 
@@ -162,7 +162,7 @@ async def amireallyalive(yes):
 
 
 CmdHelp("alive").add_command("bot", None, "υѕє αи∂ ѕєє").add_command(
-    "legend", None, "Its Same Like Alive"
+    "KANNADIGA", None, "Its Same Like Alive"
 ).add_command("about", None, "BEST alive command").add_command(
     "alive", None, "Its Show ur Alive Template"
 ).add_warning(

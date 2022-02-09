@@ -13,7 +13,7 @@ from userbot import ALIVE_NAME
 from userbot.cmdhelp import CmdHelp
 from userbot.utils import admin_cmd, humanbytes, progress, sudo_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "KANNADIGA User"
 
 
 @bot.on(admin_cmd(pattern="download(?: |$)(.*)", outgoing=True))

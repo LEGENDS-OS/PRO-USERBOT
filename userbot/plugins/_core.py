@@ -11,8 +11,8 @@ from . import *
 
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "『Lêɠêɳ̃dẞø†』"
-legend = bot.uid
-LEGEND = f"[{DEFAULTUSER}](tg://user?id={legend})"
+KANNADIGA = bot.uid
+KANNADIGA = f"[{DEFAULTUSER}](tg://user?id={KANNADIGA})"
 EVAL = os.environ.get("EVAL", None)
 
 
@@ -24,7 +24,7 @@ async def send(event):
     message_id = event.message.id
     thumb = core_pic
     input_str = event.pattern_match.group(1)
-    omk = f"**⍟ 𝙿𝚕𝚞𝚐𝚒𝚗 𝚗𝚊𝚖𝚎 ≈** `{input_str}`\n**⍟ 𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝙱𝚢 ≈** {legend_mention}\n\n⚜ **[Pro-Lêɠêɳ̃dẞø†](https://t.me/NAAN_1_KANNADIGA)** ⚜"
+    omk = f"**⍟ 𝙿𝚕𝚞𝚐𝚒𝚗 𝚗𝚊𝚖𝚎 ≈** `{input_str}`\n**⍟ 𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝙱𝚢 ≈** {KANNADIGA_mention}\n\n⚜ **[Pro-Lêɠêɳ̃dẞø†](https://t.me/NAAN_1_KANNADIGA)** ⚜"
     the_plugin_file = "./userbot/plugins/{}.py".format(input_str)
     the_1plugin_file = "./userbot/plugins/Abuse/{}.py".format(input_str)
     the_2plugin_file = "./userbot/plugins/Spam/{}.py".format(input_str)
@@ -78,7 +78,7 @@ async def send(event):
         await event.delete()
     else:
         await edit_or_reply(
-            event, f"Name Of Plugin: {input_str}\nNot Found In LegendBot"
+            event, f"Name Of Plugin: {input_str}\nNot Found In KANNADIGABOT"
         )
 
 
@@ -89,7 +89,7 @@ async def install(event):
         return
     b = 1
     owo = event.text[9:]
-    legend = await eor(event, "__Installing.__")
+    KANNADIGA = await eor(event, "__Installing.__")
     if event.reply_to_msg_id:
         try:
             downloaded_file_name = (
@@ -105,7 +105,7 @@ async def install(event):
                 if EVAL == "ON":
                     if "session" in rd:
                         os.remove(downloaded_file_name)
-                        await legend.edit(
+                        await KANNADIGA.edit(
                             f"**⚠️ WARNING !!** \n\n__Replied plugin file contains some harmful codes__."
                         )
                         return
@@ -126,30 +126,30 @@ async def install(event):
                                 else:
                                     a = "__Installing...__"
                                     b = 1
-                                await legend.edit(a)
-                            return await legend.edit(
-                                f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {legend_mention}\n\n{string}\n\n        ⚡ **[Pro-Lêɠêɳ̃dẞø†]({chnl_link})** ⚡",
+                                await KANNADIGA.edit(a)
+                            return await KANNADIGA.edit(
+                                f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {KANNADIGA_mention}\n\n{string}\n\n        ⚡ **[Pro-Lêɠêɳ̃dẞø†]({chnl_link})** ⚡",
                                 link_preview=False,
                             )
 
-                        return await legend.edit(
+                        return await KANNADIGA.edit(
                             f"Installed module `{os.path.basename(downloaded_file_name)}`"
                         )
                     else:
                         os.remove(downloaded_file_name)
                         return await eod(
-                            legend,
+                            KANNADIGA,
                             f"**Failed to Install** \n`Error`, Module already installed or unknown format",
                         )
                 else:
                     return await eod(
-                        legend, "First Turn ON Eval CMD = `.set var EVAL ON`"
+                        KANNADIGA, "First Turn ON Eval CMD = `.set var EVAL ON`"
                     )
             except Exception as e:
-                await eod(legend, f"{e}")
+                await eod(KANNADIGA, f"{e}")
                 return os.remove(download_file_name)
         except Exception as e:
-            await eod(legend, f"**Failed to Install** \n`Error`\n{str(e)}")
+            await eod(KANNADIGA, f"**Failed to Install** \n`Error`\n{str(e)}")
             return os.remove(downloaded_file_name)
 
 
@@ -223,7 +223,7 @@ async def install(event):
     if len(OUTPUT) > 69:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "cmnds_list.text"
-            LEGEND_file = await bot.send_file(
+            KANNADIGA_file = await bot.send_file(
                 event.chat_id,
                 out_file,
                 force_document=True,
@@ -232,7 +232,7 @@ async def install(event):
                 reply_to=reply_to_id,
             )
             await edit_or_reply(
-                LEGEND_file,
+                KANNADIGA_file,
                 f"**Output Too Large. This is the file for the list of plugins in L𝖊ɠêɳ̃dẞø✞︎**.\n\nBY :- **{DEFAULTUSER}**",
             )
             await event.delete()
@@ -257,7 +257,7 @@ CmdHelp("core").add_command(
     "Sends the given file from your userbot server, if any.",
     "send alive",
 ).add_command(
-    "cmds", None, "Gives out the list of modules in LegendBot."
+    "cmds", None, "Gives out the list of modules in KANNADIGABOT."
 ).add_warning(
     "Before Install Any Plugin.Open That File file by command .open"
 ).add_info(

@@ -57,7 +57,7 @@ async def deepfry(img: Image) -> Image:
 
     img = img.copy().convert("RGB")
 
-    # Crush image to legend and back
+    # Crush image to KANNADIGA and back
     img = img.convert("RGB")
     width, height = img.width, img.height
     img = img.resize(
@@ -82,7 +82,7 @@ async def deepfry(img: Image) -> Image:
 
     overlay = ImageOps.colorize(overlay, colours[0], colours[1])
 
-    # Overlay red and yellow onto main image and sharpen the legend out of it
+    # Overlay red and yellow onto main image and sharpen the KANNADIGA out of it
     img = Image.blend(img, overlay, uniform(0.1, 0.4))
     img = ImageEnhance.Sharpness(img).enhance(randint(5, 300))
 

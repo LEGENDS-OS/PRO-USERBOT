@@ -8,9 +8,9 @@ from userbot.Config import Config
 from userbot.plugins.sql_helper.globals import addgvar, delgvar, gvarstatus
 from userbot.utils import *
 
-LEGEND_USER = bot.me.first_name
+KANNADIGA_USER = bot.me.first_name
 Mr_Professor_Agora = bot.uid
-legend_mention = f"[{LEGEND_USER}](tg://user?id={Mr_Professor_Agora})"
+KANNADIGA_mention = f"[{KANNADIGA_USER}](tg://user?id={Mr_Professor_Agora})"
 
 gban_pic = "./userbot/resources/pics/gban.mp4"
 main_pic = "./userbot/resources/pics/main.jpg"
@@ -65,9 +65,9 @@ else:
     botname = f"@{mybot}"
 
 chnl_link = "https://t.me/kannadiga_bots"
-Legend_channel = f"[Kannadiga Channel]({chnl_link})"
+KANNADIGA_channel = f"[Kannadiga Channel]({chnl_link})"
 grp_link = "https://t.me/naam_1_kannadiga"
-Legend_grp = f"[Kannadiga Group]({grp_link})"
+KANNADIGA_grp = f"[Kannadiga Group]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user

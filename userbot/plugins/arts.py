@@ -6,7 +6,7 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 from . import *
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "KANNADIGA User"
 
 USERID = bot.uid
 
@@ -15,7 +15,7 @@ mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 
 @bot.on(admin_cmd(pattern="car (.*)"))
 @bot.on(sudo_cmd(pattern="car (.*)", allow_sudo=True))
-async def legend(carry):
+async def KANNADIGA(carry):
     if carry.fwd_from:
         return
     name = carry.pattern_match.group(1)
@@ -27,7 +27,7 @@ async def legend(carry):
 
 @bot.on(admin_cmd(pattern="ded (.*)"))
 @bot.on(sudo_cmd(pattern="ded (.*)", allow_sudo=True))
-async def legend(ded):
+async def KANNADIGA(ded):
     if ded.fwd_from:
         return
     name = ded.pattern_match.group(1)
@@ -68,7 +68,7 @@ A = (
 
 @bot.on(admin_cmd(pattern="sthink (.*)"))
 @bot.on(sudo_cmd(pattern="sthink (.*)", allow_sudo=True))
-async def legend(think):
+async def KANNADIGA(think):
     if think.fwd_from:
         return
     name = think.pattern_match.group(1)
@@ -95,7 +95,7 @@ async def legend(think):
 
 @bot.on(admin_cmd(pattern="sfrog (.*)"))
 @bot.on(sudo_cmd(pattern="sfrog (.*)", allow_sudo=True))
-async def legend(frogsay):
+async def KANNADIGA(frogsay):
     if frogsay.fwd_from:
         return
     name = frogsay.pattern_match.group(1)
@@ -122,7 +122,7 @@ async def legend(frogsay):
 
 @bot.on(admin_cmd(pattern="sdead (.*)"))
 @bot.on(sudo_cmd(pattern="sdead (.*)", allow_sudo=True))
-async def legend(deadfrog):
+async def KANNADIGA(deadfrog):
     if deadfrog.fwd_from:
         return
     name = deadfrog.pattern_match.group(1)
@@ -149,7 +149,7 @@ async def legend(deadfrog):
 
 @bot.on(admin_cmd(pattern="strump (.*)"))
 @bot.on(sudo_cmd(pattern="strump (.*)", allow_sudo=True))
-async def legend(trumpsay):
+async def KANNADIGA(trumpsay):
     if trumpsay.fwd_from:
         return
     name = trumpsay.pattern_match.group(1)
@@ -176,7 +176,7 @@ async def legend(trumpsay):
 
 @bot.on(admin_cmd(pattern="schina (.*)"))
 @bot.on(sudo_cmd(pattern="schina (.*)", allow_sudo=True))
-async def legend(ckmkb):
+async def KANNADIGA(ckmkb):
     if ckmkb.fwd_from:
         return
     name = ckmkb.pattern_match.group(1)
@@ -204,7 +204,7 @@ async def legend(ckmkb):
 
 @bot.on(admin_cmd(pattern=r"sshit$"))
 @bot.on(sudo_cmd(pattern="sshit$", allow_sudo=True))
-async def legend(shit):
+async def KANNADIGA(shit):
     if shit.fwd_from:
         return
     await edit_or_reply(shit, A)
