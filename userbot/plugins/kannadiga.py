@@ -76,7 +76,7 @@ msg = (
      Bot Status 
 🔰 Owner   : {Config.ALIVE_NAME}
 ✨ kannadigaBot  : {KANNADIGAversion}
-✨ Telethon  : {version.version}
+✨ Telethon  : {version.__version__}
 ✨ Abuse    :  {abuse_m}
 ✨ Sudo    :  {is_sudo}
 ✨ Bøt   : {Config.BOY_OR_GIRL}
