@@ -72,9 +72,9 @@ msg = (
     gvarstatus("KANNADIGA_TEMPLATE")
     or f"""
   ⚜️ Kannadiga Bot is Online ⚜️
-     {Config.KANNADIGA_MSG}
+     {Config.ALIVE_MSG}
      Bot Status 
-🔰 Owner   : {Config.KANNADIGA_NAME}
+🔰 Owner   : {Config.ALIVE_NAME}
 ✨ kannadigaBot  : {KANNADIGAversion}
 ✨ Telethon  : {version.version}
 ✨ Abuse    :  {abuse_m}
