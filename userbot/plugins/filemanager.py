@@ -269,7 +269,9 @@ async def handler(event):
 CmdHelp("filemanager").add_command(
     "ls_local", None, "Gives the list of downloaded medias in your KANNADIGABOT server."
 ).add_command(
-    "ls_root", None, "Gives the list of all files in root directory of KANNADIGABOT repo."
+    "ls_root",
+    None,
+    "Gives the list of all files in root directory of KANNADIGABOT repo.",
 ).add_command(
     "ls_saved",
     None,

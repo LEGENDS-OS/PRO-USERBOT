@@ -178,7 +178,11 @@ async def _(event):
     if event.fwd_from:
         return
     KANNADIGAreply = await event.get_reply_message()
-    if not KANNADIGAreply or not KANNADIGAreply.media or not KANNADIGAreply.media.document:
+    if (
+        not KANNADIGAreply
+        or not KANNADIGAreply.media
+        or not KANNADIGAreply.media.document
+    ):
         return await edit_or_reply(event, "`Stupid!, This is not animated sticker.`")
     if KANNADIGAreply.media.document.mime_type != "application/x-tgsticker":
         return await edit_or_reply(event, "`Stupid!, This is not animated sticker.`")
@@ -195,7 +199,9 @@ async def _(event):
             await event.client.send_read_acknowledge(conv.chat_id)
             if response.text.startswith("Send me an animated sticker!"):
                 return await KANNADIGAevent.edit("`This file is not supported`")
-            KANNADIGAresponse = response if response.media else await conv.get_response()
+            KANNADIGAresponse = (
+                response if response.media else await conv.get_response()
+            )
             await event.client.send_read_acknowledge(conv.chat_id)
             KANNADIGAfile = Path(
                 await event.client.download_media(KANNADIGAresponse, "./temp/")

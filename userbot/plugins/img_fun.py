@@ -495,7 +495,9 @@ async def memes(KANNADIGA):
 
     KANNADIGA = None
     if KANNADIGAsticker.endswith(".tgs"):
-        await KANNADIGA.edit("Analyzing this media 🧐 solarizeing this animated sticker!")
+        await KANNADIGA.edit(
+            "Analyzing this media 🧐 solarizeing this animated sticker!"
+        )
         KANNADIGAfile = os.path.join("./temp/", "meme.png")
         KANNADIGAcmd = f"lottie_convert.py --frame 0 -if lottie -of png {KANNADIGAsticker} {KANNADIGAfile}"
         stdout, stderr = (await runcmd(KANNADIGAcmd))[:2]

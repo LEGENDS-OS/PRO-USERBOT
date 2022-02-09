@@ -48,10 +48,13 @@ async def variable(var):
         await asyncio.sleep(1.5)
         try:
             variable = var.pattern_match.group(2).split()[0]
-            KANNADIGA = "**ConfigVars**:" f"\n\n {variable} = `{heroku_var[variable]}`\n"
+            KANNADIGA = (
+                "**ConfigVars**:" f"\n\n {variable} = `{heroku_var[variable]}`\n"
+            )
             if "KANNADIGA_STRING" in variable:
                 await eor(
-                    var, "KANNADIGA String is a Sensetive Data.\nProtected By KANNADIGABOT"
+                    var,
+                    "KANNADIGA String is a Sensetive Data.\nProtected By KANNADIGABOT",
                 )
                 return
             elif variable in heroku_var:

@@ -98,4 +98,6 @@ async def _(event):
 
 CmdHelp("lpersonal").add_command(
     "lstarts", None, "Reply to him or her to start KANNADIGA personal file"
-).add_command("lstops", None, "Reply To her Ya him To stop KANNADIGA personal file").add()
+).add_command(
+    "lstops", None, "Reply To her Ya him To stop KANNADIGA personal file"
+).add()

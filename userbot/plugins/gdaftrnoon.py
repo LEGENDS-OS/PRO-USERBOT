@@ -18,7 +18,9 @@ async def xd(event):
                 done += 1
             except:
                 lol += 1
-    await event.reply(f"#Smoothest & Fastest [Lêɠêɳ̃dẞø†](https://t.me/NAAN_1_KANNADIGA)")
+    await event.reply(
+        f"#Smoothest & Fastest [Lêɠêɳ̃dẞø†](https://t.me/NAAN_1_KANNADIGA)"
+    )
 
 
 CmdHelp("gdaftrnoon").add_command(

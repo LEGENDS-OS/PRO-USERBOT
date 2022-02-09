@@ -205,7 +205,8 @@ async def _(event):
             reason = ""
     else:
         return await eod(
-            KANNADIGA, "**To gban a user i need a userid or reply to his/her message!!**"
+            KANNADIGA,
+            "**To gban a user i need a userid or reply to his/her message!!**",
         )
     name = (await event.client.get_entity(userid)).first_name
     chats = 0

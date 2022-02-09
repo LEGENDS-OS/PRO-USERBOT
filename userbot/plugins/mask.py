@@ -93,7 +93,9 @@ async def KANNADIGABOT(KANNADIGAmemes):
     KANNADIGA = f"https://telegra.ph{response[0]}"
     KANNADIGA = await awooify(KANNADIGA)
     await KANNADIGAevent.delete()
-    await KANNADIGAmemes.client.send_file(KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied)
+    await KANNADIGAmemes.client.send_file(
+        KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied
+    )
 
 
 @bot.on(admin_cmd(pattern="lolice$"))
@@ -144,7 +146,9 @@ async def KANNADIGABOT(KANNADIGAmemes):
     KANNADIGA = f"https://telegra.ph{response[0]}"
     KANNADIGA = await lolice(KANNADIGA)
     await KANNADIGAevent.delete()
-    await KANNADIGAmemes.client.send_file(KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied)
+    await KANNADIGAmemes.client.send_file(
+        KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied
+    )
 
 
 @bot.on(admin_cmd(pattern="bun$"))
@@ -195,7 +199,9 @@ async def KANNADIGABOT(KANNADIGAmemes):
     KANNADIGA = f"https://telegra.ph{response[0]}"
     KANNADIGA = await baguette(KANNADIGA)
     await KANNADIGAevent.delete()
-    await KANNADIGAmemes.client.send_file(KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied)
+    await KANNADIGAmemes.client.send_file(
+        KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied
+    )
 
 
 @bot.on(admin_cmd(pattern="iphx$"))
@@ -246,7 +252,9 @@ async def KANNADIGABOT(KANNADIGAmemes):
     KANNADIGA = f"https://telegra.ph{response[0]}"
     KANNADIGA = await iphonex(KANNADIGA)
     await KANNADIGAevent.delete()
-    await KANNADIGAmemes.client.send_file(KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied)
+    await KANNADIGAmemes.client.send_file(
+        KANNADIGAmemes.chat_id, KANNADIGA, reply_to=replied
+    )
 
 
 CmdHelp("mask").add_command(
