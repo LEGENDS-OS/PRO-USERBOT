@@ -18,7 +18,7 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 from . import *
 
-KANNADIGA_IMG = "https://telegra.ph/file/153977a71b928874151a5.jpg"
+KANNADIGA_IMG = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@NAAN_1_KANNADIGA"
 
 
@@ -71,7 +71,7 @@ async def amireallyalive(alive):
 msg = (
     gvarstatus("ALIVE_TEMPLATE")
     or f"""
-**  ⚜️ Lêɠêɳ̃dẞø† is Online ⚜️**
+**  ⚜️ Kannadiga Bot is Online ⚜️**
      {Config.ALIVE_MSG}
     ** Bot Status **
 **🔰 Owner   :** **{Config.ALIVE_NAME}**
@@ -98,16 +98,16 @@ async def KANNADIGA_a(event):
         await eor(event, msg)
 
 
-file1 = "https://te.legra.ph/file/2426eab17330c6e6310ea.mp4"
-file2 = "https://te.legra.ph/file/11ec9dd576ee5536125b2.jpg"
-file3 = "https://te.legra.ph/file/d2a5265abdc4e73af1f94.jpg"
-file4 = "https://te.legra.ph/file/d17467283e73c884834a5.jpg"
-file5 = "https://telegra.ph/file/af51de2749a4506d3eb43.jpg"
+file1 = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
+file2 = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
+file3 = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
+file4 = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
+file5 = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 """=======================CONSTANTS====================== """
 pm_caption = f"**╭────────────**\n"
-pm_caption += f"┣✨ Owner   ~ {Config.ALIVE_NAME}\n"
+pm_caption += f"┣✨ Master   ~ {Config.ALIVE_NAME}\n"
 pm_caption += f"┣✨ KANNADIGABOT ~ {KANNADIGAversion}\n"
-pm_caption += f"┣✨ Mr Kannadiga   ~ [Owner](https://t.me/Mr_Professor_Agora)\n"
+pm_caption += f"┣✨ Owner   ~ [Mr Kannadiga](https://t.me/Mr_Professor_Agora)\n"
 pm_caption += f"┣✨ Support ~ [Group](https://t.me/NAAN_1_KANNADIGA)\n"
 pm_caption += f"┣✨ Repo   ~ [Repo](https://github.com/MR-KANNADIGA/KANNADIGABOT)\n"
 pm_caption += f"**╰────────────**\n"
