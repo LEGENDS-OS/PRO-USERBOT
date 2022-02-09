@@ -72,10 +72,10 @@ msg = (
     gvarstatus("KANNADIGA_TEMPLATE")
     or f"""
   ⚜️ Kannadiga Bot is Online ⚜️
-     {Config.kannadiga_MSG}
+     {Config.KANNADIGA_MSG}
      Bot Status 
-🔰 Owner   : {Config.kannadiga_NAME}
-✨ kannadigaBot  : {kannadigaversion}
+🔰 Owner   : {Config.KANNADIGA_NAME}
+✨ kannadigaBot  : {KANNADIGAversion}
 ✨ Telethon  : {version.version}
 ✨ Abuse    :  {abuse_m}
 ✨ Sudo    :  {is_sudo}
@@ -105,11 +105,11 @@ file4 = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 file5 = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 """=======================CONSTANTS====================== """
 pm_caption = f"╭────────────\n"
-pm_caption += f"┣✨ Owner   ~ {Config.kannadiga_NAME}\n"
-pm_caption += f"┣✨ Kannadigabot ~ {KANNADIGAversion}\n"
-pm_caption += f"┣✨ Agora   ~ [Owner](https://t.me/mr_professor_agora)\n"
-pm_caption += f"┣✨ Support ~ [Group](https://t.me/naan_1_kannadiga)\n"
-pm_caption += f"┣✨ Repo   ~ [Repo](https://github.com/MR-KANNADIGA/KANNADIGA-BOT)\n"
+pm_caption += f"┣👨‍🏫 Owner   ~ {Config.kannadiga_NAME}\n"
+pm_caption += f"┣⭐ Kannadigabot ~ {KANNADIGAversion}\n"
+pm_caption += f"┣🚩 Agora   ~ [Owner](https://t.me/mr_professor_agora)\n"
+pm_caption += f"┣🌍 Support ~ [Group](https://t.me/naan_1_kannadiga)\n"
+pm_caption += f"┣💥 Repo   ~ [Repo](https://github.com/MR-KANNADIGA/KANNADIGA-BOT)\n"
 pm_caption += f"╰────────────\n"
 
 
