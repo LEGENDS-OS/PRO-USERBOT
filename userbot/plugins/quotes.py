@@ -6,11 +6,11 @@ from userbot.cmdhelp import CmdHelp
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 LOVESTR = [
-    "The best and most beautiful things in this world cannot be seen or even heard, but must be felt with the heart.",
-    "You know you're in love when you can't fall asleep because reality is finally better than your dreams.",
-    "Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates walls to arrive at its destination full of hope.",
-    "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.",
-    "The real lover is the man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.",
+    "ಪ್ರೀತಿಯಲ್ಲಿ ಚಿಗುರಿತು ನನ್ನ ಕನಸು,ಆಸೆಯಲ್ಲಿ ಅರಳಿತು ನನ್ನ ಮನಸು..ನನ್ನ ಮನಸು ನನಸಾಗಿದೆ, ನಾ ಕಂಡ ಕನಸು..ಬಾಡದಿರಲಿ ಹೂವಿನಂತ ಮನಸು, ಎಂದಿಗೂ ನೀ ನನ್ನ ಪ್ರೀತಿಸು…- [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
+    "ಹೃದಯವೆಂಬ “Hardware” ನಲ್ಲಿ ಮನಸೆಂಬ “Operating System ಹರಿದಾದುತಿದೆ,ಪ್ರೀತಿ ಎಂಬ “Software” install ಮಾಡಿದ್ದೆ ….ಕೆಲವರು ಹೇಳ್ತಾರೆ “Happiness” ಅನ್ನೋ “Functionality” ಇದೆ ಅಂತ , ಇನ್ನು ಕೆಲವರು ಹೇಳ್ತಾರೆ ಇದರಲ್ಲಿ ಮೋಸಾ ಅನ್ನೋ “Bug” ಇದೆ ಅಂತ …- [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
+    "ಪ್ರೀತಿ ಇಲ್ಲ ಎನ್ನುವುದಾದರೆ , ನಾವಿಬ್ಬರು ನಡೆಯುವಾಗ ಒಂದೇ ನೆರಳು ಬೀಳುವುದೇಕೆ ….ಆ ಒಂದೇ ನೆರಳಿನಲ್ಲಿ ನಾವಿಬ್ಬರು ಕಾಣುವುದೇಕೆ …!! - [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
+    "ಕರೆದು ಬಿಡಲೇ ನಿನ್ನ ಹೆಸರನ್ನೊಮ್ಮೆ, ಇಳಿದು ಬಿಡಲೇ ನಿನ್ನ ಹೃದಯಕೊಮ್ಮೆ,ಈ ಪ್ರೀತಿಯ ಒಲವೆಲ್ಲವು ನಿನಗೆ ತಾನೇ…- [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
+    "ಹೊತ್ತು ಮುಳುಗುವ ಹೊತ್ತು, ಇಬ್ಬನಿ ಜಾರುತಲಿತ್ತು,ಇನಿಯ ನಾ ಕಾದೆ ನಿನಗಾಗಿ, ಈ ಲೋಕವ ಮರೆತು,ಗಂಟೆಗಳು ಉರುಳುತಿವೆ, ರವಿಯ ಕಿರಣ ಸರಿಯುತಿದೆ,ಬಾ ನನ್ನ ನಲ್ಲ ಎಲ್ಲಿರುವೆ ನೀ ……………ಓ ಮುದ್ದು ಮನಸೇ……….- [Mr ಕನ್ನಡಿಗ](https://t.me/naan_1_kannadiga).",
     "I swear I couldn't love you more than I do right now, and yet I know I will tomorrow.",
     "When I saw you I fell in love, and you smiled because you knew it.",
     "In all the world, there is no heart for me like yours. / In all the world, there is no love for you like mine.",
