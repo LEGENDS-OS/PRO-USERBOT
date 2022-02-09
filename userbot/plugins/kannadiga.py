@@ -92,7 +92,7 @@ async def kannadiga_a(event):
         KANNADIGA = await bot.inline_query(botname, "kannadiga")
         await KANNADIGA[0].click(event.chat_id)
         await event.delete()
-        if event.sender_id == MR_PROFESSOR_AGORA:
+        if event.sender_id == Mr_Professor_Agora:
             await event.delete()
     except (noin, dedbot):
         await eor(event, msg)
