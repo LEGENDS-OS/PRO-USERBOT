@@ -13,7 +13,7 @@ except:
 API_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 token = os.environ.get("BOT_TOKEN", None)
-lnbot = TelegramClient("legendboy", API_ID, API_HASH).start(bot_token=token)
+lnbot = TelegramClient("KannaDiga", API_ID, API_HASH).start(bot_token=token)
 
 
 class KANNADIGA(TelegramClient):
