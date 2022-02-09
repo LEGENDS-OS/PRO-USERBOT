@@ -178,9 +178,13 @@ async def make_gif(event, file):
             if response.text.startswith("Send me an animated sticker!"):
                 return "`This file is not supported`"
             response = response if response.media else await conv.get_response()
-            KANNADIGAresponse = response if response.media else await conv.get_response()
+            KANNADIGAresponse = (
+                response if response.media else await conv.get_response()
+            )
             await event.client.send_read_acknowledge(conv.chat_id)
-            KANNADIGAfile = await event.client.download_media(KANNADIGAresponse, "./temp")
+            KANNADIGAfile = await event.client.download_media(
+                KANNADIGAresponse, "./temp"
+            )
             return await unzip(KANNADIGAfile)
         except YouBlockedUserError:
             return "Unblock @tgstogifbot"
