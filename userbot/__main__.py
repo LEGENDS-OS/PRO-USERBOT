@@ -228,7 +228,7 @@ async def users(event):
         await event.delete()
         await tgbot.send_message(
             event.chat_id,
-            message=".set var <varname> <value> ex:- .set var ALIVE_NAME LegendBoy \n\n To Know All Var Go Back And Click On All Var",
+            message=".set var <varname> <value> ex:- .set var ALIVE_NAME KannaDiga \n\n To Know All Var Go Back And Click On All Var",
             buttons=[
                 [custom.Button.inline("Back", data="osg")],
             ],

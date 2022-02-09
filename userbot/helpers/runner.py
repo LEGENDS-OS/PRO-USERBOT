@@ -42,4 +42,4 @@ async def reload_KANNADIGABOT():
     os._exit(143)
 
 
-# PRO-LEGENDBOT
+# KANNADIGA-BOT

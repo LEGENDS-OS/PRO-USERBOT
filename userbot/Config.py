@@ -92,7 +92,7 @@ if ENV:
         )
         APP_ID = os.environ.get("APP_ID", None)
         API_HASH = os.environ.get("API_HASH", None)
-        KANNADIGA_STRING = os.environ.get("PRO_STRING", None)
+        KANNADIGA_STRING = os.environ.get("KANNADIGA_STRING", None)
         KANNADIGA_STRING = os.environ.get("KANNADIGA_STRING", None)
         EXTRA_PLUGIN = os.environ.get("EXTRA_PLUGIN", None)
         ASSISTANT = os.environ.get("ASSISTANT", None)
