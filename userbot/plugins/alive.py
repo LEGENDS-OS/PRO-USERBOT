@@ -22,8 +22,8 @@ KANNADIGA_IMG = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
 CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@NAAN_1_KANNADIGA"
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="KANNADIGA$"))
-@bot.on(sudo_cmd(pattern="KANNADIGA$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="kannadiga$"))
+@bot.on(sudo_cmd(pattern="kannadiga$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
