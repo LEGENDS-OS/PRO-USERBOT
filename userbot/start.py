@@ -53,11 +53,11 @@ async def hekp():
     except BaseException:
         pass
     try:
-        await bot(leave("@Legend_UserBot"))
+        await bot(leave("@Dangerous_kannadiga"))
     except BaseException:
         pass
     try:
-        await bot(leave("@Official_LegendBot"))
+        await bot(leave("@masti_in_dosti"))
     except BaseException:
         pass
 
