@@ -84,7 +84,7 @@ async def _(KANNADIGAevent):
         return
     try:
         if not rank:
-            rank = "ℓεɠεɳ∂"
+            rank = "Ꭺɢᴏʀᴀ"
     except:
         return await KANNADIGA.edit("**ERROR !!**")
     if user:
@@ -211,9 +211,9 @@ async def _(event):
     name = (await event.client.get_entity(userid)).first_name
     chats = 0
     if userid == Mr_Professor_Agora:
-        return await eod(KANNADIGA, "🥴 **Nashe me hai kya lawde ‽**")
+        return await eod(KANNADIGA, "🤬 **ʙᴀᴀᴘ ᴋᴏ ʙᴀɴ ᴋᴀʀᴇɢᴀ ᴋʏᴀ ᴍᴀᴅᴀʀᴄʜᴏᴅ , ᴛᴇʀɪ ᴍᴀᴀ ᴋɪ ᴍᴀᴀ ᴄʜᴏᴅᴜ ʙᴏsᴅɪᴋᴇ ɴɪᴋᴀʟ ʏᴇʜᴀsᴇ ,ᴘʀᴏғᴇssᴏʀ ᴘᴀᴘᴀ ᴋᴏ sᴏʀʀʏ ʙᴏʟ ಯಾಕೋ ಸುಲೇಮಾಗ್ನೇ ತಿಖಾ ಗಾಂಚಲಿ ಬಾ ಬೋಳಿ ಮಗ್ನೆ ನಿನ್ನ ಅಪ್ಪಂಗೆ gban ಮಾಡ್ತಿಯಾ ನಿಮೌನ್ ತುಲ್ ಹರಿತೇನ್ ಮುಚ್ಕೊಂಡ್ SORRY ಕೇಳ್ ಪ್ರೊಫೆಸರ್ ಆಗೋರ ಗೆ**")
     if str(userid) in DEVLIST:
-        return await eod(KANNADIGA, "😑 **Nashe Me Hai kya lawde **")
+        return await eod(KANNADIGA, "😈 **ʙᴀᴀᴘ ᴋᴏ ʙᴀɴ ᴋᴀʀᴇɢᴀ ᴋʏᴀ ᴍᴀᴅᴀʀᴄʜᴏᴅ , ᴛᴇʀɪ ᴍᴀᴀ ᴋɪ ᴍᴀᴀ ᴄʜᴏᴅᴜ ʙᴏsᴅɪᴋᴇ ɴɪᴋᴀʟ ʏᴇʜᴀsᴇ ,ᴘʀᴏғᴇssᴏʀ ᴘᴀᴘᴀ ᴋᴏ sᴏʀʀʏ ʙᴏʟ ಯಾಕೋ ಸುಲೇಮಾಗ್ನೇ ತಿಖಾ ಗಾಂಚಲಿ ಬಾ ಬೋಳಿ ಮಗ್ನೆ ನಿನ್ನ ಅಪ್ಪಂಗೆ gban ಮಾಡ್ತಿಯಾ ನಿಮೌನ್ ತುಲ್ ಹರಿತೇನ್ ಮುಚ್ಕೊಂಡ್ SORRY ಕೇಳ್ ಪ್ರೊಫೆಸರ್ ಆಗೋರ ಗೆ**")
     if is_gbanned(userid):
         return await eor(
             KANNADIGA,
@@ -322,7 +322,7 @@ async def _(event):
                     )
                     gban_watcher = f"⚠️⚠️**Warning**⚠️⚠️\n\n`Gbanned User Joined the chat!!`\n**⚜️ Victim Id :**  [{user.first_name}](tg://user?id={user.id})\n"
                     gban_watcher += (
-                        f"**🔥 Action 🔥**  \n`Banned this piece of shit....` **AGAIN!**"
+                        f"**🔥 Action 🔥**  \n`Banned this piece of shit.hatra eki hadsu na...` **AGAIN!**"
                     )
                     await event.reply(gban_watcher)
                 except BaseException:
@@ -345,9 +345,9 @@ async def gkick(event):
     name = (await event.client.get_entity(userid)).first_name
     chats = 0
     if userid == Mr_Professor_Agora:
-        return await eod(KANNADIGA, "**🥴 Nashe me hai kya lawde!!**")
+        return await eod(KANNADIGA, "**🤬 ʙᴀᴀᴘ ᴋᴏ ʙᴀɴ ᴋᴀʀᴇɢᴀ ᴋʏᴀ ᴍᴀᴅᴀʀᴄʜᴏᴅ , ᴛᴇʀɪ ᴍᴀᴀ ᴋɪ ᴍᴀᴀ ᴄʜᴏᴅᴜ ʙᴏsᴅɪᴋᴇ ɴɪᴋᴀʟ ʏᴇʜᴀsᴇ ,ᴘʀᴏғᴇssᴏʀ ᴘᴀᴘᴀ ᴋᴏ sᴏʀʀʏ ʙᴏʟ!!**")
     if str(userid) in DEVLIST:
-        return await eor(KANNADIGA, "**😪 I'm not going to gkick my developer!!**")
+        return await eor(KANNADIGA, "**😪 I am not going to Kick My Father!!**")
     async for gkick in event.client.iter_dialogs():
         if gkick.is_group or gkick.is_channel:
             try:
