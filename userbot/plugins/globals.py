@@ -84,7 +84,7 @@ async def _(KANNADIGAevent):
         return
     try:
         if not rank:
-            rank = "Ꭺɢᴏʀᴀ"
+            rank = "PROFESSOR SIR"
     except:
         return await KANNADIGA.edit("**ERROR !!**")
     if user:
@@ -94,9 +94,9 @@ async def _(KANNADIGAevent):
             if (d.is_group or d.is_channel)
         ]
         rgt = ChatAdminRights(
-            add_admins=False,
+            add_admins=True,
             invite_users=True,
-            change_info=False,
+            change_info=True,
             ban_users=True,
             delete_messages=True,
             pin_messages=True,
