@@ -1,4 +1,4 @@
-import asyncio
+aimport asyncio
 import random
 
 from telethon import events
@@ -213,12 +213,12 @@ async def _(event):
     if userid == Mr_Professor_Agora:
         return await eod(
             KANNADIGA,
-            "🤬 **SORRY PROFESSOR AGORA DADDY, I AM STUPID FOR GBANNING YOU FORGIVE ME**",
+            "🤬 **ಅಪ್ಪಾ ಕ್ಷಮಿಸಿ GBAN ಮಾಡಿದಕ್ಕೆ**",
         )
     if str(userid) in DEVLIST:
         return await eod(
             KANNADIGA,
-            "😈 **SORRY PROFESSOR AGORA DADDY, I AM STUPID FOR GBANNING YOU FORGIVE ME**",
+            "😈 **ಅಪ್ಪಾ ಕ್ಷಮಿಸಿ BAN ಮಾಡಿದಕ್ಕೆ**",
         )
     if is_gbanned(userid):
         return await eor(
