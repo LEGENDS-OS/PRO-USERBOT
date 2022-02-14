@@ -1,4 +1,4 @@
-aimport asyncio
+import asyncio
 import random
 
 from telethon import events
