@@ -137,22 +137,22 @@ async def _(event):
         return
     animation_interval = 3
     animation_ttl = range(15)
-    event = await edit_or_reply(event, "Calling Mrs KavyaShaan(CEO Of Telegram)......")
+    event = await edit_or_reply(event, "Calling Princess Ammu Gouda(CEO Of Telegram)......")
     animation_chars = [
-        "`Connecting To ADM Film making Studio`",
+        "`Connecting To AmmuGouda Palace ,India`",
         "`Call Connected.`",
-        "`Secretary: hello This is Agora Digital Magician Studio. Who is this?`",
-        f"`Me: hello sir this is` `{DEFAULTUSER}` .Please connect me to Mrs KavyaShaan",
+        "`Secretary: hello This is Princess Ammu Gouda Palace. Who is this?`",
+        f"`Me: hello ma'am this is` `{DEFAULTUSER}` .Please connect me to Princess Ammu Gouda",
         "`User Authorised.`",
-        "`Calling`  `At +91890435****`",
+        "`Calling`  `At PRIVATE NUMBER`",
         "`Private  Call Connected...`",
-        "`Me: hello master, How are you sir!!`",
-        "`Mrs KavyaShaan: May I Know Who Is This?`",
+        "`Me: hello ma'am, How are you ma'am!!`",
+        "`Princess AMMU GOUDA: May I Know Who Is This?`",
         f"`Me: Yes sur, itz me` `{DEFAULTUSER}`",
-        "`Mrs KavyaShaan: OMG!!! After long time to see u, Wassup Dear...\nI'm fine btw... how are you?`",
-        "`Me: I am better sir than good By the way What are u Doing.`",
-        "`Mrs KavyaShaan: Ok! I'll call you later.. I'm busy a Right Now...`",
-        "`Me: Sure Sur \nTC Bye Bye :)`",
+        "`Princess AMMU GOUDA: OMG!!! After long time to see u, Wassup Dear...\nI'm fine btw... how are you?`",
+        "`Me: I am better ma'am than good, By the way What are u Doing.`",
+        "`Princess AMMU GOUDA: Ok! I'll call you later.. I'm busy a Right Now...`",
+        "`Me: Sure ma'am \nTC Bye Bye :)`",
         "`Private Call Disconnected`",
     ]
     for i in animation_ttl:
