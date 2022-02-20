@@ -49,7 +49,7 @@ async def hekp():
         pass
 
     try:
-        await bot(JoinChannelRequest("@KANNADIGA_BOTS"))
+        await bot(JoinChannelRequest("@MASTI_IN_DOSTI"))
     except BaseException:
         pass
     try:
@@ -57,7 +57,7 @@ async def hekp():
     except BaseException:
         pass
     try:
-        await bot(leave("@masti_in_dosti"))
+        await bot(leave("@kannadiga_bots"))
     except BaseException:
         pass
 
