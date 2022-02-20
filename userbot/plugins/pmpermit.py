@@ -402,7 +402,7 @@ async def hehehe(event):
                 chat.id,
                 f"**My Boss iz here..{KANNADIGA_mention}'s Its Ur Lucky day Nibba😏!!**",
             )
-            await borg.send_message(chat, f"⚡ **Welcome My Master** ⚡")
+            await borg.send_message(chat, f"⚡ **NAMASTAE MASTER PROFESSOR AGORA ** ⚡")
 
 
 CmdHelp("pm_permit").add_command(
