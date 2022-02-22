@@ -15,13 +15,13 @@ PICS_STR = []
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 async def lg1(KANNADIGAevent):
     event = await edit_or_reply(KANNADIGAevent, "`Processing.....`")
-    fnt = await get_font_file(event.client, "@KANNADIGAFonts")
+    fnt = await get_font_file(event.client, "@LEGENDFonts")
     if KANNADIGAevent.reply_to_msg_id:
         rply = await KANNADIGAevent.get_reply_message()
         logo_ = await rply.download_media()
     else:
         async for i in bot.iter_messages(
-            "@KANNADIGA_MR_LOGOS", filter=InputMessagesFilterPhotos
+            "@LEGEND_MR_LOGOS", filter=InputMessagesFilterPhotos
         ):
             PICS_STR.append(i)
         pic = random.choice(PICS_STR)
