@@ -12,7 +12,7 @@ OWNER_ID = bot.uid
 KANNADIGA_USER = bot.me.first_name
 Its_KannaDiga = bot.uid
 
-KANNADIGA_mention = f"[{KANNADIGA_USER}](tg://user?id={its_kannadiga})"
+KANNADIGA_mention = f"[{KANNADIGA_USER}](tg://user?id={Its_KannaDiga})"
 gban_pic = "./userbot/resources/pics/gban.mp4"
 main_pic = "./userbot/resources/pics/main.jpg"
 core_pic = "./userbot/resources/pics/core.jpg"
