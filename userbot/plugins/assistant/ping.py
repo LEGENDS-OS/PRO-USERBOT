@@ -12,10 +12,10 @@ KANNADIGA_IMG = os.environ.get(
 ms = 4
 ALIVE = Config.ALIVE_NAME
 
-KannaDiga = f"**꧁•⊹٭Ping٭⊹•꧂**\n\n   ⚜ {ms}\n   ⚜ ❝𝐌𝐲 𝐌𝐚𝐬𝐭𝐞𝐫❞ ~『{ALIVE}』"
+KannaDiga = f"**꧁•⊹٭𝙾𝚆𝙽𝙴𝚁 𝙿𝚁𝙾𝙵𝙴𝚂𝚂𝙾𝚁 𝙰𝙶𝙾𝚁𝙰٭⊹•꧂**\n\n   ⚜ {ms}\n   ⚜ ❝𝐌𝐲 𝐌𝐚𝐬𝐭𝐞𝐫❞ ~『{ALIVE}』"
 
 
 @tgbot.on(events.NewMessage(pattern="^/ping"))
 async def _(event):
-    GOOD = [[Button.url("𝙿𝚛𝚘𝚏𝚎𝚜𝚜𝚘𝚛 𝙰𝚐𝚘𝚛𝚊", "https://t.me/NAAN_1_KANNADIGA")]]
+    GOOD = [[Button.url("OWNER STAY HERE", "https://t.me/MASTI_IN_DOSTI")]]
     await tgbot.send_file(event.chat_id, KANNADIGA_IMG, caption=KannaDiga, buttons=GOOD)
