@@ -46,7 +46,7 @@ async def start(event):
             buttons=[
                 [
                     Button.url(" Support ", "https://t.me/NAAN_1_KANNADIGA"),
-                    Button.url(" Updates ", "https://t.me/Kannadiga_bots"),
+                    Button.url(" Updates ", "https://t.me/Mr_Professor_Agora"),
                 ],
                 [
                     custom.Button.inline("Users", data="users"),
