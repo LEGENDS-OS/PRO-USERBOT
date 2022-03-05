@@ -12,7 +12,9 @@ KANNADIGA_IMG = os.environ.get(
 ms = 4
 ALIVE = Config.ALIVE_NAME
 
-KannaDiga = f"**꧁•⊹٭𝙾𝚆𝙽𝙴𝚁 𝙿𝚁𝙾𝙵𝙴𝚂𝚂𝙾𝚁 𝙰𝙶𝙾𝚁𝙰٭⊹•꧂**\n\n   ⚜ {ms}\n   ⚜ ❝𝐌𝐲 𝐌𝐚𝐬𝐭𝐞𝐫❞ ~『{ALIVE}』"
+KannaDiga = (
+    f"**꧁•⊹٭𝙾𝚆𝙽𝙴𝚁 𝙿𝚁𝙾𝙵𝙴𝚂𝚂𝙾𝚁 𝙰𝙶𝙾𝚁𝙰٭⊹•꧂**\n\n   ⚜ {ms}\n   ⚜ ❝𝐌𝐲 𝐌𝐚𝐬𝐭𝐞𝐫❞ ~『{ALIVE}』"
+)
 
 
 @tgbot.on(events.NewMessage(pattern="^/ping"))
