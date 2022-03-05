@@ -12,7 +12,7 @@ OWNER_ID = bot.uid
 KANNADIGA_USER = bot.me.first_name
 Its_KannaDiga = bot.uid
 
-KANNADIGA_mention = f"[{KANNADIGA_USER}](tg://user?id={Its_KannaDiga})"
+KANNADIGA_mention = f"[{KANNADIGA_USER}](tg://user?id={Mr_Professor_Agora})"
 gban_pic = "./userbot/resources/pics/gban.mp4"
 main_pic = "./userbot/resources/pics/main.jpg"
 core_pic = "./userbot/resources/pics/core.jpg"
@@ -22,7 +22,7 @@ bsdkwale_pic = "./userbot/resources/pics/bsdk_wale.jpg"
 chutiya_pic = "./userbot/resources/pics/chutiya.jpg"
 KANNADIGAversion = "3.0"
 
-perf = "[ Pro Lêɠêɳ̃dẞø† ]"
+perf = "[ Kannadiga Bot ]"
 
 
 DEVLIST = ["5127482645"]
