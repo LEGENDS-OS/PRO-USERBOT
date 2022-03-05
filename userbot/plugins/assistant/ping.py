@@ -17,5 +17,5 @@ KannaDiga = f"**꧁•⊹٭Ping٭⊹•꧂**\n\n   ⚜ {ms}\n   ⚜ ❝𝐌𝐲 
 
 @tgbot.on(events.NewMessage(pattern="^/ping"))
 async def _(event):
-    GOOD = [[Button.url("", "https://t.me/NAAN_1_KANNADIGA")]]
+    GOOD = [[Button.url("𝙿𝚛𝚘𝚏𝚎𝚜𝚜𝚘𝚛 𝙰𝚐𝚘𝚛𝚊", "https://t.me/NAAN_1_KANNADIGA")]]
     await tgbot.send_file(event.chat_id, KANNADIGA_IMG, caption=KannaDiga, buttons=GOOD)
