@@ -11,7 +11,7 @@ from userbot.Config import Config
 from .utils import load_abuse, load_addons, load_module, start_assistant, start_spam
 
 l2 = Config.SUDO_HANDLER
-KANNADIGA_PIC = "https://te.legra.ph/file/e1be79e4d3d61f7c85555.jpg"
+KANNADIGA_PIC = "https://te.legra.ph/file/e5b07c5154727e350b1ae.jpg"
 l1 = Config.HANDLER
 
 perf = "[ KANNADIGABO† ]"
@@ -49,7 +49,7 @@ async def hekp():
         pass
 
     try:
-        await bot(JoinChannelRequest("@MASTI_IN_DOSTI"))
+        await bot(JoinChannelRequest("@KARUNADA_KINGS_AND_QUEENS"))
     except BaseException:
         pass
     try:
@@ -155,7 +155,7 @@ async def spams():
 async def install():
     if plc == "ON":
         try:
-            await bot(JoinChannelRequest("@kannadiga_plugins"))
+            await bot(JoinChannelRequest("@KARUNADA_QUEEN"))
         except BaseException:
             pass
         i = 0
