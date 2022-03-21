@@ -138,7 +138,7 @@ async def _(event):
     animation_interval = 3
     animation_ttl = range(15)
     event = await edit_or_reply(
-        event, "Calling Princess Ammu Gouda(CEO Of Telegram)......"
+        event, "Calling QUEEN SNEYHSHAAN(CEO Of Telegram)......"
     )
     animation_chars = [
         "`Connecting To Karunada Queen,India`",
