@@ -12,7 +12,9 @@ pm_caption += f"┣Telethon ~ `1.15.0` \n"
 pm_caption += f"┣『KING VERSION』~ `{KANNADIGAversion}` \n"
 pm_caption += f"┣Channel ~ [Channel](https://t.me/Kannadiga_bots)\n"
 pm_caption += f"┣**License** ~ [License v3.0](github.com/MR-KANNADIGA/KANNADIGA-BOT/blob/master/LICENSE)\n"
-pm_caption += f"┣Copyright ~ By [『KANNADIGA BOT』 ](https://t.me/KARUNADA_KINGS_AND_QUEENS)\n"
+pm_caption += (
+    f"┣Copyright ~ By [『KANNADIGA BOT』 ](https://t.me/KARUNADA_KINGS_AND_QUEENS)\n"
+)
 pm_caption += f"┣Created ~ By [『KING OF KARNATAKA』 ](https://t.me/KARUNADA_KING)\n"
 pm_caption += f"╰────────────\n"
 pm_caption += f"       »»» [『SPAM SUPPORT』](https://t.me/KARUNADA_FIGHTERS) «««"
