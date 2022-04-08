@@ -1,4 +1,4 @@
-# Made by @Mr_Professor_Agora for @NAAN_1_KANNADIGA
+# Made by @Karunada_King for @Karunada_Kings_And_Queens
 
 from userbot.cmdhelp import CmdHelp
 from userbot.utils import *
