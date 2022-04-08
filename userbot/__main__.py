@@ -51,7 +51,7 @@ else:
             LOGS.info("Checking Completed. Proceeding to next step...")
             LOGS.info("♥️ Starting KANADIGABOT ♥️")
             bot.loop.run_until_complete(add_bot(Config.BOT_USERNAME))
-            LOGS.info("🥇🔥 KANADIGABOT Startup Completed 🔥🥇")
+            LOGS.info("🥇🔥 Kannadiga Bot Startup Completed 🔥🥇")
         else:
             bot.start()
     except Exception as e:
@@ -138,8 +138,8 @@ async def help(event):
             message=f"Hey Sir It's Me {bot_id}, Your Assistant! How Can I Help U?",
             buttons=[
                 [
-                    Button.url(" Support ", "https://t.me/NAAN_1_KANNADIGA"),
-                    Button.url(" Updates ", "https://t.me/KANNADIGA_BOTS"),
+                    Button.url(" Support ", "https://t.me/Karunada_kings_and_queens"),
+                    Button.url(" Updates ", "https://t.me/Karunada_fighters"),
                 ],
                 [
                     custom.Button.inline("Users", data="users"),
@@ -353,7 +353,7 @@ print(
     f"""
 ╔════❰KANADIGA BOT❱═❍⊱❁۪۪
 ║┣⪼ OWNER - {Config.ALIVE_NAME}
-║┣⪼ CREATOR - @Mr_Professor_Agora
+║┣⪼ CREATOR - @Karunada_King
 ║┣⪼ KANADIGABOT - {KANNADIGAversion}
 ║┣⪼ ✨ 『🔱 𝗞 𝗔 𝗡 𝗡 𝗔 𝗗 𝗜 𝗚 𝗔 🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
 ║╰━━━━━━━━━━━━━━━➣
