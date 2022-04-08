@@ -1,11 +1,11 @@
 """Available Commands:
 .bigoof
-Credits to @Mr_Professor_Agora
+Credits to @karunada_king
 
    TeleBot
 """
 
-# Main Credits Goes to @Mr_Professor_Agora
+# Main Credits Goes to @karunada_king
 # He Worked Very Hard to do this, So Please Respect Him!!
 
 import asyncio
