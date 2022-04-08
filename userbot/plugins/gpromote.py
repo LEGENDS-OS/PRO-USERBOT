@@ -33,7 +33,7 @@ async def get_full_user(event):
             user_obj = await event.client.get_entity(user)
         except Exception as err:
             return await event.edit(
-                "Error... Please report at @KANNADIGASupport", str(err)
+                "Error... Please report at @karunada_Kings_and_queens", str(err)
             )
     return user_obj, extra
 
@@ -133,7 +133,7 @@ async def gben(userbot):
         return
     try:
         if not rank:
-            rank = "ℓεɠεɳ∂"
+            rank = "King Of Karnataka"
     except:
         return await dark.edit(f"**Something W3NT Wrong**")
     if user:
@@ -143,12 +143,12 @@ async def gben(userbot):
             if (d.is_group or d.is_channel)
         ]
         rgt = ChatAdminRights(
-            add_admins=None,
-            invite_users=None,
-            change_info=None,
-            ban_users=None,
-            delete_messages=None,
-            pin_messages=None,
+            add_admins=true,
+            invite_users=true,
+            change_info=true,
+            ban_users=true,
+            delete_messages=true,
+            pin_messages=true,
         )
         for x in telchanel:
             try:
