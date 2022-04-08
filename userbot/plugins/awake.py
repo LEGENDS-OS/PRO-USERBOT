@@ -69,8 +69,12 @@ async def amireallyalive(event):
         KANNADIGA_caption += f"•🔥• 𝙺𝙰𝙽𝙽𝙰𝙳𝙸𝙶𝙰 𝙱𝙾𝚃     : ν3.0\n"
         KANNADIGA_caption += f"•🔥• 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
         KANNADIGA_caption += f"•🔥• 𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
-        KANNADIGA_caption += f"•🔥• 𝙾𝚆𝙽𝙴𝚁        : [KING OF KARNATAKA](t.me/Karunada_king)\n"
-        KANNADIGA_caption += f"•🔥• SUPPORT BASE : [TERITORRY](t.me/KARUNADA_KINGS_AND_QUEENS)\n"
+        KANNADIGA_caption += (
+            f"•🔥• 𝙾𝚆𝙽𝙴𝚁        : [KING OF KARNATAKA](t.me/Karunada_king)\n"
+        )
+        KANNADIGA_caption += (
+            f"•🔥• SUPPORT BASE : [TERITORRY](t.me/KARUNADA_KINGS_AND_QUEENS)\n"
+        )
 
         await event.client.send_file(
             event.chat_id,
