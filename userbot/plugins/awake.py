@@ -19,8 +19,8 @@ async def reply_id(event):
 
 
 KANNADIGA_IMG = Config.AWAKE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Kannada Kannadiga"
-CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@naan_1_kannadiga"
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "Kaannadigaru"
+CUSTOM_YOUR_GROUP = Config.YOUR_GROUP or "@karunada_Kings_and_queens"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -65,12 +65,12 @@ async def amireallyalive(event):
         KANNADIGA_caption = f"**{KANNADIGA_mention}**\n"
 
         KANNADIGA_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        KANNADIGA_caption += f"     💛 ƘᗩᑎᑎᗩᗪƖᘐᗩ ᗷዐƬ ❤️\n"
+        KANNADIGA_caption += f"     💛 KANNADIGA BOT ❤️\n"
         KANNADIGA_caption += f"•🔥• 𝙺𝙰𝙽𝙽𝙰𝙳𝙸𝙶𝙰 𝙱𝙾𝚃     : ν3.0\n"
         KANNADIGA_caption += f"•🔥• 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽      : `{version.__version__}`\n"
         KANNADIGA_caption += f"•🔥• 𝚄𝙿𝚃𝙸𝙼𝙴         : `{uptime}`\n"
         KANNADIGA_caption += f"•🔥• 𝙾𝚆𝙽𝙴𝚁        : [𝐎𝐰𝐧𝐞𝐫](t.me/Karunada_king)\n"
-        KANNADIGA_caption += f"•🔥• ᴹʸ 𝙶𝚁𝙾𝚄𝙿 : [𝕲ʀᴏᴜᴘ](t.me/naan_1_kannadiga)\n"
+        KANNADIGA_caption += f"•🔥• ᴹʸ 𝙶𝚁𝙾𝚄𝙿 : [𝕲ʀᴏᴜᴘ](t.me/KARUNADA_KINGS_AND_QUEENS)\n"
 
         await event.client.send_file(
             event.chat_id,
@@ -84,12 +84,12 @@ async def amireallyalive(event):
             awake,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
             f"~~~~~~~~~~~~~~~~~~~~~~~ \n"
-            f"         𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
-            f"•⚡• 𝕿єℓєτнοи    : `{version.__version__}`\n"
-            f"🇮🇳 𝙺𝚊𝚗𝚗𝚊𝚍𝚒𝚐𝚊 𝙱𝚘𝚝  : `{KANNADIGAversion}`\n"
-            f"🇮🇳 υρτιмє        : `{uptime}`\n"
-            f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [𝚔𝚊𝚗𝚗𝚊𝚍𝚒𝚐𝚊](t.me/mr_professor_agora)\n",
+            f"         BOT STATUS\n"
+            f"•⚡• TELETHON    : `{version.__version__}`\n"
+            f"•🇮🇳• KANNADIGA BOT  : `{KANNADIGAversion}`\n"
+            f"•🇮🇳• UPTIME        : `{uptime}`\n"
+            f"•🔱• MASTER        : {mention}\n"
+            f"•🔱• OWNER         : [](t.me/KARUNADA_KING)\n",
         )
 
 
