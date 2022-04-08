@@ -10,7 +10,7 @@ from userbot.utils import *
 
 KANNADIGA_USER = bot.me.first_name
 Mr_Professor_Agora = bot.uid
-KANNADIGA_mention = f"[{KANNADIGA_USER}](tg://user?id={Mr_Professor_Agora})"
+KANNADIGA_mention = f"[{KANNADIGA_USER}](tg://user?id={Karunada_King})"
 
 gban_pic = "./userbot/resources/pics/gban.mp4"
 main_pic = "./userbot/resources/pics/main.jpg"
@@ -23,7 +23,7 @@ chutiya_pic = "./userbot/resources/pics/chutiya.jpg"
 perf = "[ Kannadiga Bot ]"
 
 
-DEVLIST = ["5127482645"]
+DEVLIST = ["5246438045"]
 
 
 async def get_user_id(ids):
@@ -50,8 +50,8 @@ else:
 
 START_TIME = datetime.datetime.now()
 uptime = f"{str(datetime.datetime.now() - START_TIME).split('.')[0]}"
-my_channel = Config.YOUR_CHANNEL or "Kannadiga_Bots"
-my_group = Config.YOUR_GROUP or "naan_1_kannadiga"
+my_channel = Config.YOUR_CHANNEL or "Karunada_fighters"
+my_group = Config.YOUR_GROUP or "karunada_kings_and_queens"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
@@ -64,9 +64,9 @@ if mybot.startswith("@"):
 else:
     botname = f"@{mybot}"
 
-chnl_link = "https://t.me/kannadiga_bots"
+chnl_link = "https://t.me/karunada_fighters"
 KANNADIGA_channel = f"[Kannadiga Channel]({chnl_link})"
-grp_link = "https://t.me/naam_1_kannadiga"
+grp_link = "https://t.me/karunada_kings_and_queens"
 KANNADIGA_grp = f"[Kannadiga Group]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
