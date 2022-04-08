@@ -16,7 +16,7 @@ async def _(event):
         await event.edit("Inqilab Zindabad \n\n **By : Bhagat Singh**")
     if x == 2:
         await event.edit(
-            "DON'T TRY TO KNOW ABUOT ME I M KANNADIGA✌️ @Mr_Professor_Agora\nfrom: @NAAN_1_KANNADIGA"
+            "DON'T TRY TO KNOW ABUOT ME I M KING OF KARNATAKA ✌️ @KARUNADA_KING\nfrom: @KARUNADA_KINGS_AND_QUEENS"
         )
     if x == 3:
         await event.edit("Subhash Chandra Bose : Dilli Chalo ")
